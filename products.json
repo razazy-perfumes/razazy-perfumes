@@ -1,0 +1,414 @@
+[
+  {
+    "id": 1,
+    "nameAr": "رذاذي - فخامة",
+    "nameEn": "Razazy - Luxury",
+    "cats": ["oriental", "unisex"],
+    "rating": 4.9,
+    "reviewsCount": 42,
+    "stock": 18,
+    "desc": "توليفة صُممت لتعبر عن الرقي الكلاسيكي والحضور المهيب، تجمع الانتعاش الأنيق بالعمق الدافئ لمرافقتك في المناسبات الرسمية.",
+    "descEn": "Crafted to express classic refinement and commanding presence, blending crisp freshness with warm depth for formal occasions.",
+    "character": "أروماتك - خشبي فاخر",
+    "characterEn": "Luxury Woody Aromatic",
+    "usage": "المناسبات الرسمية، المساء، الأجواء المعتدلة",
+    "usageEn": "Formal occasions, evenings, mild weather",
+    "price": 35,
+    "img": "bottle.jpg",
+    "reviews": [
+      {
+        "stars": 5,
+        "text": "عطر فخم جداً وثباته ممتاز، استخدمته في مناسبة رسمية وحصلت على الكثير من الإطراءات.",
+        "textEn": "Very luxurious perfume with great longevity; wore it at a formal event and got many compliments.",
+        "who": "عبدالله م. | الرياض",
+        "whoEn": "Abdullah M. | Riyadh"
+      },
+      {
+        "stars": 5,
+        "text": "رائحة راقية تليق بالرجال، أنصح به بشدة.",
+        "textEn": "Refined scent suited for men, highly recommended.",
+        "who": "خالد س. | جدة",
+        "whoEn": "Khaled S. | Jeddah"
+      },
+      {
+        "stars": 4,
+        "text": "جميل لكن أتمنى يكون الفوحان أقوى قليلاً.",
+        "textEn": "Nice scent, though I wish the projection were slightly stronger.",
+        "who": "محمد ع. | الدمام",
+        "whoEn": "Mohammed A. | Dammam"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nameAr": "رذاذي - تميز",
+    "nameEn": "Razazy - Signature",
+    "cats": ["men"],
+    "rating": 4.8,
+    "reviewsCount": 35,
+    "stock": 14,
+    "desc": "عطر لمن يرفضون أن يكونوا عاديين، تركيبة تجمع الحيوية العصرية والجاذبية الدافئة لتأسر الحواس ويصعب نسيانها.",
+    "descEn": "For those who refuse to blend in, a composition uniting modern vitality and warm allure to captivate the senses.",
+    "character": "حمضي - أروماتك دافئ",
+    "characterEn": "Warm Citrus Aromatic",
+    "usage": "اليومي، العمل، اللقاءات الخاصة",
+    "usageEn": "Daily wear, work, special meetups",
+    "price": 35,
+    "img": "bottle.jpg",
+    "reviews": [
+      {
+        "stars": 5,
+        "text": "صار عطري المفضل للدوام، يعطي إحساس بالثقة.",
+        "textEn": "Became my go-to work fragrance, gives a confident feel.",
+        "who": "فهد أ. | الرياض",
+        "whoEn": "Fahad A. | Riyadh"
+      },
+      {
+        "stars": 5,
+        "text": "رائحة مميزة ومختلفة عن كل العطور اللي جربتها.",
+        "textEn": "Distinctive scent unlike any other fragrance I have tried.",
+        "who": "سعد م. | مكة",
+        "whoEn": "Saad M. | Makkah"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "nameAr": "رذاذي - انتعاش",
+    "nameEn": "Razazy - Fresh Breeze",
+    "cats": ["men", "unisex"],
+    "rating": 4.7,
+    "reviewsCount": 51,
+    "stock": 4,
+    "desc": "جرعة نقية من الحيوية تستلهم نسمات الصباح لتمنحك شعوراً فورياً بالنظافة والتجدد طوال النهار.",
+    "descEn": "A pure burst of vitality inspired by morning breezes, giving an instant sense of cleanliness and renewal all day.",
+    "character": "منعش - حمضي عشبي",
+    "characterEn": "Fresh Herbal Citrus",
+    "usage": "الصباح، الصيف، النادي الرياضي",
+    "usageEn": "Morning, summer, gym",
+    "price": 35,
+    "img": "bottle.jpg",
+    "reviews": [
+      {
+        "stars": 5,
+        "text": "مثالي للصيف والحر، انتعاش يدوم.",
+        "textEn": "Ideal for hot summer days, lasting freshness.",
+        "who": "نواف ر. | جدة",
+        "whoEn": "Nawaf R. | Jeddah"
+      },
+      {
+        "stars": 5,
+        "text": "أستخدمه بعد الجيم، نظافة وانتعاش فوري.",
+        "textEn": "I wear it after the gym, instant clean freshness.",
+        "who": "عمر ح. | الرياض",
+        "whoEn": "Omar H. | Riyadh"
+      },
+      {
+        "stars": 4,
+        "text": "خفيف ومنعش لكن الثبات متوسط في الحر الشديد.",
+        "textEn": "Light and refreshing, though longevity is moderate in extreme heat.",
+        "who": "يوسف ك. | الخبر",
+        "whoEn": "Yousef K. | Khobar"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "nameAr": "رذاذي - نيتش",
+    "nameEn": "Razazy - Niche Velvet",
+    "cats": ["women", "oriental"],
+    "rating": 5.0,
+    "reviewsCount": 28,
+    "stock": 9,
+    "desc": "تجربة مخملية من عالم النيش، تدرج يبدأ بنفحات غامضة ويستقر على لمسة ناعمة دافئة تلامس الحواس.",
+    "descEn": "A velvety niche experience unfolding from mysterious notes into a soft, warm embrace on the senses.",
+    "character": "زهري - شرقي مخملي",
+    "characterEn": "Velvety Floral Oriental",
+    "usage": "الأمسيات الخاصة، السهرات، البرد",
+    "usageEn": "Special evenings, nights out, cool weather",
+    "price": 35,
+    "img": "bottle.jpg",
+    "reviews": [
+      {
+        "stars": 5,
+        "text": "تجربة نيش حقيقية بسعر ممتاز، فخامة لا تُوصف.",
+        "textEn": "True niche experience at a great price, indescribable luxury.",
+        "who": "نورة ع. | الرياض",
+        "whoEn": "Noura A. | Riyadh"
+      },
+      {
+        "stars": 5,
+        "text": "كل صديقاتي سألوني عن اسم العطر، رائحة آسرة.",
+        "textEn": "All my friends asked for the name of the perfume, captivating scent.",
+        "who": "لمى ف. | جدة",
+        "whoEn": "Lama F. | Jeddah"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "nameAr": "رذاذي - بصمة خاصة",
+    "nameEn": "Razazy - Special Scent",
+    "cats": ["unisex"],
+    "rating": 4.9,
+    "reviewsCount": 33,
+    "stock": 12,
+    "desc": "بصمة تسبقك لأي مكان، مزيج بارع بين الانتعاش الراقي واللمسات الحسية الدافئة يترك أثراً عالقاً.",
+    "descEn": "A signature that precedes you anywhere, artfully balancing refined freshness with warm sensual notes.",
+    "character": "خشبي - زهري متوازن",
+    "characterEn": "Balanced Woody Floral",
+    "usage": "متعدد الاستخدامات، كل الفصول",
+    "usageEn": "Versatile, all seasons",
+    "price": 35,
+    "img": "bottle.jpg",
+    "reviews": [
+      {
+        "stars": 5,
+        "text": "عطر متوازن يناسب كل الأوقات، صراحة مفاجأة سارة.",
+        "textEn": "Well-balanced scent for any time, honestly a pleasant surprise.",
+        "who": "سارة ب. | الدمام",
+        "whoEn": "Sara B. | Dammam"
+      },
+      {
+        "stars": 5,
+        "text": "اشتريته هدية لأخي وانبهر به، طلب نفس العطر.",
+        "textEn": "Bought it as a gift for my brother and he loved it, ordered the same one.",
+        "who": "هند م. | الرياض",
+        "whoEn": "Hind M. | Riyadh"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "nameAr": "رذاذي - الجاذبية",
+    "nameEn": "Razazy - Magnetic Attraction",
+    "cats": ["men", "oriental"],
+    "rating": 4.8,
+    "reviewsCount": 47,
+    "stock": 3,
+    "desc": "قوة جذب لا تُقاوم، عطر جريء ومكثف يرتكز على نفحات عميقة تمنحك فوحاناً قوياً وثباتاً طويل الأمد.",
+    "descEn": "An irresistible pull; a bold, intense fragrance anchored by deep notes for strong projection and long wear.",
+    "character": "شرقي - تابلي دافئ",
+    "characterEn": "Warm Spicy Oriental",
+    "usage": "السهرات والمناسبات المسائية والشتاء",
+    "usageEn": "Evening gatherings, nights, winter",
+    "price": 35,
+    "img": "bottle.jpg",
+    "reviews": [
+      {
+        "stars": 5,
+        "text": "عطر قوي وجريء، ثباته خرافي يدوم ليوم كامل.",
+        "textEn": "Bold and strong scent, incredible longevity lasting all day.",
+        "who": "ماجد ع. | الرياض",
+        "whoEn": "Majed A. | Riyadh"
+      },
+      {
+        "stars": 5,
+        "text": "مثالي للسهرات الشتوية، فوحانه يملأ المكان.",
+        "textEn": "Great for winter nights, projection fills the room.",
+        "who": "تركي س. | جدة",
+        "whoEn": "Turki S. | Jeddah"
+      },
+      {
+        "stars": 4,
+        "text": "جميل لكن ثقيل شوي للصيف.",
+        "textEn": "Nice scent, though a bit heavy for summer.",
+        "who": "بدر ح. | المدينة",
+        "whoEn": "Bader H. | Madinah"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "nameAr": "رذاذي - ملكي",
+    "nameEn": "Razazy - Royal",
+    "cats": ["oriental"],
+    "rating": 5.0,
+    "reviewsCount": 62,
+    "stock": 16,
+    "desc": "فخامة تليق بالملوك، مزيج عراقة النفحات الشرقية ولمسات العطور الغربية الفاخرة لحضور طاغٍ.",
+    "descEn": "Regal luxury blending heritage Eastern notes with refined Western accords for a commanding aura.",
+    "character": "شرقي - فانيليا وأخشاب فاخرة",
+    "characterEn": "Oriental Vanilla & Fine Woods",
+    "usage": "الأعياد، الأعراس، المناسبات الكبرى",
+    "usageEn": "Eid, weddings, grand occasions",
+    "price": 35,
+    "img": "bottle.jpg",
+    "reviews": [
+      {
+        "stars": 5,
+        "text": "استخدمته في زفافي وكان العطر المثالي، فخامة لا توصف.",
+        "textEn": "Wore it on my wedding day and it was perfection, indescribable luxury.",
+        "who": "سلطان م. | الرياض",
+        "whoEn": "Sultan M. | Riyadh"
+      },
+      {
+        "stars": 5,
+        "text": "أفضل عطر شرقي جربته، يستاهل كل ريال.",
+        "textEn": "Best oriental perfume I have tried, worth every riyal.",
+        "who": "عبدالعزيز ف. | جدة",
+        "whoEn": "Abdulaziz F. | Jeddah"
+      },
+      {
+        "stars": 5,
+        "text": "هدية مثالية للأعياد، التغليف والعطر فخم.",
+        "textEn": "Ideal gift for Eid, both packaging and scent are luxurious.",
+        "who": "منال أ. | الدمام",
+        "whoEn": "Manal A. | Dammam"
+      },
+      {
+        "stars": 5,
+        "text": "ثباته أسطوري، رائحته تفوح لأيام على الملابس.",
+        "textEn": "Legendary staying power, lingers on clothes for days.",
+        "who": "حمد ر. | أبها",
+        "whoEn": "Hamad R. | Abha"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "nameAr": "رذاذي - الانتعاش القوي",
+    "nameEn": "Razazy - Power Fresh",
+    "cats": ["men"],
+    "rating": 4.7,
+    "reviewsCount": 39,
+    "stock": 7,
+    "desc": "عندما يلتقي الانتعاش الفائق بقوة الثبات، مسك أبيض نقي مع لمسات حمضية حادة تصمد أمام الحرارة.",
+    "descEn": "Where ultra-freshness meets strong longevity: pure white musk and crisp citrus built to stand up to heat.",
+    "character": "مسكي - حمضي منعش",
+    "characterEn": "Fresh Citrus Musk",
+    "usage": "الأجواء الحارة، الدوام المكثف، بعد الاستحمام",
+    "usageEn": "Hot weather, busy workdays, after shower",
+    "price": 35,
+    "img": "bottle.jpg",
+    "reviews": [
+      {
+        "stars": 5,
+        "text": "يناسب جو السعودية الحار، ثبات وانتعاش معاً.",
+        "textEn": "Suits Saudi heat well, freshness and longevity together.",
+        "who": "راكان ع. | الرياض",
+        "whoEn": "Rakan A. | Riyadh"
+      },
+      {
+        "stars": 5,
+        "text": "أستخدمه يومياً للدوام، نظافة تدوم 8 ساعات.",
+        "textEn": "I wear it daily for work, clean feel lasts 8 hours.",
+        "who": "فيصل ح. | جدة",
+        "whoEn": "Faisal H. | Jeddah"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "nameAr": "رذاذي - الفخامة الهادئة",
+    "nameEn": "Razazy - Calm Luxury",
+    "cats": ["women", "unisex"],
+    "rating": 4.9,
+    "reviewsCount": 24,
+    "stock": 11,
+    "desc": "الأناقة الحقيقية لا تحتاج صخباً، مسك فاخر ولمسات هادئة تمنحك حضوراً راقياً دون حدة.",
+    "descEn": "True elegance needs no noise; fine musk and serene notes for a graceful presence without harshness.",
+    "character": "مسكي - بودري ناعم",
+    "characterEn": "Soft Powdery Musk",
+    "usage": "الاسترخاء، العمل المكتبي، اللقاءات العائلية",
+    "usageEn": "Relaxation, office wear, family gatherings",
+    "price": 35,
+    "img": "bottle.jpg",
+    "reviews": [
+      {
+        "stars": 5,
+        "text": "ناعم وأنيق، مثالي للمكتب واللقاءات الرسمية.",
+        "textEn": "Soft and elegant, ideal for office and formal meetings.",
+        "who": "ريم س. | الرياض",
+        "whoEn": "Reem S. | Riyadh"
+      },
+      {
+        "stars": 5,
+        "text": "رائحة هادئة تبعث على السكينة، أحببته.",
+        "textEn": "Calm, soothing aroma, loved it.",
+        "who": "دانة م. | الخبر",
+        "whoEn": "Dana M. | Khobar"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "nameAr": "رذاذي - رومانسية",
+    "nameEn": "Razazy - Romantic",
+    "cats": ["women"],
+    "rating": 5.0,
+    "reviewsCount": 31,
+    "stock": 8,
+    "desc": "ترجمة عطرية للمشاعر الدافئة، تناغم ساحر بين النفحات الزهرية والمسك الناعم يفيض بالأنوثة.",
+    "descEn": "A fragrant translation of warm emotions, harmonizing floral notes with soft musk for effortless femininity.",
+    "character": "زهري - مسكي حالم",
+    "characterEn": "Dreamy Floral Musk",
+    "usage": "الأمسيات الرومانسية والهدايا",
+    "usageEn": "Romantic evenings and gifts",
+    "price": 35,
+    "img": "bottle.jpg",
+    "reviews": [
+      {
+        "stars": 5,
+        "text": "أنثوي وحالم، مثالي للمناسبات الخاصة.",
+        "textEn": "Feminine and dreamy, ideal for special occasions.",
+        "who": "جنى ف. | جدة",
+        "whoEn": "Jana F. | Jeddah"
+      },
+      {
+        "stars": 5,
+        "text": "اشتريته هدية لزوجتي وانبهرت به، رائحة رومانسية بامتياز.",
+        "textEn": "Bought it as a gift for my wife and she was thrilled, wonderfully romantic.",
+        "who": "أحمد ع. | الرياض",
+        "whoEn": "Ahmed A. | Riyadh"
+      },
+      {
+        "stars": 5,
+        "text": "زهري ناعم بدون إفراط، يعكس الرقي.",
+        "textEn": "Soft floral without being overpowering, reflects elegance.",
+        "who": "لينا ح. | الدمام",
+        "whoEn": "Lina H. | Dammam"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "nameAr": "رذاذي - نغم الفخامة القوية",
+    "nameEn": "Razazy - Naghram Luxury",
+    "cats": ["oriental", "men"],
+    "rating": 4.8,
+    "reviewsCount": 44,
+    "stock": 6,
+    "desc": "سيمفونية جريئة لعشاق العطور الثقيلة، عمق الأخشاب مع قوة المسك المركز يفرض حضوره لأيام.",
+    "descEn": "A bold symphony for heavy-scent lovers: deep woods and concentrated musk commanding presence for days.",
+    "character": "خشبي - مسكي مركز",
+    "characterEn": "Concentrated Woody Musk",
+    "usage": "الأجواء الباردة والمناسبات الفاخرة",
+    "usageEn": "Cold weather and luxury occasions",
+    "price": 35,
+    "img": "bottle.jpg",
+    "reviews": [
+      {
+        "stars": 5,
+        "text": "لعشاق العطور القوية فقط، فوحانه رهيب.",
+        "textEn": "For bold-scent lovers only, amazing projection.",
+        "who": "مشعل ر. | الرياض",
+        "whoEn": "Meshal R. | Riyadh"
+      },
+      {
+        "stars": 5,
+        "text": "ثباته على الملابس يدوم لأيام، قيمة ممتازة.",
+        "textEn": "Stays on clothes for days, great value.",
+        "who": "عادل م. | جدة",
+        "whoEn": "Adel M. | Jeddah"
+      },
+      {
+        "stars": 4,
+        "text": "ثقيل وجميل، لكن يحتاج جو بارد.",
+        "textEn": "Rich and pleasant, though best in cool weather.",
+        "who": "ناصر س. | تبوك",
+        "whoEn": "Nasser S. | Tabuk"
+      }
+    ]
+  }
+]
