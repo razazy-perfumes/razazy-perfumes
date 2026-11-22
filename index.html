@@ -1,0 +1,3414 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>رذاذي | RAZAZY - عالم العطور الفاخرة</title>
+<meta name="description" content="رذاذي RAZAZY - عطور نيش فاخرة Made in KSA بحجم 50 مل. شحن مجاني فوق 200 ريال.">
+<meta name="theme-color" content="#0b0b0b">
+<link rel="manifest" href="manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="bottle.jpg">
+<meta property="og:title" content="رذاذي | RAZAZY - عالم العطور الفاخرة">
+<meta property="og:description" content="عطور نيش فاخرة Made in KSA بتركيز Eau de Parfum وشحن مجاني فوق 200 ريال.">
+<meta property="og:image" content="bottle.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="bottle.jpg" type="image/jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg-dark:#0b0b0b; --card-bg:#151515; --gold:#d4af37; --gold-light:#f3e5ab;
+  --text-main:#fff; --text-muted:#b0b0b0; --border:#262626; --green:#25d366;
+  --radius:20px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Cairo',sans-serif;background:var(--bg-dark);color:var(--text-main);line-height:1.7;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font-family:inherit;color:inherit}
+button{cursor:pointer;border:none;background:none}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:8px}
+
+/* ===== شريط الإعلان ===== */
+.announce{
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(90deg,#1a1408,#2a2010,#3a2a15,#2a2010,#1a1408);
+  background-size:300% 100%;
+  animation:shimmerBg 6s linear infinite;
+  border-bottom:1px solid var(--border);
+  padding:10px 0;
+  height:38px;
+}
+@keyframes shimmerBg{
+  0%{background-position:0% 50%}
+  100%{background-position:300% 50%}
+}
+.announce::before{
+  content:'';
+  position:absolute;
+  top:0;left:-100%;
+  width:100%;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(212,175,55,.25),transparent);
+  animation:sweep 3s ease-in-out infinite;
+  pointer-events:none;
+}
+@keyframes sweep{
+  0%{left:-100%}
+  100%{left:100%}
+}
+.announce-track{
+  display:flex;
+  align-items:center;
+  white-space:nowrap;
+  direction:rtl;
+  animation:marqueeRtl 24s linear infinite;
+  gap:64px;
+  padding:0 32px;
+  will-change:transform;
+}
+@keyframes marqueeRtl{
+  0%{transform:translateX(-100%)}
+  100%{transform:translateX(100%)}
+}
+.announce:hover .announce-track{animation-play-state:paused}
+.announce-text{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  color:var(--gold-light);
+  font-size:.85rem;
+  font-weight:700;
+  letter-spacing:.3px;
+  text-shadow:0 0 12px rgba(212,175,55,.4);
+  flex-shrink:0;
+  direction:rtl;
+}
+html[dir="ltr"] .announce-track,
+html[dir="ltr"] .announce-text{
+  direction:ltr;
+}
+.announce-text .star{display:inline-block;animation:twinkle 1.5s ease-in-out infinite}
+@keyframes twinkle{
+  0%,100%{opacity:1;transform:scale(1)}
+  50%{opacity:.4;transform:scale(.7)}
+}
+
+.site-header{position:sticky;top:0;z-index:900;background:rgba(11,11,11,.9);backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--border)}
+.header-inner{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;
+  padding:12px 18px;gap:12px}
+.logo-mini{display:flex;flex-direction:column;align-items:center;line-height:1.1}
+.logo-mini .ar{font-size:1.4rem;font-weight:900;color:#fff}
+.logo-mini .en{font-family:'Playfair Display',serif;font-size:.68rem;letter-spacing:4px;color:#fff;font-weight:600}
+.header-actions{display:flex;align-items:center;gap:10px}
+.icon-btn{position:relative;width:42px;height:42px;border-radius:50%;border:1px solid var(--border);
+  background:var(--card-bg);display:flex;align-items:center;justify-content:center;font-size:1.15rem;transition:.3s}
+.icon-btn:hover{border-color:var(--gold)}
+.lang-toggle-btn{width:auto;min-width:46px;padding:0 12px;border-radius:999px;font-size:.78rem;font-weight:900;
+  color:var(--gold-light);gap:5px;letter-spacing:.4px}
+.lang-toggle-btn.active-en{background:linear-gradient(135deg,#d4af37,#aa8520);color:#000;border-color:transparent}
+.share-svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.cart-count{position:absolute;top:-6px;left:-6px;background:var(--gold);color:#000;font-size:.68rem;
+  font-weight:800;min-width:19px;height:19px;border-radius:50%;display:flex;align-items:center;justify-content:center;padding:0 4px}
+html[dir="ltr"] .cart-count{left:auto;right:-6px}
+
+.hero{text-align:center;padding:30px 20px 25px;background:radial-gradient(circle at top,#201b12 0%,#0b0b0b 75%);border-bottom:1px solid var(--border)}
+.brand-logo-ar{font-size:3rem;font-weight:900;color:#fff;line-height:1.15}
+.brand-logo-en{font-family:'Playfair Display',serif;font-size:1.25rem;letter-spacing:7px;color:#fff;font-weight:600;margin:4px 0 18px}
+.hero-video-container{max-width:260px;margin:0 auto 18px;border-radius:20px;overflow:hidden;
+  box-shadow:0 20px 45px rgba(212,175,55,.15);border:1px solid rgba(212,175,55,.35);background:#000}
+.hero-video-container video{width:100%;display:block;object-fit:cover}
+.specs-badge{display:inline-flex;gap:10px;background:rgba(255,255,255,.04);border:1px solid var(--border);
+  padding:7px 18px;border-radius:50px;font-size:.8rem;color:var(--gold-light);margin-bottom:15px;flex-wrap:wrap;justify-content:center}
+.brand-story{color:var(--gold-light);font-size:.92rem;max-width:580px;margin:10px auto 0;
+  border-right:3px solid var(--gold);text-align:right;padding:0 15px;line-height:1.8}
+html[dir="ltr"] .brand-story{border-right:none;border-left:3px solid var(--gold);text-align:left}
+
+.container{max-width:1100px;margin:auto;padding:25px 16px 60px}
+.section-title{font-size:1.5rem;font-weight:900;margin:10px 0 4px}
+.section-sub{color:var(--text-muted);font-size:.85rem;margin-bottom:20px}
+
+.tools{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:22px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap}
+.tab{padding:8px 20px;border-radius:50px;border:1px solid var(--border);background:var(--card-bg);
+  color:var(--text-muted);font-size:.85rem;font-weight:700;transition:.3s}
+.tab.active{background:linear-gradient(135deg,#d4af37,#aa8520);color:#000;border-color:transparent}
+.search-box{position:relative;flex:1;min-width:220px}
+.search-box input{width:100%;padding:12px 45px 12px 18px;border-radius:14px;border:1px solid var(--border);
+  background:var(--card-bg);color:var(--text-main);font-size:.9rem;outline:none;transition:.3s}
+.search-box input:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(212,175,55,.12)}
+.search-box::before{content:"🔍";position:absolute;right:15px;top:50%;transform:translateY(-50%);opacity:.6;font-size:.9rem}
+html[dir="ltr"] .search-box input{padding:12px 18px 12px 45px}
+html[dir="ltr"] .search-box::before{right:auto;left:15px}
+
+.perfumes-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px}
+.card{background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:16px;
+  text-align:center;cursor:pointer;transition:transform .3s,border-color .3s,box-shadow .3s;position:relative;display:flex;flex-direction:column}
+.card:hover{border-color:var(--gold);transform:translateY(-4px);box-shadow:0 15px 35px rgba(0,0,0,.5)}
+.cat-tag{position:absolute;top:12px;right:12px;font-size:.68rem;color:#000;background:var(--gold-light);
+  padding:3px 10px;border-radius:20px;font-weight:800;z-index:2}
+html[dir="ltr"] .cat-tag{right:auto;left:12px}
+.card-img{width:100%;height:230px;border-radius:14px;object-fit:cover;background:#080808;
+  border:1px solid rgba(212,175,55,.15);margin-bottom:10px}
+
+.stock-under-img{display:inline-flex;align-items:center;justify-content:center;gap:5px;margin:0 auto 10px;
+  padding:4px 12px;border-radius:999px;font-size:.72rem;font-weight:800;
+  background:rgba(37,211,102,.12);color:#7cf2a6;border:1px solid rgba(37,211,102,.32)}
+.stock-under-img.low{background:rgba(212,175,55,.14);color:var(--gold-light);border:1px solid rgba(212,175,55,.45)}
+
+.name-ar{font-size:1.15rem;font-weight:800;margin-bottom:6px}
+.stars{color:var(--gold);font-size:.85rem;margin-bottom:8px}
+.stars small{color:var(--text-muted);margin-right:4px;font-size:.75rem}
+html[dir="ltr"] .stars small{margin-right:0;margin-left:4px}
+.price{font-size:1.2rem;font-weight:900;color:var(--gold);margin-bottom:14px}
+.card-actions{display:flex;flex-direction:column;gap:8px;margin-top:auto}
+.btn{padding:12px;border-radius:12px;font-weight:800;font-size:.9rem;transition:.3s;text-align:center;width:100%}
+.btn:disabled{opacity:.45;cursor:not-allowed;filter:grayscale(.4)}
+.btn-gold{background:linear-gradient(135deg,#d4af37,#aa8520);color:#000}
+.btn-gold:hover:not(:disabled){filter:brightness(1.15)}
+.btn-ghost{border:1px solid var(--border);color:var(--gold-light)}
+.btn-ghost:hover:not(:disabled){border-color:var(--gold)}
+.btn-wa{background:linear-gradient(135deg,#169c47,#15803d);color:#ffffff;font-weight:900;box-shadow:0 4px 14px rgba(21,128,61,.3);transition:background .2s,box-shadow .2s,filter .2s}
+.btn-wa:hover:not(:disabled){filter:brightness(1.08);box-shadow:0 6px 18px rgba(21,128,61,.42)}
+.empty-msg{text-align:center;color:var(--text-muted);padding:40px;grid-column:1/-1}
+
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.9);backdrop-filter:blur(6px);
+  display:none;align-items:center;justify-content:center;z-index:1000;padding:18px}
+.modal-overlay.active{display:flex}
+.modal-card{background:#161616;border:1px solid var(--gold);border-radius:24px;max-width:480px;width:100%;
+  max-height:92vh;overflow-y:auto;padding:54px 22px 22px;position:relative;animation:pop .3s ease}
+@keyframes pop{from{transform:scale(.92);opacity:0}to{transform:scale(1);opacity:1}}
+.close-btn{position:absolute;top:14px;left:14px;width:38px;height:38px;border-radius:50%;
+  background:rgba(255,255,255,.12);border:1px solid var(--border);color:#fff;font-size:1.3rem;z-index:5}
+.back-btn{position:absolute;top:14px;right:14px;padding:8px 16px;border-radius:50px;
+  background:rgba(212,175,55,.15);border:1px solid var(--gold);color:var(--gold);font-weight:700;font-size:.85rem;z-index:5}
+html[dir="ltr"] .close-btn{left:auto;right:14px}
+html[dir="ltr"] .back-btn{right:auto;left:14px}
+.gallery-main{width:100%;height:260px;border-radius:16px;object-fit:cover;border:1px solid rgba(212,175,55,.25);margin-bottom:14px}
+.modal-title-ar{font-size:1.45rem;font-weight:800;margin-bottom:4px}
+.modal-title-en{font-family:'Playfair Display',serif;font-size:.95rem;color:var(--gold);margin-bottom:10px}
+.modal-desc{font-size:.9rem;color:#d8d8d8;margin-bottom:14px;text-align:justify}
+.modal-specs{border-top:1px solid var(--border);padding-top:14px;margin-bottom:16px;font-size:.88rem}
+.spec-item{margin-bottom:10px;display:flex;gap:6px;flex-wrap:wrap}
+.spec-label{color:var(--gold);font-weight:700}
+.spec-val{color:#ccc}
+.modal-price{color:var(--gold-light);font-size:1.2rem;font-weight:800}
+
+.option-box{border-top:1px solid var(--border);padding-top:14px;margin-bottom:16px}
+.option-label{display:block;font-size:.85rem;font-weight:700;color:var(--gold-light);margin-bottom:8px}
+.pack-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}
+.pack-btn{border:1px solid var(--border);background:#0f0f0f;border-radius:12px;padding:10px;text-align:right;transition:.25s}
+html[dir="ltr"] .pack-btn{text-align:left}
+.pack-btn.active{border-color:var(--gold);background:rgba(212,175,55,.12)}
+.pack-btn:disabled{opacity:.4;cursor:not-allowed}
+.pack-btn .p-title{display:block;font-size:.82rem;font-weight:800;color:#fff}
+.pack-btn .p-sub{display:block;font-size:.72rem;color:var(--gold)}
+.modal-qty-row{display:flex;align-items:center;justify-content:space-between;background:#0f0f0f;
+  border:1px solid var(--border);border-radius:12px;padding:8px 12px}
+.qty-controls{display:flex;align-items:center;gap:12px}
+.qty-controls button{width:30px;height:30px;border-radius:8px;border:1px solid var(--border);
+  background:#181818;color:var(--gold);font-weight:900;font-size:1rem}
+.qty-controls span{font-weight:800;min-width:20px;text-align:center}
+
+.direct-loc-page{padding-top:8px;text-align:right}
+html[dir="ltr"] .direct-loc-page{text-align:left}
+.direct-loc-title{font-size:1.25rem;font-weight:900;color:var(--gold);margin-bottom:4px}
+.direct-loc-sub{font-size:.82rem;color:var(--text-muted);margin-bottom:14px}
+.direct-product-summary{background:#101010;border:1px solid rgba(212,175,55,.35);border-radius:14px;padding:12px;margin-bottom:14px}
+.direct-product-row{display:flex;gap:12px;align-items:center}
+.direct-product-row img{width:62px;height:62px;border-radius:10px;object-fit:cover;border:1px solid rgba(212,175,55,.25)}
+.direct-product-info{flex:1;min-width:0}
+.direct-product-name{font-size:.92rem;font-weight:800;color:#fff}
+.direct-product-meta{font-size:.76rem;color:var(--gold-light);margin-top:2px}
+.direct-product-total{font-size:.88rem;font-weight:900;color:var(--gold);margin-top:4px}
+.direct-loc-form-box{background:#121212;border:1px solid var(--border);border-radius:14px;padding:12px;margin-bottom:14px}
+
+.share-row{display:flex;gap:10px;margin-bottom:16px}
+.share-btn{flex:1;padding:10px 12px;border-radius:12px;border:1px solid var(--border);background:rgba(255,255,255,.04);
+  color:var(--gold-light);font-size:.82rem;font-weight:700;display:flex;align-items:center;justify-content:center;gap:6px;transition:.25s}
+.share-btn:hover{border-color:var(--gold);background:rgba(212,175,55,.1)}
+
+.product-reviews{border-top:1px solid var(--border);padding-top:14px;margin-bottom:16px}
+.product-reviews h4{font-size:.95rem;color:var(--gold-light);margin-bottom:10px}
+.review-item{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:12px;padding:10px 12px;margin-bottom:8px}
+.review-item .r-stars{color:var(--gold);font-size:.8rem;margin-bottom:4px}
+.review-item .r-text{font-size:.82rem;color:#ddd}
+.review-item .r-who{font-size:.72rem;color:var(--gold);margin-top:4px}
+.no-reviews{font-size:.8rem;color:var(--text-muted);text-align:center;padding:10px}
+
+.suggestions{border-top:1px solid var(--border);padding-top:14px;margin-bottom:16px}
+.suggestions h4{font-size:.95rem;color:var(--gold-light);margin-bottom:10px}
+.suggest-row{display:flex;gap:10px;overflow-x:auto;padding:4px 2px 10px;scrollbar-width:thin;scrollbar-color:var(--gold) #222}
+.suggest-row::-webkit-scrollbar{height:6px}
+.suggest-row::-webkit-scrollbar-thumb{background:var(--gold);border-radius:10px}
+.suggest-card{flex:0 0 118px;background:#0d0d0d;border:1px solid var(--border);border-radius:12px;padding:8px;text-align:center;cursor:pointer;transition:.3s;display:flex;flex-direction:column}
+.suggest-card:hover{border-color:var(--gold);transform:translateY(-3px)}
+.suggest-card img{width:100%;height:80px;object-fit:cover;border-radius:8px;margin-bottom:6px}
+.suggest-card .s-name{font-size:.72rem;font-weight:800;line-height:1.4}
+.suggest-card .s-price{font-size:.75rem;color:var(--gold);font-weight:800;margin-top:3px;margin-bottom:7px}
+.suggest-add-btn{margin-top:auto;width:100%;padding:6px 6px;border-radius:8px;background:linear-gradient(135deg,#d4af37,#aa8520);color:#000;font-size:.7rem;font-weight:800;transition:.2s}
+.suggest-add-btn:hover{filter:brightness(1.12)}
+
+.modal-actions{display:flex;flex-direction:column;gap:10px;margin-bottom:16px}
+
+.cart-overlay{position:fixed;inset:0;background:rgba(0,0,0,.7);backdrop-filter:blur(4px);z-index:1100;
+  opacity:0;visibility:hidden;transition:.3s}
+.cart-overlay.open{opacity:1;visibility:visible}
+.cart-drawer{position:fixed;top:0;height:100%;width:min(420px,92vw);background:#121212;z-index:1200;
+  border-inline-end:1px solid var(--border);transform:translateX(100%);transition:transform .35s ease;
+  display:flex;flex-direction:column;right:0}
+html[dir="ltr"] .cart-drawer{right:auto;left:0;transform:translateX(-100%)}
+.cart-drawer.open{transform:translateX(0)!important}
+.cart-head{padding:18px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+.cart-head h3{font-size:1.15rem;font-weight:800}
+.clear-cart-btn{font-size:.78rem;color:#ff8a8a;border:1px solid rgba(255,107,107,.35);padding:4px 10px;border-radius:8px}
+.clear-cart-btn:hover{background:rgba(255,107,107,.12)}
+.cart-items{flex:1;overflow-y:auto;padding:15px}
+.cart-item{display:flex;gap:12px;background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:10px;margin-bottom:12px;align-items:center}
+.cart-item img{width:64px;height:64px;border-radius:10px;object-fit:cover}
+.ci-info{flex:1;min-width:0}
+.ci-name{font-size:.85rem;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ci-sub{font-size:.72rem;color:var(--gold-light)}
+.ci-price{font-size:.78rem;color:var(--gold)}
+.qty{display:flex;align-items:center;gap:8px;margin-top:6px}
+.qty button{width:26px;height:26px;border-radius:8px;border:1px solid var(--border);background:#0d0d0d;color:var(--gold);font-weight:800}
+.remove-item{color:#ff6b6b;font-size:1.1rem;padding:6px}
+.cart-foot{padding:14px 16px;border-top:1px solid var(--border);background:#0d0d0d;max-height:60vh;overflow-y:auto}
+.order-ref-bar{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 10px;margin-bottom:8px;
+  border-radius:10px;background:#141414;border:1px solid rgba(212,175,55,.3);font-size:.76rem;color:var(--gold-light)}
+.order-ref-text{font-weight:800;color:var(--gold);letter-spacing:.4px;user-select:all}
+.mini-copy-btn{padding:4px 9px;border-radius:7px;border:1px solid rgba(212,175,55,.4);background:rgba(212,175,55,.1);
+  color:var(--gold-light);font-size:.72rem;font-weight:700;flex-shrink:0}
+.mini-copy-btn:hover{background:rgba(212,175,55,.22)}
+.local-privacy-note{margin-bottom:8px;padding:7px 10px;border-radius:10px;background:rgba(212,175,55,.06);
+  border:1px solid rgba(212,175,55,.22);font-size:.71rem;color:var(--text-muted);line-height:1.5}
+.delivery-box{background:#131313;border:1px solid var(--border);border-radius:12px;padding:10px;margin-bottom:10px}
+.delivery-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:7px;flex-wrap:wrap}
+.delivery-title{font-size:.78rem;font-weight:800;color:var(--gold-light)}
+.gps-btn{display:inline-flex;align-items:center;gap:5px;padding:5px 10px;border-radius:9px;
+  border:1px solid rgba(212,175,55,.45);background:rgba(212,175,55,.12);color:var(--gold-light);
+  font-size:.72rem;font-weight:800;transition:.2s}
+.gps-btn:hover:not(:disabled){background:rgba(212,175,55,.22)}
+.gps-btn:disabled{opacity:.5;cursor:not-allowed}
+.delivery-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}
+.cart-field{width:100%;padding:8px 10px;border-radius:9px;border:1px solid var(--border);background:#0c0c0c;
+  color:#fff;font-size:.78rem;outline:none;margin-bottom:8px}
+.cart-field:last-child{margin-bottom:0}
+.cart-field:focus{border-color:var(--gold)}
+.maps-link-row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:6px;font-size:.72rem}
+.maps-preview-link{color:var(--gold);font-weight:700;text-decoration:underline}
+.maps-status{color:var(--text-muted);font-size:.7rem}
+.cart-note-input{width:100%;padding:8px 10px;border-radius:9px;border:1px solid var(--border);background:#151515;
+  color:#fff;font-size:.78rem;margin-bottom:10px;outline:none}
+.cart-note-input:focus{border-color:var(--gold)}
+.ship-bar{margin-bottom:10px}
+.ship-text{font-size:.75rem;color:var(--gold-light);margin-bottom:6px;display:flex;justify-content:space-between}
+.ship-track{height:6px;background:#222;border-radius:10px;overflow:hidden}
+.ship-fill{height:100%;background:linear-gradient(90deg,#d4af37,#f3e5ab);width:0;transition:width .5s;border-radius:10px}
+.summary-lines{background:#121212;border:1px solid var(--border);border-radius:10px;padding:8px 10px;margin-bottom:10px;font-size:.78rem}
+.sum-line{display:flex;justify-content:space-between;color:var(--text-muted);margin-bottom:4px}
+.sum-line:last-child{margin-bottom:0}
+.total-row{display:flex;justify-content:space-between;font-weight:900;font-size:1.05rem;margin-bottom:12px;padding-top:6px;border-top:1px dashed var(--border)}
+.total-row span:last-child{color:var(--gold)}
+#checkoutBtn{min-height:54px;padding:15px 20px;display:flex;align-items:center;justify-content:center;gap:8px;position:relative;z-index:5;touch-action:manipulation;user-select:none}
+.cart-empty{text-align:center;color:var(--text-muted);padding:50px 20px}
+.cart-empty .big{font-size:3rem;margin-bottom:10px}
+
+.trust-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin:40px 0}
+.trust-box{background:var(--card-bg);border:1px solid var(--border);border-radius:16px;padding:18px;text-align:center}
+.trust-box .ico{font-size:1.6rem;margin-bottom:6px}
+.trust-box h4{font-size:.9rem;color:var(--gold-light)}
+.trust-box p{font-size:.75rem;color:var(--text-muted)}
+
+.faq{max-width:700px;margin:0 auto 40px}
+.faq-item{border:1px solid var(--border);border-radius:14px;margin-bottom:10px;background:var(--card-bg);overflow:hidden}
+.faq-q{width:100%;text-align:right;padding:14px 16px;font-weight:700;font-size:.9rem;display:flex;justify-content:space-between}
+html[dir="ltr"] .faq-q{text-align:left}
+.faq-q::after{content:"+";color:var(--gold);font-size:1.2rem}
+.faq-item.open .faq-q::after{content:"−"}
+.faq-a{max-height:0;transition:max-height .3s;overflow:hidden;color:var(--text-muted);font-size:.85rem}
+.faq-a span{display:block;padding:0 16px 14px}
+.faq-item.open .faq-a{max-height:200px}
+
+.contact-section{padding:50px 20px;text-align:center;border-top:1px solid var(--border);background:#0d0d0d}
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;max-width:900px;margin:20px auto 0}
+.contact-card{background:var(--card-bg);border:1px solid var(--border);border-radius:16px;padding:24px 16px;transition:.3s;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.contact-card:hover{border-color:var(--gold);transform:translateY(-4px);background:#1a1a1a}
+.contact-card .icon{font-size:2.2rem;display:block;margin-bottom:8px}
+.contact-card h3{font-size:1.05rem;color:var(--gold-light);margin:0}
+.quick-send-badge{display:inline-flex;align-items:center;gap:5px;margin-top:10px;padding:5px 12px;
+  border-radius:999px;border:1px solid rgba(212,175,55,.35);background:rgba(212,175,55,.08);
+  color:var(--gold-light);font-size:.76rem;font-weight:700}
+
+.feedback-card{max-width:540px;text-align:right}
+html[dir="ltr"] .feedback-card{text-align:left}
+.feedback-card h2{color:var(--gold);margin-bottom:14px;font-size:1.3rem}
+.privacy-notice-banner{margin-bottom:12px;padding:10px 12px;border-radius:12px;
+  background:rgba(212,175,55,.07);border:1px solid rgba(212,175,55,.28);
+  font-size:.75rem;color:#e6dec3;line-height:1.6}
+.feedback-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}
+.field-input,.field-select,.field-textarea{width:100%;padding:10px 14px;border-radius:12px;border:1px solid var(--border);
+  background:#0e0e0e;color:#fff;font-size:.85rem;outline:none;transition:border-color .2s,box-shadow .2s}
+.field-input:focus,.field-select:focus,.field-textarea:focus{border-color:var(--gold)}
+.phone-row{display:grid;grid-template-columns:150px 1fr;gap:8px;margin-bottom:6px}
+.country-select{width:100%;padding:10px 8px;border-radius:12px;border:1px solid var(--border);
+  background:#0e0e0e;color:#fff;font-size:.78rem;outline:none}
+.country-select:focus{border-color:var(--gold)}
+.field-contact.required-active{border-color:rgba(212,175,55,.7)}
+.field-hint{display:block;font-size:.74rem;color:var(--text-muted);margin-bottom:10px}
+.order-ref-box{margin-bottom:10px;padding:10px;border-radius:12px;border:1px dashed rgba(212,175,55,.45);background:rgba(212,175,55,.05)}
+.order-ref-box.hidden{display:none}
+.order-ref-label{display:block;font-size:.78rem;font-weight:700;color:var(--gold-light);margin-bottom:6px}
+
+.defect-photos-box{margin-bottom:12px;padding:10px;border-radius:12px;border:1px dashed rgba(212,175,55,.4);background:rgba(255,255,255,.02)}
+.defect-photos-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:6px;flex-wrap:wrap}
+.defect-photos-label{font-size:.8rem;font-weight:800;color:var(--gold-light)}
+.defect-photo-btn{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:9px;
+  border:1px solid rgba(212,175,55,.45);background:rgba(212,175,55,.12);color:var(--gold-light);
+  font-size:.76rem;font-weight:800;transition:.2s}
+.defect-photo-btn:hover:not(:disabled){background:rgba(212,175,55,.22)}
+.defect-photo-btn:disabled{opacity:.45;cursor:not-allowed}
+.defect-photo-input{display:none}
+.defect-photo-hint{display:block;font-size:.72rem;color:var(--text-muted);margin-bottom:8px;line-height:1.5}
+.defect-previews{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.defect-preview-item{position:relative;border-radius:10px;overflow:hidden;border:1px solid var(--border);background:#0b0b0b;aspect-ratio:1/1}
+.defect-preview-item img{width:100%;height:100%;object-fit:cover}
+.defect-photo-badge{position:absolute;bottom:4px;right:4px;padding:2px 6px;border-radius:6px;
+  background:rgba(0,0,0,.78);color:var(--gold-light);font-size:.64rem;font-weight:700}
+html[dir="ltr"] .defect-photo-badge{right:auto;left:4px}
+.defect-remove-btn{position:absolute;top:4px;left:4px;width:22px;height:22px;border-radius:50%;
+  background:rgba(0,0,0,.78);color:#ff8a8a;border:1px solid rgba(255,107,107,.5);font-size:.75rem;
+  font-weight:900;display:flex;align-items:center;justify-content:center;line-height:1}
+html[dir="ltr"] .defect-remove-btn{left:auto;right:4px}
+
+.priority-pill{display:inline-block;margin-bottom:10px;padding:4px 10px;border-radius:999px;font-size:.74rem;font-weight:800;
+  background:rgba(255,255,255,.05);border:1px solid var(--border);color:var(--text-muted)}
+.priority-pill.urgent{background:rgba(255,95,95,.14);border-color:rgba(255,95,95,.55);color:#ff9c9c}
+.field-textarea{min-height:95px;resize:vertical;margin-bottom:12px}
+.hp-field{position:absolute;left:-9999px;opacity:0;pointer-events:none;height:0;width:0}
+.fb-status{margin-top:10px;font-size:.82rem;color:var(--gold-light);min-height:20px;line-height:1.6}
+.ticket-result-box{display:inline-flex;align-items:center;flex-wrap:wrap;gap:8px;margin-top:6px;padding:6px 10px;
+  border-radius:10px;background:rgba(212,175,55,.14);border:1px solid var(--gold);color:var(--gold-light);font-weight:800;font-size:.82rem}
+.ticket-history{margin-top:16px;padding-top:12px;border-top:1px solid var(--border)}
+.ticket-history-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+.ticket-history-head h4{font-size:.84rem;color:var(--gold-light);margin:0}
+.clear-tickets-btn{font-size:.72rem;color:#ff9c9c;border:1px solid rgba(255,107,107,.4);background:rgba(255,107,107,.08);
+  padding:4px 10px;border-radius:8px;font-weight:700}
+.clear-tickets-btn:hover{background:rgba(255,107,107,.18)}
+.ticket-history-item{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:7px 10px;
+  border-radius:10px;background:#0e0e0e;border:1px solid var(--border);margin-bottom:6px;font-size:.76rem}
+.ticket-history-meta{color:var(--text-muted);font-size:.7rem}
+
+footer{border-top:1px solid var(--border);background:#080808;padding:35px 20px 25px;text-align:center}
+.foot-links{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-bottom:15px;font-size:.8rem;color:var(--text-muted)}
+.foot-links a:hover{color:var(--gold)}
+footer span{color:var(--gold);font-weight:700}
+.pay-icons{display:flex;justify-content:center;gap:14px;align-items:center;margin-bottom:12px;opacity:.85;font-size:.75rem;color:var(--text-muted);flex-wrap:wrap}
+
+.fab{position:fixed;bottom:22px;width:56px;height:56px;border-radius:50%;z-index:800;
+  display:flex;align-items:center;justify-content:center;font-size:1.6rem;box-shadow:0 8px 25px rgba(0,0,0,.5);transition:.3s}
+.wa-fab{left:22px;background:var(--green);color:#fff}
+.top-fab{right:22px;background:var(--gold);color:#000;opacity:0;visibility:hidden;transform:translateY(15px)}
+html[dir="ltr"] .wa-fab{left:auto;right:22px}
+html[dir="ltr"] .top-fab{right:auto;left:22px}
+.top-fab.show{opacity:1;visibility:visible;transform:translateY(0)}
+
+.toast{position:fixed;bottom:90px;left:50%;transform:translateX(-50%) translateY(80px);background:#1d1d1d;
+  border:1px solid var(--gold);color:var(--gold-light);padding:12px 26px;border-radius:50px;font-size:.85rem;
+  font-weight:700;z-index:1500;opacity:0;transition:.4s;white-space:nowrap}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+
+.policy-card{max-width:600px}
+.policy-card h2{color:var(--gold);margin-bottom:16px;font-size:1.4rem}
+.policy-card h3{color:var(--gold-light);margin:14px 0 6px;font-size:1rem}
+.policy-card p,.policy-card li{font-size:.88rem;color:#ddd;margin-bottom:8px;text-align:right}
+html[dir="ltr"] .policy-card p,html[dir="ltr"] .policy-card li{text-align:left}
+.policy-card ul{padding-right:20px;margin-bottom:10px}
+html[dir="ltr"] .policy-card ul{padding-right:0;padding-left:20px}
+
+@media(max-width:700px){
+  .brand-logo-ar{font-size:2.4rem}
+  .perfumes-grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+  .card-img{height:170px}
+  .announce-track{animation-duration:28s;gap:40px;padding:0 16px}
+  .announce-text{font-size:.76rem}
+  .feedback-row,.pack-grid,.delivery-grid,.phone-row{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+}
+
+.tracker-card{max-width:520px;text-align:right}
+html[dir="ltr"] .tracker-card{text-align:left}
+.tracker-card h2{color:var(--gold);margin-bottom:8px;font-size:1.3rem}
+.tracker-sub{font-size:.82rem;color:var(--text-muted);margin-bottom:14px}
+.tracker-search-row{display:flex;gap:8px;margin-bottom:12px}
+.tracker-result-card{background:#101010;border:1px solid rgba(212,175,55,.4);border-radius:14px;padding:14px;margin-top:10px}
+.tracker-badge{display:inline-block;padding:3px 10px;border-radius:999px;font-size:.74rem;font-weight:800;
+  background:rgba(212,175,55,.16);color:var(--gold-light);border:1px solid rgba(212,175,55,.45);margin-bottom:8px}
+.tracker-row{font-size:.83rem;color:#e4e4e4;margin-bottom:6px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.tracker-row span:first-child{color:var(--gold);font-weight:700}
+.tracker-empty{text-align:center;padding:18px;border-radius:12px;background:#0e0e0e;border:1px dashed var(--border);
+  color:var(--text-muted);font-size:.82rem;margin-top:10px}
+
+.sort-box{min-width:195px}
+.sort-select{width:100%;padding:11px 14px;border-radius:14px;border:1px solid var(--border);
+  background:var(--card-bg);color:var(--gold-light);font-size:.86rem;font-weight:700;outline:none;transition:.3s}
+.sort-select:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(212,175,55,.12)}
+
+.pwa-install-banner{position:fixed;bottom:92px;left:50%;transform:translateX(-50%) translateY(20px);
+  width:min(520px,calc(100vw - 28px));background:rgba(20,20,20,.96);backdrop-filter:blur(12px);
+  border:1px solid var(--gold);border-radius:16px;padding:12px 14px;z-index:1350;
+  box-shadow:0 16px 40px rgba(0,0,0,.65);display:none;align-items:center;justify-content:space-between;gap:12px}
+.pwa-install-banner.show{display:flex;transform:translateX(-50%) translateY(0)}
+.pwa-install-text{display:flex;flex-direction:column;gap:2px;text-align:right}
+html[dir="ltr"] .pwa-install-text{text-align:left}
+.pwa-install-title{font-size:.86rem;font-weight:800;color:var(--gold-light)}
+.pwa-install-sub{font-size:.74rem;color:var(--text-muted)}
+.pwa-install-actions{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.pwa-install-btn{padding:8px 14px;border-radius:10px;background:linear-gradient(135deg,#d4af37,#aa8520);
+  color:#000;font-size:.78rem;font-weight:900;white-space:nowrap}
+.pwa-dismiss-btn{width:30px;height:30px;border-radius:50%;border:1px solid var(--border);
+  background:rgba(255,255,255,.06);color:var(--text-muted);font-size:1rem;font-weight:800;
+  display:flex;align-items:center;justify-content:center}
+.pwa-dismiss-btn:hover{border-color:var(--gold);color:#fff}
+</style>
+</head>
+<body>
+
+<div class="announce" aria-label="إعلان الشحن المجاني">
+  <div class="announce-track">
+    <span class="announce-text"><span class="star">✨</span> الشحن مجاني للطلبات فوق 200 ريال داخل المملكة العربية السعودية <span class="star">🇸🇦</span></span>
+    <span class="announce-text"><span class="star">✨</span> الشحن مجاني للطلبات فوق 200 ريال داخل المملكة العربية السعودية <span class="star">🇸🇦</span></span>
+    <span class="announce-text"><span class="star">✨</span> الشحن مجاني للطلبات فوق 200 ريال داخل المملكة العربية السعودية <span class="star">🇸🇦</span></span>
+    <span class="announce-text"><span class="star">✨</span> الشحن مجاني للطلبات فوق 200 ريال داخل المملكة العربية السعودية <span class="star">🇸🇦</span></span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#" class="logo-mini"><span class="ar">رذاذي</span><span class="en">RAZAZY</span></a>
+    <div class="header-actions">
+      <button type="button" class="icon-btn lang-toggle-btn" id="langToggleBtn" aria-label="Translate to English" title="ترجمة الموقع إلى الإنجليزية">🌐 <span id="langBadgeText">EN</span></button>
+      <button type="button" class="icon-btn" id="copyHomeBtn" aria-label="نسخ رابط المتجر" title="نسخ رابط المتجر">🔗</button>
+      <button type="button" class="icon-btn" id="shareHomeBtn" aria-label="مشاركة المتجر" title="مشاركة المتجر">
+        <svg class="share-svg" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="18" cy="5" r="3"></circle>
+          <circle cx="6" cy="12" r="3"></circle>
+          <circle cx="18" cy="19" r="3"></circle>
+          <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+          <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+        </svg>
+      </button>
+      <button type="button" class="icon-btn" id="openTrackerBtn" aria-label="تتبع الطلبات والتذاكر" title="تتبع الطلبات والتذاكر">🔎</button>
+      <button type="button" class="icon-btn" id="cartBtn" aria-label="فتح السلة">🛒<span class="cart-count" id="cartCount">0</span></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="brand-logo-ar">رذاذي</div>
+  <div class="brand-logo-en">RAZAZY</div>
+  <div class="hero-video-container" id="heroVideoBox">
+    <video id="heroVideo" autoplay muted loop playsinline poster="bottle.jpg">
+      <source src="perfume.mp4" type="video/mp4">
+      متصفحك لا يدعم تشغيل الفيديو
+    </video>
+  </div>
+  <div class="specs-badge">
+    <span>EAU DE PARFUM</span><span>•</span><span>صُنع بفخر في المملكة العربية السعودية 🇸🇦</span>
+  </div>
+  <p class="brand-story">"انطلقنا لنقدم تجربة عطرية فريدة تمزج أصالة الشرق بروعة الفخامة العصرية، لتعبر كل رشة عن هويتك الخاصة"</p>
+</section>
+
+<main class="container" id="products">
+  <h2 class="section-title">تشكيلتنا الحصرية</h2>
+  <p class="section-sub">اختر فئتك أو ابحث باسم العطر أو الطابع العطري</p>
+
+  <div class="tools">
+    <div class="tabs" role="tablist">
+      <button type="button" class="tab active" data-cat="all">الكل</button>
+      <button type="button" class="tab" data-cat="oriental">عطور شرقية</button>
+      <button type="button" class="tab" data-cat="men">عطور رجالي</button>
+      <button type="button" class="tab" data-cat="women">عطور نسائي</button>
+    </div>
+    <div class="search-box"><input type="text" id="searchInput" placeholder="ابحث باسم العطر أو الطابع العطري..." aria-label="بحث"></div>
+    <div class="sort-box">
+      <select class="sort-select" id="sortSelect" aria-label="فرز وترتيب العطور">
+        <option value="featured">المميز</option>
+        <option value="rating">الأعلى تقييماً</option>
+        <option value="price-asc">الأقل سعراً</option>
+        <option value="price-desc">الأعلى سعراً</option>
+        <option value="low-stock">الكمية المحدودة أولاً</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="perfumes-grid" id="perfumesList"></div>
+
+  <div class="trust-grid">
+    <div class="trust-box"><div class="ico">🚚</div><h4>شحن سريع</h4><p>سمسا وأرامكس لكل مناطق المملكة</p></div>
+    <div class="trust-box"><div class="ico">🔒</div><h4>دفع آمن</h4><p>مدى • Apple Pay • تابي • تمارا</p></div>
+    <div class="trust-box"><div class="ico">✅</div><h4>منتج أصلي 100%</h4><p>تركيز Eau de Parfum مضمون</p></div>
+    <div class="trust-box"><div class="ico">🔄</div><h4>استبدال سهل</h4><p>خلال 14 يوم من الاستلام</p></div>
+  </div>
+
+  <h2 class="section-title" id="faq" style="text-align:center">الأسئلة الشائعة</h2>
+  <div class="faq">
+    <div class="faq-item"><button type="button" class="faq-q">كم مدة الثبات والفوحان؟</button><div class="faq-a"><span>تركيزنا Eau de Parfum يعطي ثباتاً من 6 إلى 10 ساعات حسب العطر وطبيعة البشرة.</span></div></div>
+    <div class="faq-item"><button type="button" class="faq-q">كيف أطلب العطر؟</button><div class="faq-a"><span>أضف العطور للسلة ثم اضغط "إتمام الطلب عبر واتساب" وسيصلك طلبك كاملاً لموظف المبيعات.</span></div></div>
+    <div class="faq-item"><button type="button" class="faq-q">متى يصل الطلب؟</button><div class="faq-a"><span>خلال 1-3 أيام عمل داخل المملكة عبر سمسا أو أرامكس، مع رقم تتبع.</span></div></div>
+    <div class="faq-item"><button type="button" class="faq-q">هل الشحن مجاني؟</button><div class="faq-a"><span>نعم، الشحن مجاني للطلبات فوق 200 ريال، ورسوم مخفضة لما دون ذلك.</span></div></div>
+  </div>
+</main>
+
+<section class="contact-section" id="contact">
+  <h2 class="section-title" style="text-align:center">تواصل معنا</h2>
+  <p class="section-sub" style="text-align:center">فريقنا جاهز لخدمتك على مدار الساعة</p>
+  <div class="contact-grid">
+    <div class="contact-card" id="contactOrders" role="button" tabindex="0">
+      <span class="icon">🛒</span>
+      <h3>الطلبات والشراء</h3>
+    </div>
+    <a href="https://wa.me/201108281558" target="_blank" rel="noopener noreferrer" class="contact-card">
+      <span class="icon">🎧</span>
+      <h3>خدمة العملاء</h3>
+    </a>
+    <div class="contact-card" id="openFeedbackCard" role="button" tabindex="0">
+      <span class="icon">📝</span>
+      <h3>الشكاوى والمقترحات</h3>
+      <span class="quick-send-badge">✉️ إرسال شكوى أو مقترح</span>
+    </div>
+  </div>
+</section>
+
+<div class="modal-overlay" id="feedbackModal">
+  <div class="modal-card feedback-card" id="feedbackModalCard" role="dialog" aria-modal="true" aria-labelledby="fbTitle">
+    <button type="button" class="close-btn" id="feedbackClose" aria-label="إغلاق">×</button>
+    <button type="button" class="back-btn" id="feedbackBack">← رجوع</button>
+    <h2 id="fbTitle">✉️ إرسال شكوى أو مقترح</h2>
+    <div class="privacy-notice-banner" id="fbPrivacyNotice">
+      🔒 تنويه الخصوصية: يتم حفظ أرقام متابعة تذاكرك محلياً في متصفحك (razazy_tickets) لسهولة الرجوع إليها، ويمكنك مسحها في أي وقت. يُنصح بتفعيل قيود النطاق (Domain Restrictions) لمفتاح الإرسال في لوحة المزوّد عند النشر الفعلي.
+    </div>
+    <form id="feedbackForm" novalidate>
+      <input type="text" class="hp-field" id="fbWebsite" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <div class="feedback-row">
+        <input type="text" class="field-input" id="fbName" placeholder="الاسم (اختياري)">
+        <select class="field-select" id="fbType" aria-label="نوع الرسالة">
+          <option value="شكوى">شكوى</option>
+          <option value="مقترح">مقترح</option>
+          <option value="استفسار">استفسار</option>
+        </select>
+      </div>
+
+      <div class="phone-row">
+        <select class="country-select" id="fbCountry" aria-label="رمز الدولة"></select>
+        <input type="tel" class="field-input field-contact" id="fbContact" placeholder="رقم الجوال أو البريد الإلكتروني (مطلوب للشكوى)">
+      </div>
+      <span class="field-hint" id="fbContactHint">مطلوب للشكاوى لتمكين فريقنا من الرد وحل المشكلة (مثال: 5XXXXXXXX أو name@example.com).</span>
+
+      <div class="order-ref-box" id="orderRefBox">
+        <label class="order-ref-label" for="fbOrderRef">رقم الطلبية المرجعي إن وُجد (اختياري):</label>
+        <input type="text" class="field-input" id="fbOrderRef" placeholder="مثال: REF-20261120-AB15">
+      </div>
+
+      <div class="defect-photos-box" id="defectPhotosBox">
+        <div class="defect-photos-head">
+          <span class="defect-photos-label" id="defectPhotosLabel">📷 أضف صورة للمنتج لإثبات العيب (اختياري - حتى 3 صور)</span>
+          <button type="button" class="defect-photo-btn" id="addDefectPhotoBtn">+ أضف صورة (<span id="defectPhotoCount">0</span>/3)</button>
+        </div>
+        <input type="file" class="defect-photo-input" id="defectPhotoInput" accept="image/*" multiple>
+        <span class="defect-photo-hint" id="defectPhotoHint">اختياري لإثبات العيب • يتم ضغط الصور تلقائياً لتقليل الحجم (حتى 3 صور، حجم الملف الأصلي حتى 5 ميجابايت لكل صورة)</span>
+        <div class="defect-previews" id="defectPreviews"></div>
+      </div>
+
+      <textarea class="field-textarea" id="fbMsg" placeholder="اكتب شكواك أو مقترحك هنا..." required></textarea>
+      <div class="priority-pill" id="priorityPill">الأولوية التلقائية: عادية</div>
+      <button type="submit" class="btn btn-gold" id="fbSubmitBtn">إرسال مباشر الآن ✓</button>
+      <div class="fb-status" id="fbStatus" aria-live="polite"></div>
+    </form>
+
+    <div class="ticket-history" id="ticketHistoryBox"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="foot-links">
+    <a href="#" data-policy="returns">سياسة الاستبدال</a>
+    <a href="#" data-policy="terms">الشروط والأحكام</a>
+    <a href="#" data-policy="privacy">سياسة الخصوصية</a>
+  </div>
+  <div class="pay-icons"><span>مدى</span><span>•</span><span>Visa</span><span>•</span><span>Apple Pay</span><span>•</span><span>تابي</span><span>•</span><span>تمارا</span></div>
+  <p>جميع الحقوق محفوظة لبراند <span>رذاذي | RAZAZY</span> © <span id="year"></span></p>
+  <p style="margin-top:5px;font-size:.75rem">صُنع بفخر في المملكة العربية السعودية 🇸🇦</p>
+</footer>
+
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="سلة المشتريات" role="dialog" aria-modal="true">
+  <div class="cart-head">
+    <h3 id="cartDrawerTitle">🛒 سلة المشتريات</h3>
+    <div style="display:flex;align-items:center;gap:8px">
+      <button type="button" class="clear-cart-btn" id="clearCartBtn">إفراغ</button>
+      <button type="button" class="close-btn" style="position:static" id="closeCart" aria-label="إغلاق السلة">×</button>
+    </div>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-foot">
+    <div class="order-ref-bar" id="cartOrderRefBar" style="display:none">
+      <span>رقم المرجع: <span class="order-ref-text" id="cartOrderRefCode">-</span></span>
+      <button type="button" class="mini-copy-btn" id="copyCartOrderRefBtn">نسخ الرقم</button>
+    </div>
+
+    <div class="local-privacy-note" id="cartPrivacyNote">
+      🔒 يتم حفظ بيانات التوصيل (razazy_delivery) محلياً في متصفحك لتسهيل تعبئتها في طلبك التالي، وتُمسح تلقائياً بعد إتمام الطلب.
+    </div>
+
+    <div class="delivery-box">
+      <div class="delivery-head">
+        <span class="delivery-title" id="cartDeliveryTitle">📍 الموقع وبيانات التوصيل (حول العالم)</span>
+        <button type="button" class="gps-btn" id="detectGpsBtn">📌 تحديد موقعي (Google Maps)</button>
+      </div>
+      <input type="url" class="cart-field" id="orderMapsLink" placeholder="رابط Google Maps أو الصقه هنا / اضغط تحديد موقعي">
+      <div class="maps-link-row">
+        <span class="maps-status" id="mapsStatus">يمكنك تحديد موقعك تلقائياً أو لصق رابط خرائط جوجل لأي دولة</span>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="maps-preview-link" id="mapsPreviewLink" style="display:none">فتح في الخريطة ↗</a>
+      </div>
+
+      <div class="delivery-grid" style="margin-top:8px">
+        <select class="cart-field" id="orderCitySelect" aria-label="اختر المدينة أو الدولة">
+          <option value="">اختر المدينة أو الدولة...</option>
+        </select>
+        <input type="text" class="cart-field" id="orderCityCustom" placeholder="اكتب المدينة والدولة" style="display:none">
+      </div>
+      <input type="text" class="cart-field" id="orderAddress" placeholder="العنوان التفصيلي (الدولة، المدينة، الحي، الشارع، رقم المنزل)">
+    </div>
+
+    <input type="text" class="cart-note-input" id="orderNote" placeholder="اضافة مكان مميز للموقع اوعلامة مميزه قرب الموقع ..">
+    <div class="ship-bar">
+      <div class="ship-text"><span id="shipMsg">أضف 200 ريال للحصول على شحن مجاني</span><span>🚚</span></div>
+      <div class="ship-track"><div class="ship-fill" id="shipFill"></div></div>
+    </div>
+
+    <div class="summary-lines">
+      <div class="sum-line"><span>مجموع المنتجات</span><span id="cartSubtotal">0 ريال</span></div>
+      <div class="sum-line"><span>رسوم الشحن</span><span id="cartShipping">20 ريال</span></div>
+    </div>
+    <div class="total-row"><span>الإجمالي النهائي</span><span id="cartTotal">0 ريال</span></div>
+    <button type="button" class="btn btn-gold" id="checkoutBtn" style="width:100%">إتمام الطلب عبر واتساب ✓</button>
+  </div>
+</aside>
+
+<div class="modal-overlay" id="detailModal">
+  <div class="modal-card" id="detailModalCard" role="dialog" aria-modal="true" aria-labelledby="mTitleAr">
+    <button type="button" class="close-btn" id="modalClose" aria-label="إغلاق">×</button>
+    <button type="button" class="back-btn" id="modalBack">← رجوع</button>
+
+    <div id="productDetailView">
+      <img id="mImg" class="gallery-main" src="" alt="">
+      <h2 id="mTitleAr" class="modal-title-ar"></h2>
+      <div id="mTitleEn" class="modal-title-en"></div>
+
+      <div class="share-row">
+        <button type="button" class="share-btn" id="copyLinkBtn">🔗 نسخ الرابط</button>
+        <button type="button" class="share-btn" id="nativeShareBtn">
+          <svg class="share-svg" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="18" cy="5" r="3"></circle>
+            <circle cx="6" cy="12" r="3"></circle>
+            <circle cx="18" cy="19" r="3"></circle>
+            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+          </svg>
+          مشاركة عبر ...
+        </button>
+      </div>
+
+      <p id="mDesc" class="modal-desc"></p>
+      <div class="modal-specs">
+        <div class="spec-item"><span class="spec-label">الطابع:</span><span id="mChar" class="spec-val"></span></div>
+        <div class="spec-item"><span class="spec-label">أوقات الاستخدام:</span><span id="mUsage" class="spec-val"></span></div>
+        <div class="spec-item"><span class="spec-label">الحجم:</span><span class="spec-val">50 مل / 1.7 FL.OZ — Eau de Parfum</span></div>
+        <div class="spec-item"><span class="spec-label">حالة المخزون:</span><span id="mStock" class="spec-val"></span></div>
+        <div class="spec-item" style="margin-bottom:0"><span class="spec-label">السعر:</span><span id="mPrice" class="modal-price"></span></div>
+      </div>
+
+      <div class="option-box">
+        <span class="option-label">اختر الباقة:</span>
+        <div class="pack-grid" id="packGrid">
+          <button type="button" class="pack-btn active" data-pack="single">
+            <span class="p-title">عبوة واحدة (50 مل)</span>
+            <span class="p-sub" id="packSinglePrice">35 ريال</span>
+          </button>
+          <button type="button" class="pack-btn" data-pack="duo">
+            <span class="p-title">باقة عبوتين (100 مل)</span>
+            <span class="p-sub" id="packDuoPrice">65 ريال (وفر 5 ريال)</span>
+          </button>
+        </div>
+        <div class="modal-qty-row">
+          <span class="option-label" style="margin:0">الكمية:</span>
+          <div class="qty-controls">
+            <button type="button" id="mQtyDec" aria-label="نقص الكمية">−</button>
+            <span id="mQtyVal">1</span>
+            <button type="button" id="mQtyInc" aria-label="زيادة الكمية">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-reviews" id="mReviews"></div>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-gold" id="mAddCart">أضف إلى السلة 🛒</button>
+        <a id="mWaBtn" href="#" class="btn btn-wa" style="display:block">اشتري الآن عبر واتساب 💬</a>
+      </div>
+      <div class="suggestions" id="mSuggest"></div>
+    </div>
+
+    <div id="directLocationView" class="direct-loc-page" style="display:none">
+      <div class="direct-loc-title">📍 معلومات الموقع وإتمام الشراء</div>
+      <p class="direct-loc-sub">أدخل بيانات موقعك لإرسال تفاصيل المنتج ومعلومات التوصيل عبر واتساب</p>
+
+      <div class="direct-product-summary">
+        <div class="direct-product-row">
+          <img id="directProdImg" src="" alt="">
+          <div class="direct-product-info">
+            <div class="direct-product-name" id="directProdName"></div>
+            <div class="direct-product-meta" id="directProdMeta"></div>
+            <div class="direct-product-total" id="directProdTotal"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="direct-loc-form-box">
+        <div class="delivery-head">
+          <span class="delivery-title" id="directDeliveryTitle">📍 الموقع وبيانات التوصيل (حول العالم)</span>
+          <button type="button" class="gps-btn" id="directDetectGpsBtn">📌 تحديد موقعي (Google Maps)</button>
+        </div>
+        <input type="url" class="cart-field" id="directMapsLink" placeholder="رابط Google Maps أو الصقه هنا / اضغط تحديد موقعي">
+        <div class="maps-link-row">
+          <span class="maps-status" id="directMapsStatus">يمكنك تحديد موقعك تلقائياً أو لصق رابط خرائط جوجل لأي دولة</span>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="maps-preview-link" id="directMapsPreviewLink" style="display:none">فتح في الخريطة ↗</a>
+        </div>
+
+        <div class="delivery-grid" style="margin-top:8px">
+          <select class="cart-field" id="directCitySelect" aria-label="اختر المدينة أو الدولة">
+            <option value="">اختر المدينة أو الدولة...</option>
+          </select>
+          <input type="text" class="cart-field" id="directCityCustom" placeholder="اكتب المدينة والدولة" style="display:none">
+        </div>
+        <input type="text" class="cart-field" id="directAddress" placeholder="العنوان التفصيلي (الدولة، المدينة، الحي، الشارع، رقم المنزل)">
+      </div>
+
+      <input type="text" class="cart-note-input" id="directNote" placeholder="ملاحظة للطلب (مثلاً: تغليف هدية أو وقت التوصيل)...">
+
+      <div class="modal-actions" style="margin-bottom:0">
+        <button type="button" class="btn btn-wa" id="directConfirmWaBtn">اشتري الآن عبر واتساب 💬</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="trackerModal">
+  <div class="modal-card tracker-card" id="trackerModalCard" role="dialog" aria-modal="true" aria-labelledby="trkTitle">
+    <button type="button" class="close-btn" id="trackerClose" aria-label="إغلاق">×</button>
+    <button type="button" class="back-btn" id="trackerBack">← رجوع</button>
+    <h2 id="trkTitle">🔎 تتبع الطلب والتذكرة</h2>
+    <p class="tracker-sub" id="trkSub">أدخل رقم المرجع (REF-...) أو رقم المتابعة (TKT-...) للتحقق من الحالة</p>
+    <div class="tracker-search-row">
+      <input type="text" class="field-input" id="trackerInput" placeholder="مثال: TKT-20261122-AB12 أو REF-20261122-CD34" style="flex:1">
+      <button type="button" class="btn btn-gold" id="trackerSearchBtn" style="width:auto;padding:10px 18px">بحث</button>
+    </div>
+    <div id="trackerResultBox"></div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="policyModal">
+  <div class="modal-card policy-card" id="policyModalCard" role="dialog" aria-modal="true">
+    <button type="button" class="close-btn" id="policyClose" aria-label="إغلاق">×</button>
+    <button type="button" class="back-btn" id="policyBack">← رجوع</button>
+    <div id="policyContent"></div>
+  </div>
+</div>
+
+<button type="button" class="fab wa-fab" onclick="window.open('https://wa.me/201108281558','_blank','noopener,noreferrer')" aria-label="خدمة العملاء" title="خدمة العملاء">🎧</button>
+<button type="button" class="fab top-fab" id="topBtn" aria-label="للأعلى">↑</button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<div class="pwa-install-banner" id="pwaInstallBanner" role="region" aria-label="تثبيت التطبيق">
+  <div class="pwa-install-text">
+    <span class="pwa-install-title" id="pwaInstallTitle">📲 ثبّت تطبيق رذاذي | RAZAZY</span>
+    <span class="pwa-install-sub" id="pwaInstallSub">وصول أسرع وتجربة متجر متكاملة على جهازك</span>
+  </div>
+  <div class="pwa-install-actions">
+    <button type="button" class="pwa-install-btn" id="pwaInstallBtn">تثبيت</button>
+    <button type="button" class="pwa-dismiss-btn" id="pwaDismissBtn" aria-label="إغلاق">×</button>
+  </div>
+</div>
+
+<script>
+const SALES_WHATSAPP = "966539266125";
+const SUPPORT_WHATSAPP = "201108281558";
+const FEEDBACK_ENDPOINT = "https://api.web3forms.com/submit";
+const FEEDBACK_ACCESS_KEY = "c3c27abc-cf79-4272-89f1-1cef88bc4ffd";
+const SHEET_WEBHOOK_URL = "";
+const COOLDOWN_MS = 30000;
+const FREE_SHIPPING_THRESHOLD = 200;
+const SHIPPING_FEE = 20;
+const URGENT_KEYWORDS = ["تلف", "كسر", "مكسور", "ناقص", "نقص", "تأخر", "متأخر", "خطأ", "غلط", "مفقود", "عطل", "تسريب", "damage", "broken", "missing", "delay", "late", "wrong", "lost", "fault", "leak"];
+
+const COUNTRIES = [
+  {flag:"🇸🇦", name:"السعودية", nameEn:"Saudi Arabia", code:"+966"},
+  {flag:"🇦🇪", name:"الإمارات", nameEn:"UAE", code:"+971"},
+  {flag:"🇰🇼", name:"الكويت", nameEn:"Kuwait", code:"+965"},
+  {flag:"🇶🇦", name:"قطر", nameEn:"Qatar", code:"+974"},
+  {flag:"🇧🇭", name:"البحرين", nameEn:"Bahrain", code:"+973"},
+  {flag:"🇴🇲", name:"عُمان", nameEn:"Oman", code:"+968"},
+  {flag:"🇪🇬", name:"مصر", nameEn:"Egypt", code:"+20"},
+  {flag:"🇯🇴", name:"الأردن", nameEn:"Jordan", code:"+962"},
+  {flag:"🇱🇧", name:"لبنان", nameEn:"Lebanon", code:"+961"},
+  {flag:"🇮🇶", name:"العراق", nameEn:"Iraq", code:"+964"},
+  {flag:"🇾🇪", name:"اليمن", nameEn:"Yemen", code:"+967"},
+  {flag:"🇵🇸", name:"فلسطين", nameEn:"Palestine", code:"+970"},
+  {flag:"🇸🇾", name:"سوريا", nameEn:"Syria", code:"+963"},
+  {flag:"🇲🇦", name:"المغرب", nameEn:"Morocco", code:"+212"},
+  {flag:"🇹🇳", name:"تونس", nameEn:"Tunisia", code:"+216"},
+  {flag:"🇩🇿", name:"الجزائر", nameEn:"Algeria", code:"+213"},
+  {flag:"🇱🇾", name:"ليبيا", nameEn:"Libya", code:"+218"},
+  {flag:"🇸🇩", name:"السودان", nameEn:"Sudan", code:"+249"},
+  {flag:"🇲🇷", name:"موريتانيا", nameEn:"Mauritania", code:"+222"},
+  {flag:"🇺🇸", name:"أمريكا", nameEn:"USA", code:"+1"},
+  {flag:"🇬🇧", name:"بريطانيا", nameEn:"UK", code:"+44"},
+  {flag:"🇫🇷", name:"فرنسا", nameEn:"France", code:"+33"},
+  {flag:"🇩🇪", name:"ألمانيا", nameEn:"Germany", code:"+49"},
+  {flag:"🇮🇹", name:"إيطاليا", nameEn:"Italy", code:"+39"},
+  {flag:"🇪🇸", name:"إسبانيا", nameEn:"Spain", code:"+34"},
+  {flag:"🇨🇦", name:"كندا", nameEn:"Canada", code:"+1"},
+  {flag:"🇹🇷", name:"تركيا", nameEn:"Turkey", code:"+90"},
+  {flag:"🇮🇳", name:"الهند", nameEn:"India", code:"+91"},
+  {flag:"🇵🇰", name:"باكستان", nameEn:"Pakistan", code:"+92"},
+  {flag:"🇮🇩", name:"إندونيسيا", nameEn:"Indonesia", code:"+62"},
+  {flag:"🇲🇾", name:"ماليزيا", nameEn:"Malaysia", code:"+60"},
+  {flag:"🇨🇳", name:"الصين", nameEn:"China", code:"+86"},
+  {flag:"🇯🇵", name:"اليابان", nameEn:"Japan", code:"+81"},
+  {flag:"🇰🇷", name:"كوريا الجنوبية", nameEn:"South Korea", code:"+82"},
+  {flag:"🇦🇺", name:"أستراليا", nameEn:"Australia", code:"+61"},
+  {flag:"🇳🇱", name:"هولندا", nameEn:"Netherlands", code:"+31"},
+  {flag:"🇧🇪", name:"بلجيكا", nameEn:"Belgium", code:"+32"},
+  {flag:"🇨🇭", name:"سويسرا", nameEn:"Switzerland", code:"+41"},
+  {flag:"🇸🇪", name:"السويد", nameEn:"Sweden", code:"+46"},
+  {flag:"🇳🇴", name:"النرويج", nameEn:"Norway", code:"+47"},
+  {flag:"🇩🇰", name:"الدنمارك", nameEn:"Denmark", code:"+45"},
+  {flag:"🇦🇹", name:"النمسا", nameEn:"Austria", code:"+43"},
+  {flag:"🇵🇱", name:"بولندا", nameEn:"Poland", code:"+48"},
+  {flag:"🇷🇺", name:"روسيا", nameEn:"Russia", code:"+7"},
+  {flag:"🇧🇷", name:"البرازيل", nameEn:"Brazil", code:"+55"},
+  {flag:"🇲🇽", name:"المكسيك", nameEn:"Mexico", code:"+52"},
+  {flag:"🇿🇦", name:"جنوب أفريقيا", nameEn:"South Africa", code:"+27"},
+  {flag:"🇳🇬", name:"نيجيريا", nameEn:"Nigeria", code:"+234"},
+  {flag:"🇪🇹", name:"إثيوبيا", nameEn:"Ethiopia", code:"+251"},
+  {flag:"🇹🇭", name:"تايلاند", nameEn:"Thailand", code:"+66"}
+];
+
+const CAT_LABEL = {oriental:"شرقي", men:"رجالي", women:"نسائي", unisex:"مشترك"};
+const CAT_LABEL_EN = {oriental:"Oriental", men:"Men", women:"Women", unisex:"Unisex"};
+const SHARE_ICON_SVG = `<svg class="share-svg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>`;
+
+const PACKS = {
+  single: {label: "عبوة واحدة (50 مل)", labelEn: "Single Bottle (50 ml)", mult: 1, discount: 0},
+  duo:    {label: "باقة عبوتين (100 مل)", labelEn: "Duo Pack (100 ml)", mult: 2, discount: 5}
+};
+
+const perfumes = [
+ {id:1,nameAr:'رذاذي - فخامة',nameEn:'Razazy - Luxury',cats:['oriental','unisex'],rating:4.9,reviewsCount:42,stock:18,desc:'توليفة صُممت لتعبر عن الرقي الكلاسيكي والحضور المهيب، تجمع الانتعاش الأنيق بالعمق الدافئ لمرافقتك في المناسبات الرسمية.',descEn:'Crafted to express classic refinement and commanding presence, blending crisp freshness with warm depth for formal occasions.',character:'أروماتك - خشبي فاخر',characterEn:'Luxury Woody Aromatic',usage:'المناسبات الرسمية، المساء، الأجواء المعتدلة',usageEn:'Formal occasions, evenings, mild weather',price:35,img:'bottle.jpg',reviews:[{stars:5,text:'عطر فخم جداً وثباته ممتاز، استخدمته في مناسبة رسمية وحصلت على الكثير من الإطراءات.',textEn:'Very luxurious perfume with great longevity; wore it at a formal event and got many compliments.',who:'عبدالله م. | الرياض',whoEn:'Abdullah M. | Riyadh'},{stars:5,text:'رائحة راقية تليق بالرجال، أنصح به بشدة.',textEn:'Refined scent suited for men, highly recommended.',who:'خالد س. | جدة',whoEn:'Khaled S. | Jeddah'},{stars:4,text:'جميل لكن أتمنى يكون الفوحان أقوى قليلاً.',textEn:'Nice scent, though I wish the projection were slightly stronger.',who:'محمد ع. | الدمام',whoEn:'Mohammed A. | Dammam'}]},
+ {id:2,nameAr:'رذاذي - تميز',nameEn:'Razazy - Signature',cats:['men'],rating:4.8,reviewsCount:35,stock:14,desc:'عطر لمن يرفضون أن يكونوا عاديين، تركيبة تجمع الحيوية العصرية والجاذبية الدافئة لتأسر الحواس ويصعب نسيانها.',descEn:'For those who refuse to blend in, a composition uniting modern vitality and warm allure to captivate the senses.',character:'حمضي - أروماتك دافئ',characterEn:'Warm Citrus Aromatic',usage:'اليومي، العمل، اللقاءات الخاصة',usageEn:'Daily wear, work, special meetups',price:35,img:'bottle.jpg',reviews:[{stars:5,text:'صار عطري المفضل للدوام، يعطي إحساس بالثقة.',textEn:'Became my go-to work fragrance, gives a confident feel.',who:'فهد أ. | الرياض',whoEn:'Fahad A. | Riyadh'},{stars:5,text:'رائحة مميزة ومختلفة عن كل العطور اللي جربتها.',textEn:'Distinctive scent unlike any other fragrance I have tried.',who:'سعد م. | مكة',whoEn:'Saad M. | Makkah'}]},
+ {id:3,nameAr:'رذاذي - انتعاش',nameEn:'Razazy - Fresh Breeze',cats:['men','unisex'],rating:4.7,reviewsCount:51,stock:4,desc:'جرعة نقية من الحيوية تستلهم نسمات الصباح لتمنحك شعوراً فورياً بالنظافة والتجدد طوال النهار.',descEn:'A pure burst of vitality inspired by morning breezes, giving an instant sense of cleanliness and renewal all day.',character:'منعش - حمضي عشبي',characterEn:'Fresh Herbal Citrus',usage:'الصباح، الصيف، النادي الرياضي',usageEn:'Morning, summer, gym',price:35,img:'bottle.jpg',reviews:[{stars:5,text:'مثالي للصيف والحر، انتعاش يدوم.',textEn:'Ideal for hot summer days, lasting freshness.',who:'نواف ر. | جدة',whoEn:'Nawaf R. | Jeddah'},{stars:5,text:'أستخدمه بعد الجيم، نظافة وانتعاش فوري.',textEn:'I wear it after the gym, instant clean freshness.',who:'عمر ح. | الرياض',whoEn:'Omar H. | Riyadh'},{stars:4,text:'خفيف ومنعش لكن الثبات متوسط في الحر الشديد.',textEn:'Light and refreshing, though longevity is moderate in extreme heat.',who:'يوسف ك. | الخبر',whoEn:'Yousef K. | Khobar'}]},
+ {id:4,nameAr:'رذاذي - نيتش',nameEn:'Razazy - Niche Velvet',cats:['women','oriental'],rating:5.0,reviewsCount:28,stock:9,desc:'تجربة مخملية من عالم النيش، تدرج يبدأ بنفحات غامضة ويستقر على لمسة ناعمة دافئة تلامس الحواس.',descEn:'A velvety niche experience unfolding from mysterious notes into a soft, warm embrace on the senses.',character:'زهري - شرقي مخملي',characterEn:'Velvety Floral Oriental',usage:'الأمسيات الخاصة، السهرات، البرد',usageEn:'Special evenings, nights out, cool weather',price:35,img:'bottle.jpg',reviews:[{stars:5,text:'تجربة نيش حقيقية بسعر ممتاز، فخامة لا تُوصف.',textEn:'True niche experience at a great price, indescribable luxury.',who:'نورة ع. | الرياض',whoEn:'Noura A. | Riyadh'},{stars:5,text:'كل صديقاتي سألوني عن اسم العطر، رائحة آسرة.',textEn:'All my friends asked for the name of the perfume, captivating scent.',who:'لمى ف. | جدة',whoEn:'Lama F. | Jeddah'}]},
+ {id:5,nameAr:'رذاذي - بصمة خاصة',nameEn:'Razazy - Special Scent',cats:['unisex'],rating:4.9,reviewsCount:33,stock:12,desc:'بصمة تسبقك لأي مكان، مزيج بارع بين الانتعاش الراقي واللمسات الحسية الدافئة يترك أثراً عالقاً.',descEn:'A signature that precedes you anywhere, artfully balancing refined freshness with warm sensual notes.',character:'خشبي - زهري متوازن',characterEn:'Balanced Woody Floral',usage:'متعدد الاستخدامات، كل الفصول',usageEn:'Versatile, all seasons',price:35,img:'bottle.jpg',reviews:[{stars:5,text:'عطر متوازن يناسب كل الأوقات، صراحة مفاجأة سارة.',textEn:'Well-balanced scent for any time, honestly a pleasant surprise.',who:'سارة ب. | الدمام',whoEn:'Sara B. | Dammam'},{stars:5,text:'اشتريته هدية لأخي وانبهر به، طلب نفس العطر.',textEn:'Bought it as a gift for my brother and he loved it, ordered the same one.',who:'هند م. | الرياض',whoEn:'Hind M. | Riyadh'}]},
+ {id:6,nameAr:'رذاذي - الجاذبية',nameEn:'Razazy - Magnetic Attraction',cats:['men','oriental'],rating:4.8,reviewsCount:47,stock:3,desc:'قوة جذب لا تُقاوم، عطر جريء ومكثف يرتكز على نفحات عميقة تمنحك فوحاناً قوياً وثباتاً طويل الأمد.',descEn:'An irresistible pull; a bold, intense fragrance anchored by deep notes for strong projection and long wear.',character:'شرقي - تابلي دافئ',characterEn:'Warm Spicy Oriental',usage:'السهرات والمناسبات المسائية والشتاء',usageEn:'Evening gatherings, nights, winter',price:35,img:'bottle.jpg',reviews:[{stars:5,text:'عطر قوي وجريء، ثباته خرافي يدوم ليوم كامل.',textEn:'Bold and strong scent, incredible longevity lasting all day.',who:'ماجد ع. | الرياض',whoEn:'Majed A. | Riyadh'},{stars:5,text:'مثالي للسهرات الشتوية، فوحانه يملأ المكان.',textEn:'Great for winter nights, projection fills the room.',who:'تركي س. | جدة',whoEn:'Turki S. | Jeddah'},{stars:4,text:'جميل لكن ثقيل شوي للصيف.',textEn:'Nice scent, though a bit heavy for summer.',who:'بدر ح. | المدينة',whoEn:'Bader H. | Madinah'}]},
+ {id:7,nameAr:'رذاذي - ملكي',nameEn:'Razazy - Royal',cats:['oriental'],rating:5.0,reviewsCount:62,stock:16,desc:'فخامة تليق بالملوك، مزيج عراقة النفحات الشرقية ولمسات العطور الغربية الفاخرة لحضور طاغٍ.',descEn:'Regal luxury blending heritage Eastern notes with refined Western accords for a commanding aura.',character:'شرقي - فانيليا وأخشاب فاخرة',characterEn:'Oriental Vanilla & Fine Woods',usage:'الأعياد، الأعراس، المناسبات الكبرى',usageEn:'Eid, weddings, grand occasions',price:35,img:'bottle.jpg',reviews:[{stars:5,text:'استخدمته في زفافي وكان العطر المثالي، فخامة لا توصف.',textEn:'Wore it on my wedding day and it was perfection, indescribable luxury.',who:'سلطان م. | الرياض',whoEn:'Sultan M. | Riyadh'},{stars:5,text:'أفضل عطر شرقي جربته، يستاهل كل ريال.',textEn:'Best oriental perfume I have tried, worth every riyal.',who:'عبدالعزيز ف. | جدة',whoEn:'Abdulaziz F. | Jeddah'},{stars:5,text:'هدية مثالية للأعياد، التغليف والعطر فخم.',textEn:'Ideal gift for Eid, both packaging and scent are luxurious.',who:'منال أ. | الدمام',whoEn:'Manal A. | Dammam'},{stars:5,text:'ثباته أسطوري، رائحته تفوح لأيام على الملابس.',textEn:'Legendary staying power, lingers on clothes for days.',who:'حمد ر. | أبها',whoEn:'Hamad R. | Abha'}]},
+ {id:8,nameAr:'رذاذي - الانتعاش القوي',nameEn:'Razazy - Power Fresh',cats:['men'],rating:4.7,reviewsCount:39,stock:7,desc:'عندما يلتقي الانتعاش الفائق بقوة الثبات، مسك أبيض نقي مع لمسات حمضية حادة تصمد أمام الحرارة.',descEn:'Where ultra-freshness meets strong longevity: pure white musk and crisp citrus built to stand up to heat.',character:'مسكي - حمضي منعش',characterEn:'Fresh Citrus Musk',usage:'الأجواء الحارة، الدوام المكثف، بعد الاستحمام',usageEn:'Hot weather, busy workdays, after shower',price:35,img:'bottle.jpg',reviews:[{stars:5,text:'يناسب جو السعودية الحار، ثبات وانتعاش معاً.',textEn:'Suits Saudi heat well, freshness and longevity together.',who:'راكان ع. | الرياض',whoEn:'Rakan A. | Riyadh'},{stars:5,text:'أستخدمه يومياً للدوام، نظافة تدوم 8 ساعات.',textEn:'I wear it daily for work, clean feel lasts 8 hours.',who:'فيصل ح. | جدة',whoEn:'Faisal H. | Jeddah'}]},
+ {id:9,nameAr:'رذاذي - الفخامة الهادئة',nameEn:'Razazy - Calm Luxury',cats:['women','unisex'],rating:4.9,reviewsCount:24,stock:11,desc:'الأناقة الحقيقية لا تحتاج صخباً، مسك فاخر ولمسات هادئة تمنحك حضوراً راقياً دون حدة.',descEn:'True elegance needs no noise; fine musk and serene notes for a graceful presence without harshness.',character:'مسكي - بودري ناعم',characterEn:'Soft Powdery Musk',usage:'الاسترخاء، العمل المكتبي، اللقاءات العائلية',usageEn:'Relaxation, office wear, family gatherings',price:35,img:'bottle.jpg',reviews:[{stars:5,text:'ناعم وأنيق، مثالي للمكتب واللقاءات الرسمية.',textEn:'Soft and elegant, ideal for office and formal meetings.',who:'ريم س. | الرياض',whoEn:'Reem S. | Riyadh'},{stars:5,text:'رائحة هادئة تبعث على السكينة، أحببته.',textEn:'Calm, soothing aroma, loved it.',who:'دانة م. | الخبر',whoEn:'Dana M. | Khobar'}]},
+ {id:10,nameAr:'رذاذي - رومانسية',nameEn:'Razazy - Romantic',cats:['women'],rating:5.0,reviewsCount:31,stock:8,desc:'ترجمة عطرية للمشاعر الدافئة، تناغم ساحر بين النفحات الزهرية والمسك الناعم يفيض بالأنوثة.',descEn:'A fragrant translation of warm emotions, harmonizing floral notes with soft musk for effortless femininity.',character:'زهري - مسكي حالم',characterEn:'Dreamy Floral Musk',usage:'الأمسيات الرومانسية والهدايا',usageEn:'Romantic evenings and gifts',price:35,img:'bottle.jpg',reviews:[{stars:5,text:'أنثوي وحالم، مثالي للمناسبات الخاصة.',textEn:'Feminine and dreamy, ideal for special occasions.',who:'جنى ف. | جدة',whoEn:'Jana F. | Jeddah'},{stars:5,text:'اشتريته هدية لزوجتي وانبهرت به، رائحة رومانسية بامتياز.',textEn:'Bought it as a gift for my wife and she was thrilled, wonderfully romantic.',who:'أحمد ع. | الرياض',whoEn:'Ahmed A. | Riyadh'},{stars:5,text:'زهري ناعم بدون إفراط، يعكس الرقي.',textEn:'Soft floral without being overpowering, reflects elegance.',who:'لينا ح. | الدمام',whoEn:'Lina H. | Dammam'}]},
+ {id:11,nameAr:'رذاذي - نغم الفخامة القوية',nameEn:'Razazy - Naghram Luxury',cats:['oriental','men'],rating:4.8,reviewsCount:44,stock:6,desc:'سيمفونية جريئة لعشاق العطور الثقيلة، عمق الأخشاب مع قوة المسك المركز يفرض حضوره لأيام.',descEn:'A bold symphony for heavy-scent lovers: deep woods and concentrated musk commanding presence for days.',character:'خشبي - مسكي مركز',characterEn:'Concentrated Woody Musk',usage:'الأجواء الباردة والمناسبات الفاخرة',usageEn:'Cold weather and luxury occasions',price:35,img:'bottle.jpg',reviews:[{stars:5,text:'لعشاق العطور القوية فقط، فوحانه رهيب.',textEn:'For bold-scent lovers only, amazing projection.',who:'مشعل ر. | الرياض',whoEn:'Meshal R. | Riyadh'},{stars:5,text:'ثباته على الملابس يدوم لأيام، قيمة ممتازة.',textEn:'Stays on clothes for days, great value.',who:'عادل م. | جدة',whoEn:'Adel M. | Jeddah'},{stars:4,text:'ثقيل وجميل، لكن يحتاج جو بارد.',textEn:'Rich and pleasant, though best in cool weather.',who:'ناصر س. | تبوك',whoEn:'Nasser S. | Tabuk'}]}
+];
+
+const policies = {
+  returns: {
+    title:'سياسة الاستبدال والاسترجاع',
+    titleEn:'Exchange & Return Policy',
+    content:`
+      <h3>1. مدة الاستبدال والاسترجاع</h3><p>يحق للعميل طلب استبدال أو استرجاع المنتج خلال 14 يوماً من تاريخ الاستلام، شريطة أن يكون المنتج غير مفتوح وبحالته الأصلية.</p>
+      <h3>2. شروط الاسترجاع</h3><ul><li>أن يكون المنتج في عبوته الأصلية غير مفتوحة.</li><li>إرفاق صورة واضحة للمنتج وفاتورة الشراء.</li><li>ألا يكون العيب ناتجاً عن سوء استخدام من العميل.</li></ul>
+      <h3>3. حالات الاستبدال الفوري</h3><p>في حال وصول المنتج تالفاً أو غير مطابق يحق للعميل رفض استلام المنتج.</p>
+      <h3>4. طريقة طلب الاسترجاع</h3><p>يتم التواصل مع خدمة العملاء عبر واتساب لتقديم الطلب، وسيتم الرد خلال 24 ساعة عمل.</p>
+      <h3>5. استرداد المبلغ</h3><p>يتم رد المبلغ خلال 7-14 يوم عمل عبر نفس وسيلة الدفع المستخدمة، أو كرصيد متجر حسب رغبة العميل.</p>`,
+    contentEn:`
+      <h3>1. Exchange & Return Period</h3><p>Customers may request an exchange or return within 14 days of delivery, provided the item is unopened and in its original condition.</p>
+      <h3>2. Return Conditions</h3><ul><li>The product must be in its original unopened packaging.</li><li>Attach a clear photo of the item and the purchase invoice.</li><li>The defect must not result from customer misuse.</li></ul>
+      <h3>3. Immediate Exchange Cases</h3><p>If the product arrives damaged or incorrect, you may refuse delivery or request an immediate replacement.</p>
+      <h3>4. How to Request a Return</h3><p>Contact customer support via WhatsApp to submit your request; we respond within 24 business hours.</p>
+      <h3>5. Refund Processing</h3><p>Refunds are issued within 7-14 business days via the original payment method or as store credit per your preference.</p>`
+  },
+  terms: {
+    title:'الشروط والأحكام',
+    titleEn:'Terms & Conditions',
+    content:`
+      <h3>1. القبول بالشروط</h3><p>باستخدامك لموقع رذاذي، فإنك توافق على الالتزام بهذه الشروط والأحكام. إذا لم توافق، يرجى عدم استخدام الموقع.</p>
+      <h3>2. المنتجات والأسعار</h3><ul><li>جميع العطور أصلية 100% بتركيز Eau de Parfum.</li><li>الأسعار بالريال السعودي وشاملة ضريبة القيمة المضافة.</li><li>نحتفظ بحق تعديل الأسعار دون إشعار مسبق.</li></ul>
+      <h3>3. الطلبات والشحن</h3><p>يتم معالجة الطلبات خلال 24 ساعة عمل. الشحن مجاني للطلبات فوق 200 ريال داخل المملكة العربية السعودية.</p>
+      <h3>4. المسؤولية</h3><p>لا نتحمل مسؤولية الحساسية الفردية من أي مكون عطري. يُنصح بتجربة العطر على منطقة صغيرة أولاً.</p>
+      <h3>5. الملكية الفكرية</h3><p>جميع المحتويات والصور والشعارات ملكية خاصة لبراند رذاذي ويحظر نسخها أو استخدامها دون إذن خطي.</p>
+      <h3>6. القانون الحاكم</h3><p>تخضع هذه الشروط لأنظمة المملكة العربية السعودية، وأي نزاع يُحال للجهات المختصة فيها.</p>`,
+    contentEn:`
+      <h3>1. Acceptance of Terms</h3><p>By using the RAZAZY website, you agree to be bound by these Terms & Conditions. If you do not agree, please do not use the site.</p>
+      <h3>2. Products & Pricing</h3><ul><li>All fragrances are 100% authentic Eau de Parfum.</li><li>Prices are in Saudi Riyals (SAR) and include VAT.</li><li>We reserve the right to update prices without prior notice.</li></ul>
+      <h3>3. Orders & Shipping</h3><p>Orders are processed within 24 business hours. Shipping is free on orders over 200 SAR across Saudi Arabia.</p>
+      <h3>4. Liability</h3><p>We are not responsible for individual sensitivities to any fragrance ingredient. Patch testing on a small area is advised.</p>
+      <h3>5. Intellectual Property</h3><p>All content, images, and logos are exclusive property of RAZAZY and may not be copied or used without written permission.</p>
+      <h3>6. Governing Law</h3><p>These terms are governed by the laws of Saudi Arabia, and any disputes are referred to its competent authorities.</p>`
+  },
+  privacy: {
+    title:'سياسة الخصوصية',
+    titleEn:'Privacy Policy',
+    content:`
+      <h3>1. جمع المعلومات</h3><p>نقوم بجمع المعلومات التي تقدمها طوعاً عند الطلب (الاسم، رقم الجوال، العنوان) لتحسين خدمتنا.</p>
+      <h3>2. استخدام المعلومات</h3><ul><li>معالجة وتوصيل الطلبات.</li><li>التواصل معك بشأن طلبك أو عروضنا (بموافقتك).</li><li>تحسين تجربة التسوق على الموقع.</li></ul>
+      <h3>3. حماية البيانات</h3><p>نستخدم تقنيات تشفير متقدمة لحماية بياناتك، ولا نشاركها مع أي طرف ثالث إلا ما يلزم لتنفيذ الطلب (شركات الشحن).</p>
+      <h3>4. ملفات تعريف الارتباط (Cookies)</h3><p>يستخدم الموقع ملفات Cookies لتحسين الأداء وتخصيص التجربة. يمكنك تعطيلها من إعدادات المتصفح.</p>
+      <h3>5. حقوقك</h3><p>يحق لك طلب الاطلاع على بياناتك أو تعديلها أو حذفها في أي وقت عبر التواصل مع خدمة العملاء.</p>
+      <h3>6. التعديلات</h3><p>نحتفظ بحق تحديث هذه السياسة، وسيتم نشر أي تغييرات على هذه الصفحة مع تاريخ آخر تحديث.</p>`,
+    contentEn:`
+      <h3>1. Information We Collect</h3><p>We collect information you voluntarily provide when ordering (name, mobile number, address) to improve our service.</p>
+      <h3>2. How We Use Information</h3><ul><li>Processing and delivering orders.</li><li>Contacting you regarding your order or offers (with your consent).</li><li>Improving your shopping experience on the site.</li></ul>
+      <h3>3. Data Protection</h3><p>We use advanced encryption to protect your data and never share it with third parties except as needed for fulfillment (shipping carriers).</p>
+      <h3>4. Cookies</h3><p>The site uses cookies to enhance performance and personalize your experience. You can disable them in browser settings.</p>
+      <h3>5. Your Rights</h3><p>You may request to view, update, or delete your data at any time by contacting customer support.</p>
+      <h3>6. Updates</h3><p>We may update this policy from time to time, with changes published on this page and their last updated date.</p>`
+  }
+};
+
+let cart = JSON.parse(localStorage.getItem('razazy_cart') || '[]');
+let deliveryInfo = JSON.parse(localStorage.getItem('razazy_delivery') || '{"mapsLink":"","citySelect":"","cityCustom":"","address":""}');
+let activeCat = sessionStorage.getItem('razazy_cat') || 'all';
+let savedScroll = 0;
+let currentP = null;
+let selectedPack = 'single';
+let modalQty = 1;
+let modalSuggestionIds = [];
+let isDirectLocationStep = false;
+let lastFeedbackSentAt = Number(sessionStorage.getItem('razazy_last_fb_at') || 0);
+let ticketHistory = JSON.parse(localStorage.getItem('razazy_tickets') || '[]');
+let cartOrderState = JSON.parse(sessionStorage.getItem('razazy_cart_order') || '{"fingerprint":"","orderRef":""}');
+let isHandlingPopState = false;
+let defectPhotos = [];
+const MAX_DEFECT_PHOTOS = 3;
+const MAX_DEFECT_PHOTO_SIZE = 5 * 1024 * 1024;
+const COMPRESSED_MAX_DIM = 1100;
+const COMPRESSED_QUALITY = 0.72;
+let activeLang = 'ar';
+let isApplyingLang = false;
+
+const $ = id => document.getElementById(id);
+const isEnLang = () => activeLang === 'en';
+const tr = (arStr, enStr) => (isEnLang() ? enStr : arStr);
+const fmt = n => (isEnLang() ? `${n} SAR` : `${n} ريال`);
+
+const getPackUnitPrice = (basePrice, packKey) => {
+  const pk = PACKS[packKey] || PACKS.single;
+  return Math.max(1, basePrice * pk.mult - pk.discount);
+};
+const getPackBottlesCount = packKey => (PACKS[packKey]?.mult || 1);
+const getPackLabel = packKey => {
+  const pk = PACKS[packKey] || PACKS.single;
+  return isEnLang() ? pk.labelEn : pk.label;
+};
+const getPerfumeName = p => (isEnLang() ? p.nameEn : p.nameAr);
+const getPerfumeDesc = p => (isEnLang() ? (p.descEn || p.desc) : p.desc);
+const getPerfumeChar = p => (isEnLang() ? (p.characterEn || p.character) : p.character);
+const getPerfumeUsage = p => (isEnLang() ? (p.usageEn || p.usage) : p.usage);
+const getCatText = cat => (isEnLang() ? (CAT_LABEL_EN[cat] || cat) : (CAT_LABEL[cat] || cat));
+
+function getStockBadgeInfo(stock){
+  const safeStock = Math.max(1, Number(stock) || 1);
+  if(safeStock <= 5){
+    return {
+      text: isEnLang() ? `Only ${safeStock} bottles left` : `متبقي ${safeStock} عبوات فقط`,
+      cls: 'low',
+      detail: isEnLang() ? `Only ${safeStock} bottles left (limited stock)` : `متوفر ${safeStock} عبوات فقط (كمية محدودة)`
+    };
+  }
+  return {
+    text: isEnLang() ? `In Stock (${safeStock} bottles)` : `متوفر (${safeStock} عبوات)`,
+    cls: '',
+    detail: isEnLang() ? `In Stock (${safeStock} bottles)` : `متوفر في المخزون (${safeStock} عبوات)`
+  };
+}
+
+function populateCountrySelect(){
+  const sel = $('fbCountry');
+  if(!sel) return;
+  const prevVal = sel.value || '+966';
+  sel.innerHTML = COUNTRIES.map(c => {
+    const labelName = isEnLang() ? c.nameEn : c.name;
+    return `<option value="${c.code}" data-flag="${c.flag}">${c.flag} ${c.code} ${labelName}</option>`;
+  }).join('');
+  sel.value = prevVal;
+}
+
+function generateReferenceCode(prefix = 'REF'){
+  const now = new Date();
+  const y = now.getFullYear();
+  const m = String(now.getMonth() + 1).padStart(2, '0');
+  const d = String(now.getDate()).padStart(2, '0');
+  const letters = 'ABCDEFGHJKLMNPQRSTUVWXYZ';
+  const alpha = letters[Math.floor(Math.random() * letters.length)] + letters[Math.floor(Math.random() * letters.length)];
+  const rnd = String(Math.floor(10 + Math.random() * 89));
+  return `${prefix}-${y}${m}${d}-${alpha}${rnd}`;
+}
+
+function formatRefForWhatsapp(code){
+  return `« ${String(code || '').trim()} »`;
+}
+
+function detectPriority(type, text){
+  const normalized = (text || '').toLowerCase();
+  const hasUrgentWord = URGENT_KEYWORDS.some(k => normalized.includes(k.toLowerCase()));
+  const isComplaint = type === 'شكوى' || type === 'Complaint';
+  return (isComplaint && hasUrgentWord) ? 'عاجلة' : 'عادية';
+}
+
+function syncPriorityPill(){
+  const type = $('fbType').value;
+  const msg = $('fbMsg').value.trim();
+  const pill = $('priorityPill');
+  if(!pill) return;
+  const priority = detectPriority(type, msg);
+  const isUrgent = priority === 'عاجلة';
+  pill.classList.toggle('urgent', isUrgent);
+  if(isEnLang()){
+    pill.textContent = isUrgent ? 'Auto Priority: Urgent ⚡' : 'Auto Priority: Normal';
+  } else {
+    pill.textContent = isUrgent ? 'الأولوية التلقائية: عاجلة ⚡' : 'الأولوية التلقائية: عادية';
+  }
+}
+
+function formatKb(dataUrl){
+  const base64Len = Math.max(0, (dataUrl || '').split(',')[1]?.length || 0);
+  const bytes = Math.round((base64Len * 3) / 4);
+  return Math.max(1, Math.round(bytes / 1024));
+}
+
+function renderDefectPhotosUI(){
+  const countEl = $('defectPhotoCount');
+  const addBtn = $('addDefectPhotoBtn');
+  const labelEl = $('defectPhotosLabel');
+  const hintEl = $('defectPhotoHint');
+  const previewsEl = $('defectPreviews');
+  if(countEl) countEl.textContent = String(defectPhotos.length);
+  if(labelEl){
+    labelEl.textContent = tr(
+      '📷 أضف صورة للمنتج لإثبات العيب (اختياري - حتى 3 صور)',
+      '📷 Add Product Photo to Prove Defect (Optional - Up to 3 Photos)'
+    );
+  }
+  if(hintEl){
+    hintEl.textContent = tr(
+      'اختياري لإثبات العيب • يتم ضغط الصور تلقائياً لتقليل الحجم (حتى 3 صور، حجم الملف الأصلي حتى 5 ميجابايت لكل صورة)',
+      'Optional to prove defect • Photos are automatically compressed to reduce payload size (up to 3 photos, original file up to 5MB each)'
+    );
+  }
+  if(addBtn){
+    const prefix = isEnLang() ? '+ Add photo' : '+ أضف صورة';
+    addBtn.innerHTML = `${prefix} (<span id="defectPhotoCount">${defectPhotos.length}</span>/3)`;
+    addBtn.disabled = defectPhotos.length >= MAX_DEFECT_PHOTOS;
+  }
+  if(!previewsEl) return;
+
+  previewsEl.innerHTML = defectPhotos.map((item, idx) => `
+    <div class="defect-preview-item">
+      <img src="${item.dataUrl}" alt="${item.name}">
+      <span class="defect-photo-badge">~${item.kb}KB</span>
+      <button type="button" class="defect-remove-btn" data-remove-photo="${idx}" aria-label="${tr('حذف الصورة', 'Remove photo')}">×</button>
+    </div>`).join('');
+}
+
+function readFileAsDataUrl(file){
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(String(reader.result || ''));
+    reader.onerror = () => reject(new Error('READ_ERROR'));
+    reader.readAsDataURL(file);
+  });
+}
+
+function compressImageDataUrl(rawDataUrl, mimeType){
+  return new Promise(resolve => {
+    const img = new Image();
+    img.onload = () => {
+      let {width, height} = img;
+      if(width > COMPRESSED_MAX_DIM || height > COMPRESSED_MAX_DIM){
+        if(width >= height){
+          height = Math.round((height * COMPRESSED_MAX_DIM) / width);
+          width = COMPRESSED_MAX_DIM;
+        } else {
+          width = Math.round((width * COMPRESSED_MAX_DIM) / height);
+          height = COMPRESSED_MAX_DIM;
+        }
+      }
+      const canvas = document.createElement('canvas');
+      canvas.width = Math.max(1, width);
+      canvas.height = Math.max(1, height);
+      const ctx = canvas.getContext('2d');
+      if(!ctx){
+        resolve(rawDataUrl);
+        return;
+      }
+      if(mimeType === 'image/png'){
+        ctx.fillStyle = '#0e0e0e';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+      }
+      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+      let compressed = rawDataUrl;
+      try {
+        const candidate = canvas.toDataURL('image/jpeg', COMPRESSED_QUALITY);
+        if(candidate && candidate.length < rawDataUrl.length){
+          compressed = candidate;
+        }
+      } catch(_e){}
+      resolve(compressed);
+    };
+    img.onerror = () => resolve(rawDataUrl);
+    img.src = rawDataUrl;
+  });
+}
+
+$('addDefectPhotoBtn').addEventListener('click', () => {
+  if(defectPhotos.length >= MAX_DEFECT_PHOTOS){
+    return toast(tr('الحد الأقصى 3 صور للمنتج', 'Maximum of 3 product photos allowed'));
+  }
+  $('defectPhotoInput').click();
+});
+
+$('defectPhotoInput').addEventListener('change', async e => {
+  const files = Array.from(e.target.files || []);
+  e.target.value = '';
+  if(!files.length) return;
+
+  for(const file of files){
+    if(defectPhotos.length >= MAX_DEFECT_PHOTOS){
+      toast(tr('يمكنك إرفاق 3 صور كحد أقصى', 'You can attach up to 3 photos'));
+      break;
+    }
+    if(!file.type.startsWith('image/')){
+      toast(tr('يرجى اختيار ملف صورة صالح', 'Please select a valid image file'));
+      continue;
+    }
+    if(file.size > MAX_DEFECT_PHOTO_SIZE){
+      toast(tr('حجم الصورة يجب أن يكون أقل من 5 ميجابايت', 'Image size must be under 5MB'));
+      continue;
+    }
+    try {
+      const rawUrl = await readFileAsDataUrl(file);
+      const compressedUrl = await compressImageDataUrl(rawUrl, file.type);
+      defectPhotos.push({
+        name: file.name.replace(/\.[^.]+$/, '.jpg'),
+        dataUrl: compressedUrl,
+        kb: formatKb(compressedUrl)
+      });
+    } catch(_err){
+      toast(tr('تعذر قراءة الصورة المختارة', 'Could not read selected image'));
+    }
+  }
+  renderDefectPhotosUI();
+});
+
+$('defectPreviews').addEventListener('click', e => {
+  const remBtn = e.target.closest('[data-remove-photo]');
+  if(!remBtn) return;
+  const idx = Number(remBtn.dataset.removePhoto);
+  defectPhotos.splice(idx, 1);
+  renderDefectPhotosUI();
+});
+
+function localizeTicketType(typeVal){
+  if(isEnLang()){
+    if(typeVal === 'شكوى') return 'Complaint';
+    if(typeVal === 'مقترح') return 'Suggestion';
+    if(typeVal === 'استفسار') return 'Inquiry';
+  } else {
+    if(typeVal === 'Complaint') return 'شكوى';
+    if(typeVal === 'Suggestion') return 'مقترح';
+    if(typeVal === 'Inquiry') return 'استفسار';
+  }
+  return typeVal;
+}
+
+function localizePriorityText(prioVal){
+  if(isEnLang()){
+    return prioVal === 'عاجلة' ? 'Urgent' : 'Normal';
+  }
+  return prioVal === 'Urgent' ? 'عاجلة' : 'عادية';
+}
+
+function renderTicketHistory(){
+  const box = $('ticketHistoryBox');
+  if(!box) return;
+  if(!ticketHistory.length){
+    box.innerHTML = '';
+    return;
+  }
+  const heading = tr('🗂 سجل تذاكرك الأخيرة على هذا الجهاز', '🗂 Your Recent Tickets on This Device');
+  const clearLabel = tr('🗑 مسح السجل', '🗑 Clear History');
+  const copyLabel = tr('نسخ', 'Copy');
+  box.innerHTML = `
+    <div class="ticket-history-head">
+      <h4>${heading}</h4>
+      <button type="button" class="clear-tickets-btn" id="clearTicketsBtn">${clearLabel}</button>
+    </div>` + ticketHistory.slice(0, 5).map(t => `
+    <div class="ticket-history-item">
+      <div>
+        <strong>${t.ticketId}</strong> <span class="ticket-history-meta">(${localizeTicketType(t.type)} • ${localizePriorityText(t.priority)} • ${t.dateShort})</span>
+      </div>
+      <button type="button" class="mini-copy-btn" data-copy-ticket="${t.ticketId}">${copyLabel}</button>
+    </div>`).join('');
+}
+
+$('ticketHistoryBox').addEventListener('click', e => {
+  const clearBtn = e.target.closest('#clearTicketsBtn');
+  if(clearBtn){
+    ticketHistory = [];
+    localStorage.removeItem('razazy_tickets');
+    renderTicketHistory();
+    toast(tr('🗑 تم مسح سجل التذاكر المحلية', '🗑 Local ticket history cleared'));
+    return;
+  }
+  const btn = e.target.closest('[data-copy-ticket]');
+  if(btn) copyTextToClipboard(btn.dataset.copyTicket);
+});
+
+function saveTicketToLocal(ticketObj){
+  ticketHistory = [ticketObj, ...ticketHistory.filter(x => x.ticketId !== ticketObj.ticketId)].slice(0, 10);
+  localStorage.setItem('razazy_tickets', JSON.stringify(ticketHistory));
+  renderTicketHistory();
+}
+
+function getEffectiveCity(){
+  const selVal = $('orderCitySelect').value.trim();
+  const customVal = $('orderCityCustom').value.trim();
+  return (selVal === 'أخرى' || selVal === 'Other') ? customVal : selVal;
+}
+
+function getDirectEffectiveCity(){
+  const selVal = $('directCitySelect').value.trim();
+  const customVal = $('directCityCustom').value.trim();
+  return (selVal === 'أخرى' || selVal === 'Other') ? customVal : selVal;
+}
+
+function isValidMapsUrl(raw){
+  const v = (raw || '').trim();
+  if(!v) return false;
+  return /^https?:\/\/(www\.)?(google\.[a-z.]+\/maps|maps\.app\.goo\.gl|goo\.gl\/maps)/i.test(v);
+}
+
+function syncMapsPreviewUI(){
+  const linkVal = $('orderMapsLink').value.trim();
+  const preview = $('mapsPreviewLink');
+  const status = $('mapsStatus');
+  if(isValidMapsUrl(linkVal)){
+    preview.href = linkVal;
+    preview.style.display = 'inline';
+    status.textContent = tr('✅ رابط Google Maps جاهز للإرسال مع الطلب', '✅ Google Maps link ready to send with order');
+  } else {
+    preview.style.display = 'none';
+    preview.removeAttribute('href');
+    status.textContent = linkVal
+      ? tr('⚠️ تأكد أن الرابط تابع لخرائط جوجل', '⚠️ Make sure the link is a valid Google Maps URL')
+      : tr('يمكنك تحديد موقعك تلقائياً أو لصق رابط خرائط جوجل لأي دولة', 'Detect your location automatically or paste a Google Maps link for any country');
+  }
+}
+
+function syncDirectMapsPreviewUI(){
+  const linkVal = $('directMapsLink').value.trim();
+  const preview = $('directMapsPreviewLink');
+  const status = $('directMapsStatus');
+  if(isValidMapsUrl(linkVal)){
+    preview.href = linkVal;
+    preview.style.display = 'inline';
+    status.textContent = tr('✅ رابط Google Maps جاهز للإرسال مع الطلب', '✅ Google Maps link ready to send with order');
+  } else {
+    preview.style.display = 'none';
+    preview.removeAttribute('href');
+    status.textContent = linkVal
+      ? tr('⚠️ تأكد أن الرابط تابع لخرائط جوجل', '⚠️ Make sure the link is a valid Google Maps URL')
+      : tr('يمكنك تحديد موقعك تلقائياً أو لصق رابط خرائط جوجل لأي دولة', 'Detect your location automatically or paste a Google Maps link for any country');
+  }
+}
+
+function setCityFromDetectedText(rawCity, rawCountry, targetPrefix = 'order'){
+  const cleanCity = (rawCity || '').trim();
+  const cleanCountry = (rawCountry || '').trim();
+  const sep = isEnLang() ? ', ' : '، ';
+  const combined = cleanCity && cleanCountry ? `${cleanCity}${sep}${cleanCountry}` : (cleanCity || cleanCountry);
+  if(!combined) return;
+
+  const selectEl = targetPrefix === 'direct' ? $('directCitySelect') : $('orderCitySelect');
+  const customEl = targetPrefix === 'direct' ? $('directCityCustom') : $('orderCityCustom');
+
+  const opts = Array.from(selectEl.options).filter(o => o.value && o.value !== 'أخرى' && o.value !== 'Other');
+  const matched = opts.find(o => {
+    const val = o.value.toLowerCase();
+    const txt = (o.textContent || '').toLowerCase();
+    return (cleanCity && (val.includes(cleanCity.toLowerCase()) || txt.includes(cleanCity.toLowerCase()))) || val === combined.toLowerCase();
+  });
+
+  if(matched){
+    selectEl.value = matched.value;
+    customEl.style.display = 'none';
+    customEl.value = '';
+  } else {
+    selectEl.value = 'أخرى';
+    customEl.style.display = 'block';
+    customEl.value = combined;
+  }
+}
+
+async function detectCurrentLocationToMaps(){
+  if(!navigator.geolocation){
+    toast(tr('متصفحك لا يدعم تحديد الموقع تلقائياً، يمكنك لصق رابط Google Maps يدوياً', 'Your browser does not support auto-location; paste a Google Maps link manually'));
+    return;
+  }
+  const btn = $('detectGpsBtn');
+  const oldLabel = btn.textContent;
+  btn.disabled = true;
+  btn.textContent = tr('⏳ جاري تحديد الموقع...', '⏳ Detecting location...');
+  $('mapsStatus').textContent = tr('جاري التقاط إحداثيات GPS لأي موقع حول العالم...', 'Capturing GPS coordinates for any location worldwide...');
+
+  navigator.geolocation.getCurrentPosition(
+    async pos => {
+      const lat = pos.coords.latitude.toFixed(6);
+      const lng = pos.coords.longitude.toFixed(6);
+      const mapsUrl = `https://www.google.com/maps?q=${lat},${lng}`;
+      $('orderMapsLink').value = mapsUrl;
+      syncMapsPreviewUI();
+
+      try {
+        const langCode = isEnLang() ? 'en' : 'ar';
+        const resp = await fetch(`https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${lat}&lon=${lng}&accept-language=${langCode}`);
+        if(resp.ok){
+          const geo = await resp.json();
+          const addrObj = geo.address || {};
+          const cityCandidate = addrObj.city || addrObj.town || addrObj.village || addrObj.county || addrObj.state || '';
+          const countryCandidate = addrObj.country || '';
+          if(cityCandidate || countryCandidate) setCityFromDetectedText(cityCandidate, countryCandidate, 'order');
+
+          const addrParts = [
+            countryCandidate,
+            cityCandidate,
+            addrObj.suburb || addrObj.neighbourhood || addrObj.district,
+            addrObj.road,
+            addrObj.house_number
+          ].filter(Boolean);
+          if(addrParts.length && !$('orderAddress').value.trim()){
+            $('orderAddress').value = addrParts.join(' - ');
+          }
+        }
+      } catch(_e){}
+
+      saveDeliveryInfo();
+      btn.disabled = false;
+      btn.textContent = oldLabel;
+      toast(tr('📌 تم تحديد موقعك وإرفاق رابط Google Maps', '📌 Location detected and Google Maps link attached'));
+    },
+    err => {
+      btn.disabled = false;
+      btn.textContent = oldLabel;
+      const msg = err.code === 1
+        ? tr('تم رفض إذن الموقع؛ يمكنك لصق رابط Google Maps يدوياً', 'Location permission denied; paste a Google Maps link manually')
+        : tr('تعذر التقاط GPS؛ يمكنك لصق رابط Google Maps يدوياً', 'Could not capture GPS; paste a Google Maps link manually');
+      $('mapsStatus').textContent = '⚠️ ' + msg;
+      toast(msg);
+    },
+    {enableHighAccuracy: true, timeout: 12000, maximumAge: 60000}
+  );
+}
+
+async function detectDirectLocationToMaps(){
+  if(!navigator.geolocation){
+    toast(tr('متصفحك لا يدعم تحديد الموقع تلقائياً، يمكنك لصق رابط Google Maps يدوياً', 'Your browser does not support auto-location; paste a Google Maps link manually'));
+    return;
+  }
+  const btn = $('directDetectGpsBtn');
+  const oldLabel = btn.textContent;
+  btn.disabled = true;
+  btn.textContent = tr('⏳ جاري تحديد الموقع...', '⏳ Detecting location...');
+  $('directMapsStatus').textContent = tr('جاري التقاط إحداثيات GPS لأي موقع حول العالم...', 'Capturing GPS coordinates for any location worldwide...');
+
+  navigator.geolocation.getCurrentPosition(
+    async pos => {
+      const lat = pos.coords.latitude.toFixed(6);
+      const lng = pos.coords.longitude.toFixed(6);
+      const mapsUrl = `https://www.google.com/maps?q=${lat},${lng}`;
+      $('directMapsLink').value = mapsUrl;
+      syncDirectMapsPreviewUI();
+
+      try {
+        const langCode = isEnLang() ? 'en' : 'ar';
+        const resp = await fetch(`https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${lat}&lon=${lng}&accept-language=${langCode}`);
+        if(resp.ok){
+          const geo = await resp.json();
+          const addrObj = geo.address || {};
+          const cityCandidate = addrObj.city || addrObj.town || addrObj.village || addrObj.county || addrObj.state || '';
+          const countryCandidate = addrObj.country || '';
+          if(cityCandidate || countryCandidate) setCityFromDetectedText(cityCandidate, countryCandidate, 'direct');
+
+          const addrParts = [
+            countryCandidate,
+            cityCandidate,
+            addrObj.suburb || addrObj.neighbourhood || addrObj.district,
+            addrObj.road,
+            addrObj.house_number
+          ].filter(Boolean);
+          if(addrParts.length && !$('directAddress').value.trim()){
+            $('directAddress').value = addrParts.join(' - ');
+          }
+        }
+      } catch(_e){}
+
+      saveDeliveryInfoFromDirect();
+      btn.disabled = false;
+      btn.textContent = oldLabel;
+      toast(tr('📌 تم تحديد موقعك وإرفاق رابط Google Maps', '📌 Location detected and Google Maps link attached'));
+    },
+    err => {
+      btn.disabled = false;
+      btn.textContent = oldLabel;
+      const msg = err.code === 1
+        ? tr('تم رفض إذن الموقع؛ يمكنك لصق رابط Google Maps يدوياً', 'Location permission denied; paste a Google Maps link manually')
+        : tr('تعذر التقاط GPS؛ يمكنك لصق رابط Google Maps يدوياً', 'Could not capture GPS; paste a Google Maps link manually');
+      $('directMapsStatus').textContent = '⚠️ ' + msg;
+      toast(msg);
+    },
+    {enableHighAccuracy: true, timeout: 12000, maximumAge: 60000}
+  );
+}
+
+function saveDeliveryInfo(){
+  deliveryInfo = {
+    mapsLink: $('orderMapsLink').value.trim(),
+    citySelect: $('orderCitySelect').value,
+    cityCustom: $('orderCityCustom').value,
+    address: $('orderAddress').value
+  };
+  localStorage.setItem('razazy_delivery', JSON.stringify(deliveryInfo));
+  syncMapsPreviewUI();
+  if(cart.length) getOrCreateCartOrderRef(false);
+}
+
+function saveDeliveryInfoFromDirect(){
+  deliveryInfo = {
+    mapsLink: $('directMapsLink').value.trim(),
+    citySelect: $('directCitySelect').value,
+    cityCustom: $('directCityCustom').value,
+    address: $('directAddress').value
+  };
+  localStorage.setItem('razazy_delivery', JSON.stringify(deliveryInfo));
+  syncDirectMapsPreviewUI();
+}
+
+function getCartFingerprint(){
+  const itemsPart = cart
+    .map(i => `${i.key}:${i.qty}:${i.unitPrice || ''}`)
+    .sort()
+    .join('|');
+  const notePart = ($('orderNote')?.value || '').trim();
+  const mapsPart = ($('orderMapsLink')?.value || '').trim();
+  const cityPart = getEffectiveCity();
+  const addrPart = ($('orderAddress')?.value || '').trim();
+  return `${itemsPart}__note:${notePart}__maps:${mapsPart}__city:${cityPart}__addr:${addrPart}`;
+}
+
+function getOrCreateCartOrderRef(forceNew = false){
+  if(!cart.length) return '';
+  const fp = getCartFingerprint();
+  if(forceNew || !cartOrderState.orderRef || cartOrderState.fingerprint !== fp){
+    cartOrderState = {
+      fingerprint: fp,
+      orderRef: generateReferenceCode('REF')
+    };
+    sessionStorage.setItem('razazy_cart_order', JSON.stringify(cartOrderState));
+  }
+  return cartOrderState.orderRef;
+}
+
+function isEmailValue(val){
+  return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(val.trim());
+}
+
+function normalizePhoneWithCountry(rawVal, countryCode){
+  const trimmed = rawVal.trim();
+  if(!trimmed) return '';
+  const digitsOnly = trimmed.replace(/[^\d+]/g, '');
+  if(digitsOnly.startsWith('+')){
+    return /^\+\d{8,15}$/.test(digitsOnly) ? digitsOnly : '';
+  }
+  let localDigits = digitsOnly.replace(/\D/g, '');
+  if(countryCode === '+966' && localDigits.startsWith('05') && localDigits.length === 10){
+    localDigits = localDigits.slice(1);
+  } else if(localDigits.startsWith('00')){
+    const intl = '+' + localDigits.slice(2);
+    return /^\+\d{8,15}$/.test(intl) ? intl : '';
+  } else if(localDigits.startsWith('0') && localDigits.length > 9){
+    localDigits = localDigits.slice(1);
+  }
+  if(!/^\d{7,12}$/.test(localDigits)) return '';
+  return `${countryCode}${localDigits}`;
+}
+
+function validateAndFormatContact(rawVal, countryCode){
+  const trimmed = rawVal.trim();
+  if(!trimmed) return {ok: true, formatted: isEnLang() ? 'Not provided' : 'غير مذكور'};
+  if(isEmailValue(trimmed)){
+    return {ok: true, formatted: trimmed};
+  }
+  const phoneFormatted = normalizePhoneWithCountry(trimmed, countryCode);
+  if(phoneFormatted){
+    return {ok: true, formatted: phoneFormatted};
+  }
+  return {ok: false, formatted: ''};
+}
+
+function saveCart(){ localStorage.setItem('razazy_cart', JSON.stringify(cart)); updateCartUI(); }
+function toast(msg){ const t=$('toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(t._x); t._x=setTimeout(()=>t.classList.remove('show'),2200); }
+
+function getBaseUrl(){
+  return window.location.origin + window.location.pathname;
+}
+function getProductShareUrl(id){
+  const u = new URL(getBaseUrl());
+  u.searchParams.set('perfume', id);
+  return u.toString();
+}
+function getPolicyShareUrl(key){
+  const u = new URL(getBaseUrl());
+  u.searchParams.set('policy', key);
+  return u.toString();
+}
+function updatePageUrl(paramKey, paramVal){
+  if(!window.history || !window.history.replaceState) return;
+  const u = new URL(getBaseUrl());
+  if(paramKey && paramVal !== null && paramVal !== undefined){
+    u.searchParams.set(paramKey, paramVal);
+  }
+  window.history.replaceState(window.history.state, '', u.toString());
+}
+async function copyTextToClipboard(text){
+  try {
+    if(navigator.clipboard && window.isSecureContext){
+      await navigator.clipboard.writeText(text);
+    } else {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.focus();
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+    }
+    toast(tr('✅ تم النسخ إلى الحافظة', '✅ Copied to clipboard'));
+  } catch(err){
+    toast(tr('⚠️ تعذر النسخ', '⚠️ Failed to copy'));
+  }
+}
+async function shareContent({title, text, url}){
+  if(navigator.share){
+    try {
+      await navigator.share({title, text, url});
+    } catch(err){
+      if(err.name !== 'AbortError'){
+        copyTextToClipboard(url);
+      }
+    }
+  } else {
+    copyTextToClipboard(url);
+  }
+}
+
+$('copyHomeBtn').onclick = () => copyTextToClipboard(getBaseUrl());
+$('shareHomeBtn').onclick = () => shareContent({
+  title: tr('رذاذي | RAZAZY - عالم العطور الفاخرة', 'RAZAZY | Luxury Perfumes World'),
+  text: tr('اكتشف تشكيلة عطور رذاذي الفاخرة المصنوعة في السعودية 🇸🇦', 'Discover RAZAZY luxury perfumes proudly made in Saudi Arabia 🇸🇦'),
+  url: getBaseUrl()
+});
+
+function render(){
+  const term = $('searchInput').value.trim();
+  const sortMode = $('sortSelect') ? $('sortSelect').value : 'featured';
+  const filtered = perfumes.filter(p =>
+    (activeCat==='all' || p.cats.includes(activeCat)) &&
+    (p.nameAr.includes(term)||p.nameEn.toLowerCase().includes(term.toLowerCase())||p.character.includes(term)||(p.characterEn||'').toLowerCase().includes(term.toLowerCase())||p.usage.includes(term)||(p.usageEn||'').toLowerCase().includes(term.toLowerCase())));
+  const list = [...filtered].sort((a, b) => {
+    if(sortMode === 'rating') return (Number(b.rating) || 0) - (Number(a.rating) || 0) || (Number(b.reviewsCount) || 0) - (Number(a.reviewsCount) || 0);
+    if(sortMode === 'price-asc') return (Number(a.price) || 0) - (Number(b.price) || 0);
+    if(sortMode === 'price-desc') return (Number(b.price) || 0) - (Number(a.price) || 0);
+    if(sortMode === 'low-stock') return (Math.max(1, Number(a.stock) || 1)) - (Math.max(1, Number(b.stock) || 1));
+    return 0;
+  });
+  const addLabel = tr('أضف إلى السلة 🛒', 'Add to Cart 🛒');
+  const viewLabel = tr('عرض التفاصيل', 'View Details');
+  const emptyLabel = tr('😕 لا توجد نتائج مطابقة لبحثك', '😕 No matching perfumes found');
+  $('perfumesList').innerHTML = list.length ? list.map(p => {
+    const safeStock = Math.max(1, Number(p.stock) || 1);
+    const st = getStockBadgeInfo(safeStock);
+    const displayName = getPerfumeName(p);
+    return `
+    <article class="card" data-id="${p.id}">
+      <span class="cat-tag">${getCatText(p.cats[0])}</span>
+      <img class="card-img" src="${p.img}" alt="${displayName}" loading="lazy">
+      <div class="stock-under-img ${st.cls}">📦 ${st.text}</div>
+      <div class="name-ar">${displayName}</div>
+      <div class="stars">${'⭐'.repeat(Math.round(p.rating))} <small>${p.rating} (${p.reviewsCount})</small></div>
+      <div class="price">${fmt(p.price)}</div>
+      <div class="card-actions">
+        <button type="button" class="btn btn-gold" data-add="${p.id}">${addLabel}</button>
+        <button type="button" class="btn btn-ghost" data-view="${p.id}">${viewLabel}</button>
+      </div>
+    </article>`;
+  }).join('') : `<p class="empty-msg">${emptyLabel}</p>`;
+}
+
+$('perfumesList').addEventListener('click', e => {
+  const add = e.target.closest('[data-add]'), view = e.target.closest('[data-view]'), card = e.target.closest('.card');
+  if(add){
+    addToCart(+add.dataset.add);
+    e.stopPropagation();
+    return;
+  }
+  if(view){ openModal(+view.dataset.view); return; }
+  if(card){ openModal(+card.dataset.id); }
+});
+
+document.querySelectorAll('.tab').forEach(t => {
+  if(t.dataset.cat === activeCat){
+    document.querySelector('.tab.active')?.classList.remove('active');
+    t.classList.add('active');
+  }
+  t.addEventListener('click', () => {
+    document.querySelector('.tab.active')?.classList.remove('active');
+    t.classList.add('active');
+    activeCat = t.dataset.cat;
+    sessionStorage.setItem('razazy_cat', activeCat);
+    render();
+  });
+});
+$('searchInput').addEventListener('input', render);
+
+function addToCart(id, packKey = 'single', qty = 1){
+  const p = perfumes.find(x=>x.id===id);
+  if(!p) return;
+  const safeStock = Math.max(1, Number(p.stock) || 1);
+  const bottlesPerItem = getPackBottlesCount(packKey);
+  const currentPerfumeBottles = cart
+    .filter(x => x.id === id)
+    .reduce((sum, x) => sum + x.qty * getPackBottlesCount(x.pack), 0);
+  const availableBottles = Math.max(0, safeStock - currentPerfumeBottles);
+  if(availableBottles <= 0){
+    return toast(tr(`الحد الأقصى المتاح من هذا العطر هو ${safeStock} عبوات`, `Maximum available for this perfume is ${safeStock} bottles`));
+  }
+  const maxAllowedItems = Math.floor(availableBottles / bottlesPerItem);
+  if(maxAllowedItems <= 0){
+    return toast(tr('الكمية المتبقية في المخزون لا تكفي لهذه الباقة', 'Remaining stock is not enough for this package'));
+  }
+  const actualQty = Math.min(qty, maxAllowedItems);
+
+  const key = `${id}_${packKey}`;
+  const unitPrice = getPackUnitPrice(p.price, packKey);
+  const item = cart.find(x=>x.key===key);
+  if(item){
+    item.qty += actualQty;
+  } else {
+    cart.push({key, id, pack: packKey, unitPrice, qty: actualQty});
+  }
+  saveCart();
+  toast(actualQty < qty ? tr(`تمت إضافة ${actualQty} (الحد المتاح في المخزون)`, `Added ${actualQty} (max available in stock)`) : tr('✅ تمت الإضافة إلى السلة', '✅ Added to cart'));
+}
+
+function updateCartUI(){
+  const count = cart.reduce((s,i)=>s+i.qty,0);
+  $('cartCount').textContent = count;
+  if($('cartDrawerTitle')){
+    $('cartDrawerTitle').textContent = tr('🛒 سلة المشتريات', '🛒 Shopping Cart');
+  }
+  if($('cartPrivacyNote')){
+    $('cartPrivacyNote').textContent = tr(
+      '🔒 يتم حفظ بيانات التوصيل (razazy_delivery) محلياً في متصفحك لتسهيل تعبئتها في طلبك التالي، وتُمسح تلقائياً بعد إتمام الطلب.',
+      '🔒 Delivery details (razazy_delivery) are stored locally in your browser for convenience and cleared automatically after checkout.'
+    );
+  }
+  if($('cartDeliveryTitle')){
+    $('cartDeliveryTitle').textContent = tr('📍 الموقع وبيانات التوصيل (حول العالم)', '📍 Location & Delivery Info (Worldwide)');
+  }
+  if($('directDeliveryTitle')){
+    $('directDeliveryTitle').textContent = tr('📍 الموقع وبيانات التوصيل (حول العالم)', '📍 Location & Delivery Info (Worldwide)');
+  }
+
+  const subtotal = cart.reduce((s,i)=>{
+    const p = perfumes.find(x=>x.id===i.id);
+    const price = i.unitPrice || (p ? p.price : 35);
+    return s + price * i.qty;
+  }, 0);
+  const shipping = subtotal === 0 || subtotal >= FREE_SHIPPING_THRESHOLD ? 0 : SHIPPING_FEE;
+  const total = subtotal + shipping;
+
+  $('cartSubtotal').textContent = fmt(subtotal);
+  $('cartShipping').textContent = subtotal === 0 ? fmt(0) : (shipping === 0 ? tr('مجاني 🎉', 'Free 🎉') : fmt(shipping));
+  $('cartTotal').textContent = fmt(total);
+
+  const pct = Math.min(subtotal / FREE_SHIPPING_THRESHOLD * 100, 100);
+  $('shipFill').style.width = pct+'%';
+  if(subtotal === 0){
+    $('shipMsg').textContent = tr(`أضف ${FREE_SHIPPING_THRESHOLD} ريال للحصول على شحن مجاني`, `Add ${FREE_SHIPPING_THRESHOLD} SAR for free shipping`);
+  } else if(subtotal >= FREE_SHIPPING_THRESHOLD){
+    $('shipMsg').textContent = tr('🎉 مبروك! حصلت على شحن مجاني', '🎉 Congrats! You unlocked free shipping');
+  } else {
+    $('shipMsg').textContent = tr(
+      `أضف ${FREE_SHIPPING_THRESHOLD - subtotal} ريال للشحن المجاني (الشحن الآن ${SHIPPING_FEE} ريال)`,
+      `Add ${FREE_SHIPPING_THRESHOLD - subtotal} SAR for free shipping (Shipping now ${SHIPPING_FEE} SAR)`
+    );
+  }
+
+  const refBar = $('cartOrderRefBar');
+  if(cart.length){
+    const currentOrderRef = getOrCreateCartOrderRef(false);
+    refBar.style.display = 'flex';
+    $('cartOrderRefCode').textContent = currentOrderRef;
+  } else {
+    refBar.style.display = 'none';
+    $('cartOrderRefCode').textContent = '-';
+    cartOrderState = {fingerprint:'', orderRef:''};
+    sessionStorage.removeItem('razazy_cart_order');
+  }
+
+  const emptyCartHtml = `<div class="cart-empty"><div class="big">🛒</div><p>${tr('سلتك فارغة.. ابدأ بتجربة عطورنا', 'Your cart is empty.. start exploring our scents')}</p></div>`;
+  $('cartItems').innerHTML = cart.length ? cart.map(i => {
+    const p = perfumes.find(x=>x.id===i.id);
+    if(!p) return '';
+    const unitPrice = i.unitPrice || p.price;
+    const packLabel = getPackLabel(i.pack);
+    const displayName = getPerfumeName(p);
+    return `<div class="cart-item">
+      <img src="${p.img}" alt="${displayName}">
+      <div class="ci-info">
+        <div class="ci-name">${displayName}</div>
+        <div class="ci-sub">${packLabel}</div>
+        <div class="ci-price">${fmt(unitPrice)} × ${i.qty}</div>
+        <div class="qty"><button type="button" data-dec="${i.key}">−</button><span>${i.qty}</span><button type="button" data-inc="${i.key}">+</button></div>
+      </div>
+      <button type="button" class="remove-item" data-rem="${i.key}" aria-label="${tr('حذف', 'Remove')}">🗑</button></div>`;
+  }).join('') : emptyCartHtml;
+}
+
+$('copyCartOrderRefBtn').onclick = () => {
+  if(!cart.length) return;
+  const refCode = getOrCreateCartOrderRef(false);
+  copyTextToClipboard(refCode);
+};
+
+$('orderNote').addEventListener('input', () => {
+  if(cart.length) getOrCreateCartOrderRef(false);
+});
+
+function syncCityCustomVisibility(){
+  const v = $('orderCitySelect').value;
+  const isOther = v === 'أخرى' || v === 'Other';
+  $('orderCityCustom').style.display = isOther ? 'block' : 'none';
+}
+
+function syncDirectCityCustomVisibility(){
+  const v = $('directCitySelect').value;
+  const isOther = v === 'أخرى' || v === 'Other';
+  $('directCityCustom').style.display = isOther ? 'block' : 'none';
+}
+
+function populateCitySelects(){
+  const cityOptions = isEnLang() ? [
+    {v:"", t:"Choose city or country..."},
+    {v:"الرياض، السعودية", t:"Riyadh, Saudi Arabia"},
+    {v:"جدة، السعودية", t:"Jeddah, Saudi Arabia"},
+    {v:"مكة المكرمة، السعودية", t:"Makkah, Saudi Arabia"},
+    {v:"المدينة المنورة، السعودية", t:"Madinah, Saudi Arabia"},
+    {v:"الدمام، السعودية", t:"Dammam, Saudi Arabia"},
+    {v:"الخبر، السعودية", t:"Khobar, Saudi Arabia"},
+    {v:"الظهران، السعودية", t:"Dhahran, Saudi Arabia"},
+    {v:"أبها، السعودية", t:"Abha, Saudi Arabia"},
+    {v:"خميس مشيط، السعودية", t:"Khamis Mushait, Saudi Arabia"},
+    {v:"تبوك، السعودية", t:"Tabuk, Saudi Arabia"},
+    {v:"بريدة، السعودية", t:"Buraydah, Saudi Arabia"},
+    {v:"دبي، الإمارات", t:"Dubai, UAE"},
+    {v:"أبوظبي، الإمارات", t:"Abu Dhabi, UAE"},
+    {v:"مدينة الكويت، الكويت", t:"Kuwait City, Kuwait"},
+    {v:"الدوحة، قطر", t:"Doha, Qatar"},
+    {v:"المنامة، البحرين", t:"Manama, Bahrain"},
+    {v:"مسقط، عُمان", t:"Muscat, Oman"},
+    {v:"القاهرة، مصر", t:"Cairo, Egypt"},
+    {v:"عمّان، الأردن", t:"Amman, Jordan"},
+    {v:"لندن، المملكة المتحدة", t:"London, UK"},
+    {v:"نيويورك، أمريكا", t:"New York, USA"},
+    {v:"باريس، فرنسا", t:"Paris, France"},
+    {v:"إسطنبول، تركيا", t:"Istanbul, Turkey"},
+    {v:"أخرى", t:"Other city / country..."}
+  ] : [
+    {v:"", t:"اختر المدينة أو الدولة..."},
+    {v:"الرياض، السعودية", t:"الرياض، السعودية"},
+    {v:"جدة، السعودية", t:"جدة، السعودية"},
+    {v:"مكة المكرمة، السعودية", t:"مكة المكرمة، السعودية"},
+    {v:"المدينة المنورة، السعودية", t:"المدينة المنورة، السعودية"},
+    {v:"الدمام، السعودية", t:"الدمام، السعودية"},
+    {v:"الخبر، السعودية", t:"الخبر، السعودية"},
+    {v:"الظهران، السعودية", t:"الظهران، السعودية"},
+    {v:"أبها، السعودية", t:"أبها، السعودية"},
+    {v:"خميس مشيط، السعودية", t:"خميس مشيط، السعودية"},
+    {v:"تبوك، السعودية", t:"تبوك، السعودية"},
+    {v:"بريدة، السعودية", t:"بريدة، السعودية"},
+    {v:"دبي، الإمارات", t:"دبي، الإمارات"},
+    {v:"أبوظبي، الإمارات", t:"أبوظبي، الإمارات"},
+    {v:"مدينة الكويت، الكويت", t:"مدينة الكويت، الكويت"},
+    {v:"الدوحة، قطر", t:"الدوحة، قطر"},
+    {v:"المنامة، البحرين", t:"المنامة، البحرين"},
+    {v:"مسقط، عُمان", t:"مسقط، عُمان"},
+    {v:"القاهرة، مصر", t:"القاهرة، مصر"},
+    {v:"عمّان، الأردن", t:"عمّان، الأردن"},
+    {v:"لندن، المملكة المتحدة", t:"لندن، المملكة المتحدة"},
+    {v:"نيويورك، أمريكا", t:"نيويورك، أمريكا"},
+    {v:"باريس، فرنسا", t:"باريس، فرنسا"},
+    {v:"إسطنبول، تركيا", t:"إسطنبول، تركيا"},
+    {v:"أخرى", t:"مدينة / دولة أخرى..."}
+  ];
+
+  [$('orderCitySelect'), $('directCitySelect')].forEach(sel => {
+    if(!sel) return;
+    const prev = sel.value;
+    sel.innerHTML = cityOptions.map(o => `<option value="${o.v}">${o.t}</option>`).join('');
+    sel.value = prev;
+  });
+}
+
+$('orderMapsLink').value = deliveryInfo.mapsLink || '';
+$('orderCitySelect').value = deliveryInfo.citySelect || '';
+$('orderCityCustom').value = deliveryInfo.cityCustom || '';
+$('orderAddress').value = deliveryInfo.address || '';
+syncCityCustomVisibility();
+syncMapsPreviewUI();
+
+$('directMapsLink').value = deliveryInfo.mapsLink || '';
+$('directCitySelect').value = deliveryInfo.citySelect || '';
+$('directCityCustom').value = deliveryInfo.cityCustom || '';
+$('directAddress').value = deliveryInfo.address || '';
+syncDirectCityCustomVisibility();
+syncDirectMapsPreviewUI();
+
+$('detectGpsBtn').addEventListener('click', detectCurrentLocationToMaps);
+$('orderMapsLink').addEventListener('input', saveDeliveryInfo);
+$('orderCitySelect').addEventListener('change', () => {
+  syncCityCustomVisibility();
+  saveDeliveryInfo();
+});
+$('orderCityCustom').addEventListener('input', saveDeliveryInfo);
+$('orderAddress').addEventListener('input', saveDeliveryInfo);
+
+$('directDetectGpsBtn').addEventListener('click', detectDirectLocationToMaps);
+$('directMapsLink').addEventListener('input', saveDeliveryInfoFromDirect);
+$('directCitySelect').addEventListener('change', () => {
+  syncDirectCityCustomVisibility();
+  saveDeliveryInfoFromDirect();
+});
+$('directCityCustom').addEventListener('input', saveDeliveryInfoFromDirect);
+$('directAddress').addEventListener('input', saveDeliveryInfoFromDirect);
+
+$('cartItems').addEventListener('click', e => {
+  const inc=e.target.closest('[data-inc]'), dec=e.target.closest('[data-dec]'), rem=e.target.closest('[data-rem]');
+  if(inc){
+    const it=cart.find(i=>i.key===inc.dataset.inc);
+    if(it){
+      const p = perfumes.find(x=>x.id===it.id);
+      const safeStock = p ? Math.max(1, Number(p.stock) || 1) : 99;
+      const totalBottlesAfterInc = cart
+        .filter(x => x.id === it.id)
+        .reduce((sum, x) => sum + x.qty * getPackBottlesCount(x.pack), 0) + getPackBottlesCount(it.pack);
+      if(p && totalBottlesAfterInc > safeStock){
+        return toast(tr(`الحد الأقصى المتوفر من هذا العطر ${safeStock} عبوات`, `Maximum available for this perfume is ${safeStock} bottles`));
+      }
+      it.qty++;
+    }
+  }
+  if(dec){ const it=cart.find(i=>i.key===dec.dataset.dec); if(it){ it.qty--; if(it.qty<=0) cart=cart.filter(x=>x!==it); } }
+  if(rem){ cart=cart.filter(i=>i.key!==rem.dataset.rem); }
+  if(inc||dec||rem) saveCart();
+});
+
+$('clearCartBtn').onclick = () => {
+  if(!cart.length) return toast(tr('السلة فارغة بالفعل', 'Cart is already empty'));
+  cart = [];
+  saveCart();
+  toast(tr('🗑 تم إفراغ السلة', '🗑 Cart cleared'));
+};
+
+function hasAnyActiveModalOrDrawer(){
+  return $('cartDrawer').classList.contains('open') ||
+    $('detailModal').classList.contains('active') ||
+    $('feedbackModal').classList.contains('active') ||
+    $('policyModal').classList.contains('active') ||
+    $('trackerModal').classList.contains('active');
+}
+
+function syncBodyScrollLock(){
+  if(!hasAnyActiveModalOrDrawer()){
+    document.body.style.overflow = '';
+  } else {
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function hideCartUI(){
+  $('cartDrawer').classList.remove('open');
+  $('cartOverlay').classList.remove('open');
+  syncBodyScrollLock();
+}
+
+function openCart(){
+  if($('cartDrawer').classList.contains('open')) return;
+  $('cartDrawer').classList.add('open');
+  $('cartOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  if(window.history && window.history.state?.overlay !== 'cart'){
+    const safeUrl = getBaseUrl() + window.location.search;
+    window.history.pushState({overlay:'cart', returnUrl:safeUrl}, '', safeUrl);
+  }
+}
+
+function closeCart(){
+  if(!$('cartDrawer').classList.contains('open')) return;
+  if(!isHandlingPopState && window.history && window.history.state?.overlay === 'cart'){
+    window.history.back();
+    return;
+  }
+  hideCartUI();
+}
+
+$('cartBtn').onclick = openCart;
+$('closeCart').onclick = closeCart;
+$('cartOverlay').onclick = closeCart;
+$('contactOrders').onclick = () => { openCart(); };
+$('contactOrders').onkeydown = e => { if(e.key==='Enter'||e.key===' ') openCart(); };
+
+let _lastCheckoutFireAt = 0;
+
+function triggerCartWhatsappCheckout(e){
+  if(e){
+    e.preventDefault();
+    e.stopPropagation();
+  }
+  const nowTs = Date.now();
+  if(nowTs - _lastCheckoutFireAt < 400) return;
+  _lastCheckoutFireAt = nowTs;
+
+  if(!cart.length) return toast(tr('السلة فارغة أولاً 🛒', 'Cart is empty first 🛒'));
+  const mapsLink = $('orderMapsLink').value.trim();
+  const city = getEffectiveCity();
+  const address = $('orderAddress').value.trim();
+
+  if(!mapsLink && !city && !address){
+    $('detectGpsBtn').focus();
+    return toast(tr('حدد موقعك عبر Google Maps أو أدخل المدينة والعنوان', 'Detect your location via Google Maps or enter city and address'));
+  }
+  if(!city && !address){
+    $('orderCitySelect').focus();
+    return toast(tr('يرجى تحديد المدينة أو الدولة أو إدخال العنوان', 'Please select city/country or enter address'));
+  }
+  if(!address && !mapsLink){
+    $('orderAddress').focus();
+    return toast(tr('أدخل العنوان التفصيلي أو أرفق رابط Google Maps', 'Enter detailed address or attach a Google Maps link'));
+  }
+
+  const orderRef = getOrCreateCartOrderRef(false);
+  const waRefDisplay = formatRefForWhatsapp(orderRef);
+  let msg = `مرحباً رذاذي 🌸، أرغب بطلب:\nكود المرجع: ${waRefDisplay}`;
+  if(city) msg += `\nالمدينة / الدولة: ${city}`;
+  if(address) msg += `\nالعنوان: ${address}`;
+  if(mapsLink) msg += `\nموقع Google Maps: ${mapsLink}`;
+  msg += `\n\n`;
+
+  let subtotal = 0;
+  cart.forEach(i => {
+    const p = perfumes.find(x=>x.id===i.id);
+    if(!p) return;
+    const unitPrice = i.unitPrice || p.price;
+    const packLabel = PACKS[i.pack]?.label || PACKS.single.label;
+    subtotal += unitPrice * i.qty;
+    msg += `• ${p.nameAr} (${packLabel}) × ${i.qty} = ${unitPrice * i.qty} ريال\n`;
+  });
+  const shipping = subtotal >= FREE_SHIPPING_THRESHOLD ? 0 : SHIPPING_FEE;
+  const total = subtotal + shipping;
+  const note = $('orderNote').value.trim();
+  if(note) msg += `\nملاحظة: ${note}`;
+  msg += `\nمجموع المنتجات: ${subtotal} ريال`;
+  msg += `\nرسوم الشحن: ${shipping === 0 ? 'مجاني 🎉' : `${shipping} ريال`}`;
+  msg += `\nالإجمالي النهائي: ${total} ريال`;
+
+  let ordersTrack = JSON.parse(localStorage.getItem('razazy_orders') || '[]');
+  ordersTrack = [{
+    orderRef,
+    city: city || 'غير محدد',
+    total,
+    status: 'تم الإرسال عبر واتساب',
+    dateShort: new Date().toISOString().slice(0, 10)
+  }, ...ordersTrack.filter(o => o.orderRef !== orderRef)].slice(0, 15);
+  localStorage.setItem('razazy_orders', JSON.stringify(ordersTrack));
+
+  cart = [];
+  localStorage.removeItem('razazy_cart');
+  deliveryInfo = {mapsLink:'', citySelect:'', cityCustom:'', address:''};
+  localStorage.removeItem('razazy_delivery');
+  $('orderMapsLink').value = '';
+  $('orderCitySelect').value = '';
+  $('orderCityCustom').value = '';
+  $('orderCityCustom').style.display = 'none';
+  $('orderAddress').value = '';
+  $('orderNote').value = '';
+  syncMapsPreviewUI();
+  cartOrderState = {fingerprint: '', orderRef: ''};
+  sessionStorage.removeItem('razazy_cart_order');
+  updateCartUI();
+
+  hideCartUI();
+  const cleanHomeUrl = getBaseUrl();
+  if(window.history && window.history.replaceState){
+    window.history.replaceState({page:'home', completedOrderRef:orderRef}, '', cleanHomeUrl);
+  }
+
+  const waUrl = `https://wa.me/${SALES_WHATSAPP}?text=${encodeURIComponent(msg)}`;
+  const a = document.createElement('a');
+  a.href = waUrl;
+  a.target = '_blank';
+  a.rel = 'noopener noreferrer';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
+
+(function bindCartCheckoutButton(){
+  const btn = $('checkoutBtn');
+  if(!btn) return;
+  btn.type = 'button';
+  btn.disabled = false;
+  btn.style.pointerEvents = 'auto';
+  btn.style.cursor = 'pointer';
+  btn.addEventListener('click', triggerCartWhatsappCheckout);
+  btn.addEventListener('keydown', e => {
+    if(e.key === 'Enter' || e.key === ' '){
+      triggerCartWhatsappCheckout(e);
+    }
+  });
+})();
+
+function syncModalPackAndWa(){
+  if(!currentP) return;
+  const safeStock = Math.max(1, Number(currentP.stock) || 1);
+  const singlePrice = getPackUnitPrice(currentP.price, 'single');
+  const duoPrice = getPackUnitPrice(currentP.price, 'duo');
+  const saving = Math.max(0, currentP.price * 2 - duoPrice);
+  $('packSinglePrice').textContent = fmt(singlePrice);
+  $('packDuoPrice').textContent = saving > 0
+    ? (isEnLang() ? `${fmt(duoPrice)} (Save ${fmt(saving)})` : `${fmt(duoPrice)} (وفر ${saving} ريال)`)
+    : fmt(duoPrice);
+
+  const duoBtn = document.querySelector('.pack-btn[data-pack="duo"]');
+  if(duoBtn){
+    duoBtn.disabled = safeStock < 2;
+    if(duoBtn.disabled && selectedPack === 'duo'){
+      selectedPack = 'single';
+    }
+  }
+
+  const maxItemsForPack = Math.max(1, Math.floor(safeStock / getPackBottlesCount(selectedPack)));
+  if(modalQty > maxItemsForPack) modalQty = maxItemsForPack;
+
+  const activeUnitPrice = getPackUnitPrice(currentP.price, selectedPack);
+  $('mPrice').textContent = fmt(activeUnitPrice * modalQty);
+  $('mQtyVal').textContent = modalQty;
+
+  document.querySelectorAll('.pack-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.pack === selectedPack);
+  });
+
+  $('mAddCart').disabled = false;
+  $('mAddCart').textContent = tr('أضف إلى السلة 🛒', 'Add to Cart 🛒');
+
+  $('mWaBtn').style.opacity = '1';
+  $('mWaBtn').style.pointerEvents = 'auto';
+  $('mWaBtn').textContent = tr('اشتري الآن عبر واتساب 💬', 'Buy Now via WhatsApp 💬');
+  $('mWaBtn').href = '#direct-location';
+}
+
+function renderModalContentOnly(){
+  if(!currentP) return;
+  const p = currentP;
+  const safeStock = Math.max(1, Number(p.stock) || 1);
+  const st = getStockBadgeInfo(safeStock);
+  $('mImg').src = p.img;
+  $('mImg').alt = getPerfumeName(p);
+  $('mTitleAr').textContent = p.nameAr;
+  $('mTitleEn').textContent = p.nameEn;
+  $('mDesc').textContent = getPerfumeDesc(p);
+  $('mChar').textContent = getPerfumeChar(p);
+  $('mUsage').textContent = getPerfumeUsage(p);
+  $('mStock').textContent = st.detail;
+  syncModalPackAndWa();
+
+  if(p.reviews && p.reviews.length){
+    const revHeading = tr(`⭐ آراء العملاء (${p.reviews.length})`, `⭐ Customer Reviews (${p.reviews.length})`);
+    $('mReviews').innerHTML = `<h4>${revHeading}</h4>` +
+      p.reviews.map(r => {
+        const revText = isEnLang() ? (r.textEn || r.text) : r.text;
+        const revWho = isEnLang() ? (r.whoEn || r.who) : r.who;
+        return `<div class="review-item"><div class="r-stars">${'⭐'.repeat(r.stars)}</div><div class="r-text">${revText}</div><div class="r-who">— ${revWho}</div></div>`;
+      }).join('');
+  } else {
+    $('mReviews').innerHTML = `<div class="no-reviews">${tr('لا توجد تقييمات بعد. كن أول من يقيّم!', 'No reviews yet. Be the first to review!')}</div>`;
+  }
+
+  const others = modalSuggestionIds
+    .map(id => perfumes.find(x => x.id === id))
+    .filter(Boolean);
+  const sugHeading = tr('💡 قد يعجبك أيضاً', '💡 You May Also Like');
+  const sugAddBtn = tr('أضف إلى السلة 🛒', 'Add to Cart 🛒');
+  $('mSuggest').innerHTML = `<h4>${sugHeading}</h4><div class="suggest-row">` + others.map(o=>{
+    const shortName = isEnLang() ? o.nameEn.replace(/^Razazy\s*-\s*/i, '') : o.nameAr.replace('رذاذي - ','');
+    return `
+    <div class="suggest-card" data-suggest="${o.id}">
+      <img src="${o.img}" alt="${getPerfumeName(o)}" loading="lazy">
+      <div class="s-name">${shortName}</div>
+      <div class="s-price">${fmt(o.price)}</div>
+      <button type="button" class="suggest-add-btn" data-suggest-add="${o.id}">${sugAddBtn}</button>
+    </div>`;
+  }).join('') + `</div>`;
+
+  if(isDirectLocationStep){
+    const activeUnitPrice = getPackUnitPrice(p.price, selectedPack);
+    const packLabel = getPackLabel(selectedPack);
+    const lineTotal = activeUnitPrice * modalQty;
+    $('directProdImg').src = p.img;
+    $('directProdImg').alt = getPerfumeName(p);
+    $('directProdName').textContent = `${p.nameAr} (${p.nameEn})`;
+    $('directProdMeta').textContent = `${packLabel} • ${tr('الكمية', 'Qty')}: ${modalQty} • ${getPerfumeChar(p)}`;
+    $('directProdTotal').textContent = `${tr('الإجمالي', 'Total')}: ${fmt(lineTotal)}`;
+  }
+}
+
+function showDirectLocationScreen(){
+  if(!currentP) return;
+  isDirectLocationStep = true;
+  $('productDetailView').style.display = 'none';
+  $('directLocationView').style.display = 'block';
+
+  const activeUnitPrice = getPackUnitPrice(currentP.price, selectedPack);
+  const packLabel = getPackLabel(selectedPack);
+  const lineTotal = activeUnitPrice * modalQty;
+  const displayName = getPerfumeName(currentP);
+
+  $('directProdImg').src = currentP.img;
+  $('directProdImg').alt = displayName;
+  $('directProdName').textContent = `${currentP.nameAr} (${currentP.nameEn})`;
+  $('directProdMeta').textContent = `${packLabel} • ${tr('الكمية', 'Qty')}: ${modalQty} • ${getPerfumeChar(currentP)}`;
+  $('directProdTotal').textContent = `${tr('الإجمالي', 'Total')}: ${fmt(lineTotal)}`;
+
+  $('directMapsLink').value = deliveryInfo.mapsLink || '';
+  $('directCitySelect').value = deliveryInfo.citySelect || '';
+  $('directCityCustom').value = deliveryInfo.cityCustom || '';
+  $('directAddress').value = deliveryInfo.address || '';
+  syncDirectCityCustomVisibility();
+  syncDirectMapsPreviewUI();
+  $('detailModalCard').scrollTop = 0;
+}
+
+function showProductDetailScreen(){
+  isDirectLocationStep = false;
+  $('directLocationView').style.display = 'none';
+  $('productDetailView').style.display = 'block';
+  $('detailModalCard').scrollTop = 0;
+}
+
+function hideProductModalUI(restoreScroll = true){
+  isDirectLocationStep = false;
+  $('directLocationView').style.display = 'none';
+  $('productDetailView').style.display = 'block';
+  $('detailModal').classList.remove('active');
+  syncBodyScrollLock();
+  updatePageUrl(null, null);
+  if(restoreScroll && !hasAnyActiveModalOrDrawer()){
+    window.scrollTo(0, savedScroll);
+  }
+}
+
+function openModal(id, fromSuggestion = false){
+  const p = perfumes.find(x=>x.id===id);
+  if(!p) return;
+  currentP = p;
+  selectedPack = 'single';
+  modalQty = 1;
+  modalSuggestionIds = perfumes.filter(x=>x.id!==p.id).sort(()=>Math.random()-0.5).slice(0,4).map(x=>x.id);
+  isDirectLocationStep = false;
+  $('directLocationView').style.display = 'none';
+  $('productDetailView').style.display = 'block';
+
+  if(!$('detailModal').classList.contains('active')){
+    savedScroll = window.scrollY;
+  }
+
+  renderModalContentOnly();
+
+  $('detailModal').classList.add('active');
+  document.body.style.overflow = 'hidden';
+
+  const modalCard = $('detailModalCard');
+  modalCard.scrollTop = 0;
+  requestAnimationFrame(() => { modalCard.scrollTop = 0; });
+
+  if(window.history){
+    const shareUrl = getProductShareUrl(p.id);
+    if(window.history.state?.modal !== 'product'){
+      window.history.pushState({modal:'product', id:p.id}, '', shareUrl);
+    } else if(fromSuggestion){
+      window.history.replaceState({modal:'product', id:p.id}, '', shareUrl);
+    }
+  }
+}
+
+function handleProductBackAction(){
+  if(!$('detailModal').classList.contains('active')) return;
+  if(isDirectLocationStep){
+    showProductDetailScreen();
+    return;
+  }
+  if(!isHandlingPopState && window.history && window.history.state?.modal === 'product'){
+    window.history.back();
+    return;
+  }
+  hideProductModalUI(true);
+}
+
+$('modalClose').onclick = () => {
+  if(!isHandlingPopState && window.history && window.history.state?.modal === 'product'){
+    window.history.back();
+    return;
+  }
+  hideProductModalUI(true);
+};
+$('modalBack').onclick = handleProductBackAction;
+$('detailModal').addEventListener('click', e => {
+  if(e.target === $('detailModal')){
+    if(!isHandlingPopState && window.history && window.history.state?.modal === 'product'){
+      window.history.back();
+      return;
+    }
+    hideProductModalUI(true);
+  }
+});
+
+$('mWaBtn').addEventListener('click', e => {
+  e.preventDefault();
+  if(!currentP) return;
+  showDirectLocationScreen();
+});
+
+$('directConfirmWaBtn').addEventListener('click', () => {
+  if(!currentP) return;
+  const mapsLink = $('directMapsLink').value.trim();
+  const city = getDirectEffectiveCity();
+  const address = $('directAddress').value.trim();
+
+  if(!mapsLink && !city && !address){
+    $('directDetectGpsBtn').focus();
+    return toast(tr('حدد موقعك عبر Google Maps أو أدخل المدينة والعنوان', 'Detect your location via Google Maps or enter city and address'));
+  }
+  if(!city && !address){
+    $('directCitySelect').focus();
+    return toast(tr('يرجى تحديد المدينة أو الدولة أو إدخال العنوان', 'Please select city/country or enter address'));
+  }
+  if(!address && !mapsLink){
+    $('directAddress').focus();
+    return toast(tr('أدخل العنوان التفصيلي أو أرفق رابط Google Maps', 'Enter detailed address or attach a Google Maps link'));
+  }
+
+  const activeUnitPrice = getPackUnitPrice(currentP.price, selectedPack);
+  const packLabel = PACKS[selectedPack]?.label || PACKS.single.label;
+  const lineTotal = activeUnitPrice * modalQty;
+  const note = $('directNote').value.trim();
+  const orderRef = generateReferenceCode('REF');
+  const waRefDisplay = formatRefForWhatsapp(orderRef);
+
+  let msg = `مرحباً رذاذي | RAZAZY 🌸\n`;
+  msg += `عطور نيش فاخرة (Eau de Parfum) — صُنع بفخر في المملكة العربية السعودية 🇸🇦\n`;
+  msg += `كود المرجع: ${waRefDisplay}\n\n`;
+  msg += `🧴 معلومات المنتج:\n`;
+  msg += `• العطر: ${currentP.nameAr} (${currentP.nameEn})\n`;
+  msg += `• الفئة والطابع: ${currentP.character}\n`;
+  msg += `• الباقة والكمية: ${packLabel} × ${modalQty}\n`;
+  msg += `• السعر: ${lineTotal} ريال\n\n`;
+  msg += `📍 معلومات الموقع والتوصيل:\n`;
+  if(city) msg += `• المدينة / الدولة: ${city}\n`;
+  if(address) msg += `• العنوان التفصيلي: ${address}\n`;
+  if(mapsLink) msg += `• رابط Google Maps: ${mapsLink}\n`;
+  if(note) msg += `• ملاحظة: ${note}\n`;
+
+  const waUrl = `https://wa.me/${SALES_WHATSAPP}?text=${encodeURIComponent(msg)}`;
+  const a = document.createElement('a');
+  a.href = waUrl;
+  a.target = '_blank';
+  a.rel = 'noopener noreferrer';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+});
+
+$('packGrid').addEventListener('click', e => {
+  const btn = e.target.closest('.pack-btn');
+  if(!btn || btn.disabled) return;
+  selectedPack = btn.dataset.pack;
+  syncModalPackAndWa();
+});
+$('mQtyInc').onclick = () => {
+  if(!currentP) return;
+  const safeStock = Math.max(1, Number(currentP.stock) || 1);
+  const maxItems = Math.max(1, Math.floor(safeStock / getPackBottlesCount(selectedPack)));
+  if(modalQty < maxItems){
+    modalQty++;
+    syncModalPackAndWa();
+  } else {
+    toast(tr(`الحد الأقصى المتاح ${maxItems}`, `Maximum available is ${maxItems}`));
+  }
+};
+$('mQtyDec').onclick = () => { if(modalQty > 1){ modalQty--; syncModalPackAndWa(); } };
+
+$('copyLinkBtn').onclick = () => {
+  if(currentP) copyTextToClipboard(getProductShareUrl(currentP.id));
+};
+$('nativeShareBtn').onclick = () => {
+  if(!currentP) return;
+  shareContent({
+    title: `${getPerfumeName(currentP)} | رذاذي RAZAZY`,
+    text: `${getPerfumeName(currentP)} - ${getPerfumeChar(currentP)} (${fmt(currentP.price)})`,
+    url: getProductShareUrl(currentP.id)
+  });
+};
+
+$('mSuggest').addEventListener('click', e => {
+  const addBtn = e.target.closest('[data-suggest-add]');
+  if(addBtn){
+    e.stopPropagation();
+    addToCart(+addBtn.dataset.suggestAdd);
+    return;
+  }
+  const c = e.target.closest('[data-suggest]');
+  if(c){ openModal(+c.dataset.suggest, true); }
+});
+
+$('mAddCart').onclick = () => {
+  if(currentP){
+    addToCart(currentP.id, selectedPack, modalQty);
+    hideProductModalUI(true);
+  }
+};
+
+function syncFeedbackModeByType(){
+  const type = $('fbType').value;
+  const isComplaint = type === 'شكوى' || type === 'Complaint';
+  const contactInput = $('fbContact');
+  const hint = $('fbContactHint');
+  const orderBox = $('orderRefBox');
+
+  if(isComplaint){
+    contactInput.required = true;
+    contactInput.classList.add('required-active');
+    contactInput.placeholder = tr('رقم الجوال أو البريد الإلكتروني (مطلوب للشكوى)', 'Mobile number or email (required for complaints)');
+    hint.textContent = tr(
+      'مطلوب للشكاوى لتمكين فريقنا من الرد وحل المشكلة (مثال: 5XXXXXXXX أو name@example.com).',
+      'Required for complaints so our team can respond and resolve the issue (e.g., 5XXXXXXXX or name@example.com).'
+    );
+    orderBox.classList.remove('hidden');
+  } else {
+    contactInput.required = false;
+    contactInput.classList.remove('required-active');
+    contactInput.placeholder = tr('رقم الجوال أو البريد الإلكتروني (اختياري)', 'Mobile number or email (optional)');
+    hint.textContent = tr(
+      `اختياري لنوع (${type})؛ إدخاله يتيح لنا متابعتك أو شكرك عند الحاجة.`,
+      `Optional for (${localizeTicketType(type)}); providing it lets us follow up or thank you if needed.`
+    );
+    orderBox.classList.add('hidden');
+  }
+  syncPriorityPill();
+}
+
+function populateFeedbackTypeSelect(){
+  const sel = $('fbType');
+  if(!sel) return;
+  const prev = sel.value;
+  const opts = isEnLang() ? [
+    {v: "شكوى", t: "Complaint"},
+    {v: "مقترح", t: "Suggestion"},
+    {v: "استفسار", t: "Inquiry"}
+  ] : [
+    {v: "شكوى", t: "شكوى"},
+    {v: "مقترح", t: "مقترح"},
+    {v: "استفسار", t: "استفسار"}
+  ];
+  sel.innerHTML = opts.map(o => `<option value="${o.v}">${o.t}</option>`).join('');
+  sel.value = prev || "شكوى";
+}
+
+$('fbType').addEventListener('change', () => {
+  $('fbStatus').textContent = '';
+  syncFeedbackModeByType();
+});
+$('fbMsg').addEventListener('input', syncPriorityPill);
+
+function hideFeedbackModalUI(){
+  $('feedbackModal').classList.remove('active');
+  syncBodyScrollLock();
+  if(!hasAnyActiveModalOrDrawer()){
+    window.scrollTo(0, savedScroll);
+  }
+}
+
+function openFeedbackModal(){
+  if($('feedbackModal').classList.contains('active')) return;
+  savedScroll = window.scrollY;
+  $('fbStatus').textContent = '';
+  syncFeedbackModeByType();
+  renderDefectPhotosUI();
+  renderTicketHistory();
+  $('feedbackModal').classList.add('active');
+  document.body.style.overflow = 'hidden';
+  $('feedbackModalCard').scrollTop = 0;
+  if(window.history && window.history.state?.modal !== 'feedback'){
+    window.history.pushState({modal:'feedback'}, '', getBaseUrl() + window.location.search);
+  }
+}
+
+function closeFeedbackModal(){
+  if(!$('feedbackModal').classList.contains('active')) return;
+  if(!isHandlingPopState && window.history && window.history.state?.modal === 'feedback'){
+    window.history.back();
+    return;
+  }
+  hideFeedbackModalUI();
+}
+$('openFeedbackCard').onclick = openFeedbackModal;
+$('openFeedbackCard').onkeydown = e => { if(e.key==='Enter'||e.key===' ') openFeedbackModal(); };
+$('feedbackClose').onclick = closeFeedbackModal;
+$('feedbackBack').onclick = closeFeedbackModal;
+$('feedbackModal').addEventListener('click', e => { if(e.target===$('feedbackModal')) closeFeedbackModal(); });
+
+$('feedbackForm').addEventListener('submit', async e => {
+  e.preventDefault();
+
+  if($('fbWebsite').value.trim() !== ''){
+    $('fbStatus').textContent = tr('✅ تم إرسال رسالتك بنجاح.', '✅ Your message has been sent successfully.');
+    return;
+  }
+
+  const elapsed = Date.now() - lastFeedbackSentAt;
+  if(lastFeedbackSentAt && elapsed < COOLDOWN_MS){
+    const remainingSec = Math.ceil((COOLDOWN_MS - elapsed) / 1000);
+    $('fbStatus').textContent = tr(
+      `⏳ يرجى الانتظار ${remainingSec} ثانية قبل إرسال رسالة جديدة لتجنب التكرار.`,
+      `⏳ Please wait ${remainingSec} seconds before sending another message.`
+    );
+    return toast(tr(`⏳ انتظر ${remainingSec} ثانية`, `⏳ Wait ${remainingSec}s`));
+  }
+
+  const msg = $('fbMsg').value.trim();
+  if(!msg){
+    $('fbStatus').textContent = tr('⚠️ يرجى كتابة نص الرسالة أولاً.', '⚠️ Please enter your message first.');
+    return toast(tr('يرجى كتابة الرسالة أولاً', 'Please enter your message first'));
+  }
+
+  const name = $('fbName').value.trim() || (isEnLang() ? 'Customer' : 'عميل');
+  const type = $('fbType').value;
+  const countryCode = $('fbCountry').value;
+  const contactRaw = $('fbContact').value.trim();
+  const orderRef = $('fbOrderRef').value.trim() || (isEnLang() ? 'Not provided' : 'غير مذكور');
+  const priority = detectPriority(type, msg);
+  const ticketId = generateReferenceCode('TKT');
+  const createdAt = new Date().toISOString();
+
+  const isComplaint = type === 'شكوى' || type === 'Complaint';
+  if(isComplaint && !contactRaw){
+    $('fbStatus').textContent = tr('⚠️ يرجى إدخال رقم الجوال أو البريد الإلكتروني لأن نوع الرسالة شكوى.', '⚠️ Please enter a mobile number or email because the message type is a complaint.');
+    $('fbContact').focus();
+    return toast(tr('رقم الجوال أو البريد مطلوب للشكوى', 'Mobile or email is required for complaints'));
+  }
+
+  const contactCheck = validateAndFormatContact(contactRaw, countryCode);
+  if(!contactCheck.ok){
+    $('fbStatus').textContent = tr(
+      `⚠️ صيغة الجوال أو البريد الإلكتروني غير واضحة؛ أدخل بريداً مثل name@domain.com أو رقماً مناسباً لرمز الدولة (${countryCode}).`,
+      `⚠️ Invalid mobile or email format; enter an email like name@domain.com or a valid number for (${countryCode}).`
+    );
+    $('fbContact').focus();
+    return toast(tr('تحقق من صيغة الجوال أو البريد', 'Check mobile or email format'));
+  }
+
+  const contactFinal = contactCheck.formatted;
+  const urgentTag = priority === 'عاجلة' ? (isEnLang() ? ' [Urgent]' : ' [عاجلة]') : '';
+  const photosSummary = defectPhotos.length
+    ? defectPhotos.map((ph, i) => `صورة ${i + 1}: ${ph.name} (~${ph.kb}KB)\n${ph.dataUrl}`).join('\n\n')
+    : 'لا توجد صور مرفقة';
+
+  const formData = new FormData();
+  formData.append('access_key', FEEDBACK_ACCESS_KEY);
+  formData.append('subject', `[${ticketId}]${urgentTag} رذاذي RAZAZY - ${type} من ${name}`);
+  formData.append('ticket_id', ticketId);
+  formData.append('priority', priority);
+  formData.append('name', name);
+  formData.append('type', type);
+  formData.append('contact', contactFinal);
+  formData.append('order_reference', orderRef);
+  formData.append('defect_photos_count', String(defectPhotos.length));
+  formData.append('defect_photos', photosSummary);
+  formData.append('message', msg);
+  formData.append('created_at', createdAt);
+
+  const btn = $('fbSubmitBtn');
+  btn.disabled = true;
+  btn.textContent = tr('جاري الإرسال...', 'Sending...');
+  $('fbStatus').textContent = '';
+
+  try {
+    const res = await fetch(FEEDBACK_ENDPOINT, {
+      method: 'POST',
+      body: formData
+    });
+    const data = await res.json();
+    if(!res.ok || !data.success){
+      throw new Error(data.message || 'SEND_FAILED');
+    }
+
+    if(SHEET_WEBHOOK_URL){
+      fetch(SHEET_WEBHOOK_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+          ticket_id: ticketId,
+          status: 'جديد',
+          priority,
+          type,
+          name,
+          contact: contactFinal,
+          order_reference: orderRef,
+          defect_photos_count: defectPhotos.length,
+          message: msg,
+          created_at: createdAt
+        })
+      }).catch(() => {});
+    }
+
+    const nowObj = new Date();
+    const dateShort = `${nowObj.getFullYear()}-${String(nowObj.getMonth()+1).padStart(2,'0')}-${String(nowObj.getDate()).padStart(2,'0')}`;
+    saveTicketToLocal({ticketId, type, priority, dateShort});
+
+    lastFeedbackSentAt = Date.now();
+    sessionStorage.setItem('razazy_last_fb_at', String(lastFeedbackSentAt));
+
+    $('fbMsg').value = '';
+    $('fbName').value = '';
+    $('fbContact').value = '';
+    $('fbOrderRef').value = '';
+    defectPhotos = [];
+    renderDefectPhotosUI();
+    syncFeedbackModeByType();
+
+    const sentMsg = isEnLang()
+      ? `✅ Your message has been sent (${localizePriorityText(priority)}).<br><span class="ticket-result-box"><span>Tracking ID: ${ticketId}</span><button type="button" class="mini-copy-btn" onclick="copyTextToClipboard('${ticketId}')">Copy</button></span>`
+      : `✅ تم إرسال رسالتك بنجاح (${priority}).<br><span class="ticket-result-box"><span>رقم المتابعة: ${ticketId}</span><button type="button" class="mini-copy-btn" onclick="copyTextToClipboard('${ticketId}')">نسخ الرقم</button></span>`;
+    $('fbStatus').innerHTML = sentMsg;
+    toast(tr(`✅ تم الإرسال • رقم المتابعة ${ticketId}`, `✅ Sent • Tracking ID ${ticketId}`));
+    btn.disabled = false;
+    btn.textContent = tr('إرسال مباشر الآن ✓', 'Send Directly Now ✓');
+  } catch (err) {
+    btn.disabled = false;
+    btn.textContent = tr('إرسال مباشر الآن ✓', 'Send Directly Now ✓');
+    $('fbStatus').textContent = tr(
+      '⚠️ تعذر الإرسال حالياً؛ تأكد من فتح الصفحة عبر استضافة أو خادم محلي (http/https) وحاول مجدداً.',
+      '⚠️ Could not send right now; make sure the page is opened via hosting or a local server (http/https) and try again.'
+    );
+    toast(tr('⚠️ تعذر إرسال الرسالة', '⚠️ Could not send message'));
+  }
+});
+
+let activePolicyKey = null;
+
+function hidePolicyUI(){
+  activePolicyKey = null;
+  $('policyModal').classList.remove('active');
+  syncBodyScrollLock();
+  updatePageUrl(null, null);
+  if(!hasAnyActiveModalOrDrawer()){
+    window.scrollTo(0, savedScroll);
+  }
+}
+
+function renderPolicyBody(key){
+  const pol = policies[key];
+  if(!pol) return;
+  const polTitle = isEnLang() ? (pol.titleEn || pol.title) : pol.title;
+  const polBody = isEnLang() ? (pol.contentEn || pol.content) : pol.content;
+  const copyTxt = tr('نسخ الرابط', 'Copy Link');
+  const shareTxt = tr('مشاركة عبر ...', 'Share via ...');
+  const shareTitleEsc = polTitle.replace(/'/g, "\\'");
+  $('policyContent').innerHTML = `<h2>${polTitle}</h2>
+    <div class="share-row" style="margin-bottom:14px">
+      <button type="button" class="share-btn" onclick="copyTextToClipboard(getPolicyShareUrl('${key}'))">🔗 ${copyTxt}</button>
+      <button type="button" class="share-btn" onclick="shareContent({title:'${shareTitleEsc} - RAZAZY',text:'${shareTitleEsc}',url:getPolicyShareUrl('${key}')})">${SHARE_ICON_SVG} ${shareTxt}</button>
+    </div>
+    ${polBody}`;
+}
+
+function openPolicy(key){
+  const pol = policies[key]; if(!pol) return;
+  activePolicyKey = key;
+  savedScroll = window.scrollY;
+  renderPolicyBody(key);
+  $('policyModal').classList.add('active'); document.body.style.overflow='hidden';
+  $('policyModalCard').scrollTop = 0;
+  if(window.history && window.history.state?.modal !== 'policy'){
+    window.history.pushState({modal:'policy', policy:key}, '', getPolicyShareUrl(key));
+  }
+}
+
+function closePolicy(){
+  if(!$('policyModal').classList.contains('active')) return;
+  if(!isHandlingPopState && window.history && window.history.state?.modal === 'policy'){
+    window.history.back();
+    return;
+  }
+  hidePolicyUI();
+}
+$('policyClose').onclick = closePolicy;
+$('policyBack').onclick = closePolicy;
+$('policyModal').addEventListener('click', e => { if(e.target===$('policyModal')) closePolicy(); });
+document.querySelectorAll('[data-policy]').forEach(a => { a.onclick = e => { e.preventDefault(); openPolicy(a.dataset.policy); }; });
+
+window.addEventListener('popstate', () => {
+  isHandlingPopState = true;
+  if($('cartDrawer').classList.contains('open')){
+    hideCartUI();
+  } else if($('detailModal').classList.contains('active')){
+    hideProductModalUI(true);
+  } else if($('feedbackModal').classList.contains('active')){
+    hideFeedbackModalUI();
+  } else if($('policyModal').classList.contains('active')){
+    hidePolicyUI();
+  } else if($('trackerModal').classList.contains('active')){
+    hideTrackerUI();
+  }
+  setTimeout(() => { isHandlingPopState = false; }, 0);
+});
+
+document.addEventListener('keydown', e => {
+  if(e.key === 'Escape'){
+    if($('cartDrawer').classList.contains('open')) closeCart();
+    else if($('detailModal').classList.contains('active')) handleProductBackAction();
+    else if($('feedbackModal').classList.contains('active')) closeFeedbackModal();
+    else if($('policyModal').classList.contains('active')) closePolicy();
+    else if($('trackerModal').classList.contains('active')) closeTrackerModal();
+  }
+});
+
+document.querySelectorAll('.faq-q').forEach(q => q.onclick = () => q.parentElement.classList.toggle('open'));
+window.addEventListener('scroll', () => $('topBtn').classList.toggle('show', scrollY>500));
+$('topBtn').onclick = () => scrollTo({top:0,behavior:'smooth'});
+$('year').textContent = new Date().getFullYear();
+
+if($('heroVideo')){
+  $('heroVideo').addEventListener('error', () => {
+    if($('heroVideoBox')) $('heroVideoBox').style.display = 'none';
+  });
+}
+
+const LANG_DICT = {
+  "رذاذي | RAZAZY - عالم العطور الفاخرة": "RAZAZY | Luxury Perfumes World",
+  "رذاذي RAZAZY - عطور نيش فاخرة Made in KSA بحجم 50 مل. شحن مجاني فوق 200 ريال.": "RAZAZY - Luxury niche perfumes Made in KSA (50ml). Free shipping over 200 SAR.",
+  "عطور نيش فاخرة Made in KSA بتركيز Eau de Parfum وشحن مجاني فوق 200 ريال.": "Luxury niche perfumes Made in KSA in Eau de Parfum concentration with free shipping over 200 SAR.",
+  "إعلان الشحن المجاني": "Free Shipping Announcement",
+  "الشحن مجاني للطلبات فوق 200 ريال داخل المملكة العربية السعودية": "Free shipping on orders over 200 SAR across Saudi Arabia",
+  "نسخ رابط المتجر": "Copy store link",
+  "مشاركة المتجر": "Share store",
+  "فتح السلة": "Open cart",
+  "متصفحك لا يدعم تشغيل الفيديو": "Your browser does not support video playback",
+  "صُنع بفخر في المملكة العربية السعودية 🇸🇦": "Proudly Made in Saudi Arabia 🇸🇦",
+  "\"انطلقنا لنقدم تجربة عطرية فريدة تمزج أصالة الشرق بروعة الفخامة العصرية، لتعبر كل رشة عن هويتك الخاصة\"": "\"We set out to deliver a unique fragrance experience blending Eastern heritage with modern luxury, so every spray expresses your identity.\"",
+  "تشكيلتنا الحصرية": "Exclusive Collection",
+  "اختر فئتك أو ابحث باسم العطر أو الطابع العطري": "Choose a category or search by perfume name or scent profile",
+  "الكل": "All",
+  "عطور شرقية": "Oriental",
+  "عطور رجالي": "Men",
+  "عطور نسائي": "Women",
+  "ابحث باسم العطر أو الطابع العطري...": "Search by perfume name or scent profile...",
+  "بحث": "Search",
+  "شحن سريع": "Fast Shipping",
+  "سمسا وأرامكس لكل مناطق المملكة": "SMSA & Aramex across all regions",
+  "دفع آمن": "Secure Payment",
+  "مدى • Apple Pay • تابي • تمارا": "Mada • Apple Pay • Tabby • Tamara",
+  "منتج أصلي 100%": "100% Authentic",
+  "تركيز Eau de Parfum مضمون": "Guaranteed Eau de Parfum concentration",
+  "استبدال سهل": "Easy Exchange",
+  "خلال 14 يوم من الاستلام": "Within 14 days of delivery",
+  "الأسئلة الشائعة": "Frequently Asked Questions",
+  "كم مدة الثبات والفوحان؟": "How long do longevity and sillage last?",
+  "تركيزنا Eau de Parfum يعطي ثباتاً من 6 إلى 10 ساعات حسب العطر وطبيعة البشرة.": "Our Eau de Parfum concentration lasts 6 to 10 hours depending on the scent and skin type.",
+  "كيف أطلب العطر؟": "How do I order a perfume?",
+  "أضف العطور للسلة ثم اضغط \"إتمام الطلب عبر واتساب\" وسيصلك طلبك كاملاً لموظف المبيعات.": "Add perfumes to your cart and tap \"Complete Order via WhatsApp\" to send your full order to sales.",
+  "متى يصل الطلب؟": "When will my order arrive?",
+  "خلال 1-3 أيام عمل داخل المملكة عبر سمسا أو أرامكس، مع رقم تتبع.": "Within 1-3 business days across Saudi Arabia via SMSA or Aramex, with a tracking number.",
+  "هل الشحن مجاني؟": "Is shipping free?",
+  "نعم، الشحن مجاني للطلبات فوق 200 ريال، ورسوم مخفضة لما دون ذلك.": "Yes, shipping is free for orders over 200 SAR, with reduced rates below that.",
+  "تواصل معنا": "Contact Us",
+  "فريقنا جاهز لخدمتك على مدار الساعة": "Our team is ready to serve you around the clock",
+  "الطلبات والشراء": "Orders & Shopping",
+  "خدمة العملاء": "Customer Support",
+  "الشكاوى والمقترحات": "Complaints & Suggestions",
+  "إرسال شكوى أو مقترح": "Send Complaint or Suggestion",
+  "إغلاق": "Close",
+  "← رجوع": "← Back",
+  "✉️ إرسال شكوى أو مقترح": "✉️ Send Complaint or Suggestion",
+  "🔒 تنويه الخصوصية: يتم حفظ أرقام متابعة تذاكرك محلياً في متصفحك (razazy_tickets) لسهولة الرجوع إليها، ويمكنك مسحها في أي وقت. يُنصح بتفعيل قيود النطاق (Domain Restrictions) لمفتاح الإرسال في لوحة المزوّد عند النشر الفعلي.": "🔒 Privacy Note: Your ticket tracking IDs are saved locally in your browser (razazy_tickets) for easy reference and can be cleared anytime. Enable Domain Restrictions for the form key in your provider dashboard in production.",
+  "🔒 يتم حفظ بيانات التوصيل (razazy_delivery) محلياً في متصفحك لتسهيل تعبئتها في طلبك التالي، وتُمسح تلقائياً بعد إتمام الطلب.": "🔒 Delivery details (razazy_delivery) are stored locally in your browser for convenience and cleared automatically after checkout.",
+  "الاسم (اختياري)": "Name (optional)",
+  "نوع الرسالة": "Message type",
+  "شكوى": "Complaint",
+  "مقترح": "Suggestion",
+  "استفسار": "Inquiry",
+  "رمز الدولة": "Country code",
+  "رقم الجوال أو البريد الإلكتروني (مطلوب للشكوى)": "Mobile number or email (required for complaints)",
+  "رقم الجوال أو البريد الإلكتروني (اختياري)": "Mobile number or email (optional)",
+  "مطلوب للشكاوى لتمكين فريقنا من الرد وحل المشكلة (مثال: 5XXXXXXXX أو name@example.com).": "Required for complaints so our team can respond and resolve the issue (e.g., 5XXXXXXXX or name@example.com).",
+  "رقم الطلبية المرجعي إن وُجد (اختياري):": "Order reference number if available (optional):",
+  "مثال: REF-20261120-AB15": "Example: REF-20261120-AB15",
+  "أضف صورة للمنتج لإثبات العيب (اختياري - حتى 3 صور)": "Add Product Photo to Prove Defect (Optional - Up to 3 Photos)",
+  "أضف صورة": "Add photo",
+  "اختياري لإثبات العيب • يتم ضغط الصور تلقائياً لتقليل الحجم (حتى 3 صور، حجم الملف الأصلي حتى 5 ميجابايت لكل صورة)": "Optional to prove defect • Photos are automatically compressed to reduce payload size (up to 3 photos, original file up to 5MB each)",
+  "اكتب شكواك أو مقترحك هنا...": "Write your complaint or suggestion here...",
+  "الأولوية التلقائية: عادية": "Auto Priority: Normal",
+  "الأولوية التلقائية: عاجلة ⚡": "Auto Priority: Urgent ⚡",
+  "إرسال مباشر الآن ✓": "Send Directly Now ✓",
+  "🗑 مسح السجل": "🗑 Clear History",
+  "سياسة الاستبدال": "Exchange Policy",
+  "الشروط والأحكام": "Terms & Conditions",
+  "سياسة الخصوصية": "Privacy Policy",
+  "مدى": "Mada",
+  "تابي": "Tabby",
+  "تمارا": "Tamara",
+  "جميع الحقوق محفوظة لبراند": "All rights reserved to",
+  "سلة المشتريات": "Shopping Cart",
+  "🛒 سلة المشتريات": "🛒 Shopping Cart",
+  "إفراغ": "Clear",
+  "إغلاق السلة": "Close cart",
+  "رقم المرجع:": "Reference:",
+  "نسخ الرقم": "Copy code",
+  "الموقع وبيانات التوصيل (حول العالم)": "Location & Delivery Info (Worldwide)",
+  "📍 الموقع وبيانات التوصيل (حول العالم)": "📍 Location & Delivery Info (Worldwide)",
+  "تحديد موقعي (Google Maps)": "Detect My Location (Google Maps)",
+  "رابط Google Maps أو الصقه هنا / اضغط تحديد موقعي": "Google Maps link or paste here / tap Detect My Location",
+  "يمكنك تحديد موقعك تلقائياً أو لصق رابط خرائط جوجل لأي دولة": "Detect your location automatically or paste a Google Maps link for any country",
+  "فتح في الخريطة ↗": "Open in Map ↗",
+  "اختر المدينة أو الدولة": "Choose city or country",
+  "اختر المدينة أو الدولة...": "Choose city or country...",
+  "اكتب المدينة والدولة": "Enter city and country",
+  "العنوان التفصيلي (الدولة، المدينة، الحي، الشارع، رقم المنزل)": "Detailed address (Country, City, District, Street, House No.)",
+  "اضافة مكان مميز للموقع اوعلامة مميزه قرب الموقع ..": "Add a landmark or special note near the location..",
+  "مجموع المنتجات": "Subtotal",
+  "رسوم الشحن": "Shipping Fee",
+  "الإجمالي النهائي": "Final Total",
+  "إتمام الطلب عبر واتساب ✓": "Complete Order via WhatsApp ✓",
+  "نسخ الرابط": "Copy Link",
+  "🔗 نسخ الرابط": "🔗 Copy Link",
+  "مشاركة عبر ...": "Share via ...",
+  "الطابع:": "Character:",
+  "أوقات الاستخدام:": "Occasions:",
+  "الحجم:": "Size:",
+  "50 مل / 1.7 FL.OZ — Eau de Parfum": "50 ml / 1.7 FL.OZ — Eau de Parfum",
+  "حالة المخزون:": "Stock Status:",
+  "السعر:": "Price:",
+  "اختر الباقة:": "Choose Package:",
+  "عبوة واحدة (50 مل)": "Single Bottle (50 ml)",
+  "باقة عبوتين (100 مل)": "Duo Pack (100 ml)",
+  "الكمية:": "Quantity:",
+  "نقص الكمية": "Decrease quantity",
+  "زيادة الكمية": "Increase quantity",
+  "أضف إلى السلة 🛒": "Add to Cart 🛒",
+  "اشتري الآن عبر واتساب 💬": "Buy Now via WhatsApp 💬",
+  "معلومات الموقع وإتمام الشراء": "Location Info & Checkout",
+  "أدخل بيانات موقعك لإرسال تفاصيل المنتج ومعلومات التوصيل عبر واتساب": "Enter your location details to send product info and delivery details via WhatsApp",
+  "ملاحظة للطلب (مثلاً: تغليف هدية أو وقت التوصيل)...": "Order note (e.g., gift wrap or delivery time)...",
+  "للأعلى": "Scroll to top",
+  "عرض التفاصيل": "View Details",
+  "شرقي": "Oriental",
+  "رجالي": "Men",
+  "نسائي": "Women",
+  "مشترك": "Unisex",
+  "مجاني 🎉": "Free 🎉",
+  "سلتك فارغة.. ابدأ بتجربة عطورنا": "Your cart is empty.. start exploring our scents",
+  "😕 لا توجد نتائج مطابقة لبحثك": "😕 No matching perfumes found",
+  "لا توجد تقييمات بعد. كن أول من يقيّم!": "No reviews yet. Be the first to review!",
+  "نسخ": "Copy",
+  "تم النسخ إلى الحافظة": "Copied to clipboard",
+  "✅ تم النسخ إلى الحافظة": "✅ Copied to clipboard",
+  "تمت الإضافة إلى السلة": "Added to cart",
+  "✅ تمت الإضافة إلى السلة": "✅ Added to cart",
+  "السلة فارغة أولاً 🛒": "Cart is empty first 🛒",
+  "تم إفراغ السلة": "Cart cleared",
+  "🗑 تم إفراغ السلة": "🗑 Cart cleared",
+  "السلة فارغة بالفعل": "Cart is already empty",
+  "حذف": "Remove",
+  "الكمية": "Qty",
+  "الإجمالي": "Total",
+  "حذف الصورة": "Remove photo",
+  "تتبع الطلب والتذكرة": "Track Order & Ticket",
+  "🔎 تتبع الطلب والتذكرة": "🔎 Track Order & Ticket",
+  "أدخل رقم المرجع (REF-...) أو رقم المتابعة (TKT-...) للتحقق من الحالة": "Enter a reference number (REF-...) or tracking ID (TKT-...) to check status",
+  "مثال: TKT-20261122-AB12 أو REF-20261122-CD34": "Example: TKT-20261122-AB12 or REF-20261122-CD34",
+  "حذف السجلات": "Clear Records",
+  "تم الإرسال عبر واتساب": "Sent via WhatsApp"
+};
+
+const REV_DICT = Object.fromEntries(Object.entries(LANG_DICT).map(([k, v]) => [v, k]));
+
+function translateString(str){
+  if(typeof str !== 'string') return str;
+  const trimmed = str.trim();
+  if(!trimmed) return str;
+
+  if(activeLang === 'en'){
+    if(LANG_DICT[trimmed]) return str.replace(trimmed, LANG_DICT[trimmed]);
+    const avail = trimmed.match(/^متوفر\s*\((\d+)\s*عبوات\)$/);
+    if(avail) return `In Stock (${avail[1]} bottles)`;
+    const availDet = trimmed.match(/^متوفر في المخزون\s*\((\d+)\s*عبوات\)$/);
+    if(availDet) return `In Stock (${availDet[1]} bottles)`;
+    const low = trimmed.match(/^متبقي\s*(\d+)\s*عبوات فقط$/);
+    if(low) return `Only ${low[1]} bottles left`;
+    const lowDet = trimmed.match(/^متوفر\s*(\d+)\s*عبوات فقط\s*\(كمية محدودة\)$/);
+    if(lowDet) return `Only ${lowDet[1]} bottles left (limited stock)`;
+    const pr = trimmed.match(/^(\d+)\s*ريال$/);
+    if(pr) return `${pr[1]} SAR`;
+    const sv = trimmed.match(/^(\d+)\s*SAR\s*\(وفر\s*(\d+)\s*ريال\)$/);
+    if(sv) return `${sv[1]} SAR (Save ${sv[2]} SAR)`;
+    const svAr = trimmed.match(/^(\d+)\s*ريال\s*\(وفر\s*(\d+)\s*ريال\)$/);
+    if(svAr) return `${svAr[1]} SAR (Save ${svAr[2]} SAR)`;
+    const shipAdd = trimmed.match(/^أضف\s*(\d+)\s*ريال للشحن المجاني\s*\(الشحن الآن\s*(\d+)\s*ريال\)$/);
+    if(shipAdd) return `Add ${shipAdd[1]} SAR for free shipping (Shipping now ${shipAdd[2]} SAR)`;
+    const shipFree = trimmed.match(/^أضف\s*(\d+)\s*ريال للحصول على شحن مجاني$/);
+    if(shipFree) return `Add ${shipFree[1]} SAR for free shipping`;
+    if(trimmed.startsWith('رذاذي - ')) return 'RAZAZY - ' + trimmed.slice('رذاذي - '.length);
+    return str;
+  } else {
+    if(REV_DICT[trimmed]) return str.replace(trimmed, REV_DICT[trimmed]);
+    const enAv = trimmed.match(/^In Stock\s*\((\d+)\s*bottles\)$/);
+    if(enAv) return `متوفر (${enAv[1]} عبوات)`;
+    const enLw = trimmed.match(/^Only\s*(\d+)\s*bottles left(?:\s*\(limited stock\))?$/);
+    if(enLw) return `متبقي ${enLw[1]} عبوات فقط`;
+    const enPr = trimmed.match(/^(\d+)\s*SAR$/);
+    if(enPr) return `${enPr[1]} ريال`;
+    const enSv = trimmed.match(/^(\d+)\s*SAR\s*\(Save\s*(\d+)\s*SAR\)$/);
+    if(enSv) return `${enSv[1]} ريال (وفر ${enSv[2]} ريال)`;
+    return str;
+  }
+}
+
+function walkAndTranslate(root = document.body){
+  if(isApplyingLang || !root) return;
+  isApplyingLang = true;
+  try {
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode(node){
+        const parent = node.parentElement;
+        if(!parent) return NodeFilter.FILTER_REJECT;
+        if(['SCRIPT', 'STYLE', 'NOSCRIPT', 'CODE', 'PRE'].includes(parent.tagName)){
+          return NodeFilter.FILTER_REJECT;
+        }
+        return node.nodeValue && node.nodeValue.trim() ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
+      }
+    });
+    let current;
+    while((current = walker.nextNode())){
+      const converted = translateString(current.nodeValue);
+      if(converted !== current.nodeValue) current.nodeValue = converted;
+    }
+    ['placeholder', 'title', 'aria-label'].forEach(attr => {
+      root.querySelectorAll('*').forEach(el => {
+        if(el.hasAttribute(attr)){
+          const orig = el.getAttribute(attr);
+          const conv = translateString(orig);
+          if(conv !== orig) el.setAttribute(attr, conv);
+        }
+      });
+    });
+  } finally {
+    isApplyingLang = false;
+  }
+}
+
+function setSiteLanguage(targetLang, notify = false){
+  activeLang = targetLang === 'en' ? 'en' : 'ar';
+  sessionStorage.setItem('razazy_lang', activeLang);
+  const isEn = activeLang === 'en';
+
+  document.documentElement.lang = isEn ? 'en' : 'ar';
+  document.documentElement.dir = isEn ? 'ltr' : 'rtl';
+  document.title = isEn ? LANG_DICT["رذاذي | RAZAZY - عالم العطور الفاخرة"] : "رذاذي | RAZAZY - عالم العطور الفاخرة";
+
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if(metaDesc){
+    metaDesc.setAttribute('content', isEn
+      ? LANG_DICT["رذاذي RAZAZY - عطور نيش فاخرة Made in KSA بحجم 50 مل. شحن مجاني فوق 200 ريال."]
+      : "رذاذي RAZAZY - عطور نيش فاخرة Made in KSA بحجم 50 مل. شحن مجاني فوق 200 ريال.");
+  }
+  const ogTitle = document.querySelector('meta[property="og:title"]');
+  if(ogTitle){
+    ogTitle.setAttribute('content', document.title);
+  }
+  const ogDesc = document.querySelector('meta[property="og:description"]');
+  if(ogDesc){
+    ogDesc.setAttribute('content', isEn
+      ? LANG_DICT["عطور نيش فاخرة Made in KSA بتركيز Eau de Parfum وشحن مجاني فوق 200 ريال."]
+      : "عطور نيش فاخرة Made in KSA بتركيز Eau de Parfum وشحن مجاني فوق 200 ريال.");
+  }
+
+  const btn = $('langToggleBtn');
+  const badge = $('langBadgeText');
+  if(btn && badge){
+    btn.classList.toggle('active-en', isEn);
+    badge.textContent = isEn ? 'AR' : 'EN';
+    btn.title = isEn ? 'الترجمة إلى العربية' : 'Translate to English';
+    btn.setAttribute('aria-label', isEn ? 'Translate to Arabic' : 'Translate to English');
+  }
+
+  if($('copyLinkBtn')){
+    $('copyLinkBtn').innerHTML = isEn ? '🔗 Copy Link' : '🔗 نسخ الرابط';
+  }
+  if($('nativeShareBtn')){
+    $('nativeShareBtn').innerHTML = `${SHARE_ICON_SVG} ${isEn ? 'Share via ...' : 'مشاركة عبر ...'}`;
+  }
+
+  populateCountrySelect();
+  populateFeedbackTypeSelect();
+  populateCitySelects();
+  render();
+  updateCartUI();
+  syncMapsPreviewUI();
+  syncDirectMapsPreviewUI();
+  syncFeedbackModeByType();
+  renderDefectPhotosUI();
+  renderTicketHistory();
+
+  if(currentP && $('detailModal').classList.contains('active')){
+    renderModalContentOnly();
+  }
+  if(activePolicyKey && $('policyModal').classList.contains('active')){
+    renderPolicyBody(activePolicyKey);
+  }
+
+  walkAndTranslate(document.body);
+  if(notify){
+    toast(isEn ? '🌐 Language switched to English' : '🌐 تم التبديل إلى العربية');
+  }
+}
+
+const _baseToast = toast;
+toast = function(msg){
+  _baseToast(translateString(msg));
+};
+
+$('langToggleBtn').addEventListener('click', () => {
+  setSiteLanguage(activeLang === 'en' ? 'ar' : 'en', true);
+});
+
+sessionStorage.setItem('razazy_lang', 'ar');
+setSiteLanguage('ar', false);
+
+const PRODUCTS_JSON_URL = "products.json";
+const TRACKER_STATUS_ENDPOINT = "";
+
+async function loadPerfumesFromExternalJson(){
+  try {
+    const resp = await fetch(PRODUCTS_JSON_URL, {cache: "no-store"});
+    if(!resp.ok) throw new Error("HTTP_" + resp.status);
+    const data = await resp.json();
+    if(Array.isArray(data) && data.length > 0){
+      perfumes.length = 0;
+      data.forEach(item => perfumes.push(item));
+      render();
+      updateCartUI();
+      if(currentP && $('detailModal').classList.contains('active')){
+        const refreshed = perfumes.find(x => x.id === currentP.id);
+        if(refreshed){
+          currentP = refreshed;
+          renderModalContentOnly();
+          walkAndTranslate($('detailModalCard'));
+        }
+      }
+    }
+  } catch(_err){}
+}
+
+function hideTrackerUI(){
+  $('trackerModal').classList.remove('active');
+  syncBodyScrollLock();
+  if(!hasAnyActiveModalOrDrawer()){
+    window.scrollTo(0, savedScroll);
+  }
+}
+
+function openTrackerModal(prefillCode = ""){
+  if($('trackerModal').classList.contains('active') && !prefillCode) return;
+  savedScroll = window.scrollY;
+  $('trackerModal').classList.add('active');
+  document.body.style.overflow = 'hidden';
+  if(prefillCode) $('trackerInput').value = prefillCode;
+  runTrackerLookup($('trackerInput').value.trim());
+  if(window.history && window.history.state?.modal !== 'tracker'){
+    window.history.pushState({modal:'tracker'}, '', getBaseUrl() + window.location.search);
+  }
+}
+
+function closeTrackerModal(){
+  if(!$('trackerModal').classList.contains('active')) return;
+  if(!isHandlingPopState && window.history && window.history.state?.modal === 'tracker'){
+    window.history.back();
+    return;
+  }
+  hideTrackerUI();
+}
+
+async function runTrackerLookup(rawCode){
+  const box = $('trackerResultBox');
+  if(!box) return;
+  const code = (rawCode || '').trim().toUpperCase();
+  if(!code){
+    const recentT = ticketHistory.slice(0, 3);
+    const recentO = JSON.parse(localStorage.getItem('razazy_orders') || '[]').slice(0, 3);
+    if(!recentT.length && !recentO.length){
+      box.innerHTML = `<div class="tracker-empty">${tr('أدخل رقم TKT-... أو REF-... لعرض التفاصيل والحالة.', 'Enter a TKT-... or REF-... code to view details and status.')}</div>`;
+      return;
+    }
+    let htmlOut = `<div class="tracker-empty" style="text-align:${isEnLang() ? 'left' : 'right'}">`;
+    htmlOut += `<div style="font-weight:800;color:var(--gold-light);margin-bottom:6px">${tr('السجلات المحفوظة على هذا الجهاز:', 'Records saved on this device:')}</div>`;
+    recentT.forEach(t => {
+      htmlOut += `<div style="margin-bottom:4px">🎫 <strong>${t.ticketId}</strong> — ${localizeTicketType(t.type)} (${localizePriorityText(t.priority)})</div>`;
+    });
+    recentO.forEach(o => {
+      htmlOut += `<div style="margin-bottom:4px">🛍 <strong>${o.orderRef}</strong> — ${fmt(o.total)} (${translateString(o.status)})</div>`;
+    });
+    htmlOut += `</div>`;
+    box.innerHTML = htmlOut;
+    return;
+  }
+
+  if(TRACKER_STATUS_ENDPOINT){
+    box.innerHTML = `<div class="tracker-empty">${tr('⏳ جاري التحقق من الحالة...', '⏳ Checking status...')}</div>`;
+    try {
+      const r = await fetch(`${TRACKER_STATUS_ENDPOINT}?code=${encodeURIComponent(code)}`);
+      if(r.ok){
+        const remote = await r.json();
+        if(remote && remote.found){
+          box.innerHTML = `
+            <div class="tracker-result-card">
+              <div class="tracker-badge">${remote.status || tr('قيد المعالجة', 'In Progress')}</div>
+              <div class="tracker-row"><span>${tr('الرمز', 'Code')}:</span><strong>${code}</strong></div>
+              ${remote.type ? `<div class="tracker-row"><span>${tr('النوع', 'Type')}:</span><span>${remote.type}</span></div>` : ''}
+              ${remote.updatedAt ? `<div class="tracker-row"><span>${tr('آخر تحديث', 'Updated')}:</span><span>${remote.updatedAt}</span></div>` : ''}
+            </div>`;
+          return;
+        }
+      }
+    } catch(_e){}
+  }
+
+  const foundTicket = ticketHistory.find(t => String(t.ticketId).toUpperCase() === code);
+  if(foundTicket){
+    box.innerHTML = `
+      <div class="tracker-result-card">
+        <div class="tracker-badge">${tr('تم الاستلام • بانتظار رد الدعم', 'Received • Awaiting Support')}</div>
+        <div class="tracker-row"><span>${tr('رقم التذكرة', 'Ticket ID')}:</span><strong>${foundTicket.ticketId}</strong></div>
+        <div class="tracker-row"><span>${tr('النوع', 'Type')}:</span><span>${localizeTicketType(foundTicket.type)}</span></div>
+        <div class="tracker-row"><span>${tr('الأولوية', 'Priority')}:</span><span>${localizePriorityText(foundTicket.priority)}</span></div>
+        <div class="tracker-row"><span>${tr('التاريخ', 'Date')}:</span><span>${foundTicket.dateShort}</span></div>
+      </div>`;
+    return;
+  }
+
+  const ordersList = JSON.parse(localStorage.getItem('razazy_orders') || '[]');
+  const foundOrder = ordersList.find(o => String(o.orderRef).toUpperCase() === code);
+  if(foundOrder){
+    box.innerHTML = `
+      <div class="tracker-result-card">
+        <div class="tracker-badge">${translateString(foundOrder.status)}</div>
+        <div class="tracker-row"><span>${tr('رقم المرجع', 'Order Ref')}:</span><strong>${foundOrder.orderRef}</strong></div>
+        <div class="tracker-row"><span>${tr('المدينة / الدولة', 'City / Country')}:</span><span>${foundOrder.city}</span></div>
+        <div class="tracker-row"><span>${tr('الإجمالي', 'Total')}:</span><span>${fmt(foundOrder.total)}</span></div>
+        <div class="tracker-row"><span>${tr('التاريخ', 'Date')}:</span><span>${foundOrder.dateShort}</span></div>
+      </div>`;
+    return;
+  }
+
+  box.innerHTML = `<div class="tracker-empty">${tr(
+    'لم يتم العثور على سجل محلي بهذا الرمز. إذا أرسلت الطلب أو التذكرة من جهاز آخر، يمكنك التواصل مع خدمة العملاء عبر واتساب وتزويدهم بالرمز.',
+    'No local record found for this code. If submitted from another device, contact support via WhatsApp with the code.'
+  )}</div>`;
+}
+
+$('openTrackerBtn').onclick = () => openTrackerModal();
+$('trackerClose').onclick = closeTrackerModal;
+$('trackerBack').onclick = closeTrackerModal;
+$('trackerModal').addEventListener('click', e => { if(e.target === $('trackerModal')) closeTrackerModal(); });
+$('trackerSearchBtn').onclick = () => runTrackerLookup($('trackerInput').value);
+$('trackerInput').addEventListener('keydown', e => {
+  if(e.key === 'Enter'){
+    e.preventDefault();
+    runTrackerLookup($('trackerInput').value);
+  }
+});
+
+(function enhanceTrackerModalWithClearAndLang(){
+  const modalCard = $('trackerModalCard');
+  const searchRow = document.querySelector('#trackerModal .tracker-search-row');
+  if(!modalCard || !searchRow) return;
+
+  const clearBtn = document.createElement('button');
+  clearBtn.type = 'button';
+  clearBtn.id = 'trackerClearRecordsBtn';
+  clearBtn.className = 'clear-tickets-btn';
+  clearBtn.style.whiteSpace = 'nowrap';
+  clearBtn.style.marginBottom = '8px';
+  clearBtn.textContent = tr('🗑 حذف السجلات', '🗑 Clear Records');
+  clearBtn.setAttribute('aria-label', tr('حذف السجلات', 'Clear Records'));
+  searchRow.insertAdjacentElement('afterend', clearBtn);
+
+  clearBtn.addEventListener('click', () => {
+    localStorage.removeItem('razazy_orders');
+    localStorage.removeItem('razazy_tickets');
+    ticketHistory = [];
+    if(typeof renderTicketHistory === 'function') renderTicketHistory();
+    $('trackerInput').value = '';
+    runTrackerLookup('');
+    toast(tr('🗑 تم حذف السجلات', '🗑 Records cleared'));
+  });
+
+  const _origSetLangForTracker = setSiteLanguage;
+  setSiteLanguage = function(targetLang, notify = false){
+    _origSetLangForTracker(targetLang, notify);
+    clearBtn.textContent = tr('🗑 حذف السجلات', '🗑 Clear Records');
+    clearBtn.setAttribute('aria-label', tr('حذف السجلات', 'Clear Records'));
+    if($('trackerModal') && $('trackerModal').classList.contains('active')){
+      runTrackerLookup($('trackerInput').value);
+    }
+  };
+})();
+
+function populateSortSelect(){
+  const sel = $('sortSelect');
+  if(!sel) return;
+  const prev = sel.value || 'featured';
+  const opts = isEnLang() ? [
+    {v: "featured", t: "Featured"},
+    {v: "rating", t: "Highest Rated"},
+    {v: "price-asc", t: "Price: Low to High"},
+    {v: "price-desc", t: "Price: High to Low"},
+    {v: "low-stock", t: "Low Stock First"}
+  ] : [
+    {v: "featured", t: "المميز"},
+    {v: "rating", t: "الأعلى تقييماً"},
+    {v: "price-asc", t: "الأقل سعراً"},
+    {v: "price-desc", t: "الأعلى سعراً"},
+    {v: "low-stock", t: "الكمية المحدودة أولاً"}
+  ];
+  sel.innerHTML = opts.map(o => `<option value="${o.v}">${o.t}</option>`).join('');
+  sel.value = prev;
+}
+
+function updateStructuredDataJsonLd(){
+  let scriptEl = document.getElementById('razazyJsonLd');
+  if(!scriptEl){
+    scriptEl = document.createElement('script');
+    scriptEl.type = 'application/ld+json';
+    scriptEl.id = 'razazyJsonLd';
+    document.head.appendChild(scriptEl);
+  }
+  const baseUrl = getBaseUrl();
+  const storeSchema = {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": isEnLang() ? "RAZAZY | Luxury Perfumes" : "رذاذي | RAZAZY - عالم العطور الفاخرة",
+    "url": baseUrl,
+    "image": new URL("bottle.jpg", baseUrl).toString(),
+    "priceRange": "SAR",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "SA"
+    }
+  };
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": isEnLang() ? "RAZAZY Perfumes Collection" : "تشكيلة عطور رذاذي",
+    "numberOfItems": perfumes.length,
+    "itemListElement": perfumes.map((p, idx) => {
+      const stockCount = Math.max(1, Number(p.stock) || 1);
+      return {
+        "@type": "ListItem",
+        "position": idx + 1,
+        "item": {
+          "@type": "Product",
+          "sku": `RAZ-${p.id}`,
+          "name": isEnLang() ? p.nameEn : p.nameAr,
+          "description": isEnLang() ? (p.descEn || p.desc) : p.desc,
+          "image": new URL(p.img || "bottle.jpg", baseUrl).toString(),
+          "brand": {
+            "@type": "Brand",
+            "name": "RAZAZY"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": Number(p.rating) || 4.8,
+            "reviewCount": Number(p.reviewsCount) || 1
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": getProductShareUrl(p.id),
+            "priceCurrency": "SAR",
+            "price": Number(p.price) || 35,
+            "availability": stockCount > 0 ? "https://schema.org/InStock" : "https://schema.org/OutOfStock"
+          }
+        }
+      };
+    })
+  };
+  scriptEl.textContent = JSON.stringify([storeSchema, itemListSchema], null, 2);
+}
+
+const _baseRenderForStage3 = render;
+render = function(){
+  _baseRenderForStage3();
+  updateStructuredDataJsonLd();
+};
+
+const _baseSetLangForStage3 = setSiteLanguage;
+setSiteLanguage = function(targetLang, notify = false){
+  activeLang = targetLang === 'en' ? 'en' : 'ar';
+  populateSortSelect();
+  _baseSetLangForStage3(activeLang, notify);
+};
+
+if($('sortSelect')){
+  $('sortSelect').addEventListener('change', render);
+}
+
+populateSortSelect();
+render();
+
+async function initStage3(){
+  await loadPerfumesFromExternalJson();
+  updateStructuredDataJsonLd();
+}
+initStage3();
+
+(function initPwaSupport(){
+  let deferredInstallPrompt = null;
+  const banner = $('pwaInstallBanner');
+  const installBtn = $('pwaInstallBtn');
+  const dismissBtn = $('pwaDismissBtn');
+  const titleEl = $('pwaInstallTitle');
+  const subEl = $('pwaInstallSub');
+
+  function syncPwaBannerTexts(){
+    if(titleEl){
+      titleEl.textContent = isEnLang() ? '📲 Install RAZAZY App' : '📲 ثبّت تطبيق رذاذي | RAZAZY';
+    }
+    if(subEl){
+      subEl.textContent = isEnLang()
+        ? 'Faster access and a smooth app experience on your device'
+        : 'وصول أسرع وتجربة متجر متكاملة على جهازك';
+    }
+    if(installBtn){
+      installBtn.textContent = isEnLang() ? 'Install' : 'تثبيت';
+    }
+    if(dismissBtn){
+      dismissBtn.setAttribute('aria-label', isEnLang() ? 'Dismiss' : 'إغلاق');
+    }
+  }
+
+  function hideInstallBanner(){
+    if(banner) banner.classList.remove('show');
+  }
+
+  window.addEventListener('beforeinstallprompt', e => {
+    e.preventDefault();
+    deferredInstallPrompt = e;
+    syncPwaBannerTexts();
+    if(banner) banner.classList.add('show');
+  });
+
+  if(installBtn){
+    installBtn.addEventListener('click', async () => {
+      if(!deferredInstallPrompt) return;
+      const promptEvent = deferredInstallPrompt;
+      deferredInstallPrompt = null;
+      hideInstallBanner();
+      try {
+        promptEvent.prompt();
+        const choice = await promptEvent.userChoice;
+        if(choice && choice.outcome === 'accepted'){
+          toast(isEnLang() ? '✅ RAZAZY app installed' : '✅ تم تثبيت تطبيق رذاذي');
+        }
+      } catch(_err){}
+    });
+  }
+
+  if(dismissBtn){
+    dismissBtn.addEventListener('click', () => {
+      deferredInstallPrompt = null;
+      hideInstallBanner();
+    });
+  }
+
+  window.addEventListener('appinstalled', () => {
+    deferredInstallPrompt = null;
+    hideInstallBanner();
+  });
+
+  const _origSetLangPwa = setSiteLanguage;
+  setSiteLanguage = function(targetLang, notify = false){
+    _origSetLangPwa(targetLang, notify);
+    syncPwaBannerTexts();
+  };
+
+  const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+  if(isStandalone){
+    hideInstallBanner();
+  }
+
+  if('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1')){
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js', {scope: './'}).catch(() => {});
+    });
+  }
+})();
+</script>
+</body>
+</html>
